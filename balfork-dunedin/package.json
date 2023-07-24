@@ -1,0 +1,33 @@
+{
+  "name": "balfork-dunedin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@sanity/client": "^3.2.0",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.14.3",
+    "canvas-confetti": "^1.6.0",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "next-sanity-image": "^3.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.3.1",
+    "sanity": "^3.14.3",
+    "styled-components": "5.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  }
+}
