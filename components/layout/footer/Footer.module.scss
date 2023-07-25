@@ -1,10 +1,14 @@
+@use "styles/abstracts" as a;
+
 .footer {
-  @apply flex-col w-full gap-20 bg-light-white;
+  @apply flex-col w-full gap-8 bg-light-white pt-4;
   padding-inline: 5rem;
+  background: #aca19d;
 }
 
 .footerCopyright {
-  @apply max-sm:flex-col w-full text-sm font-normal pt-2 mb-4 border-t-2 border-amber-700;
+  @apply max-sm:flex-col w-full text-sm font-normal pt-2 mb-4;
+  border-top: 1px solid a.$primary-dark;
 }
 
 .footerColumn {

@@ -14,12 +14,10 @@
 
 .aboutUs__description {
   @apply flex items-center justify-start flex-col;
+}
 
-  h1 {
-    font-size: 2rem;
-  }
+.meetOurTeam {
+  &__cards {
 
-  h3 {
-    font-size: 1.5rem;
   }
 }

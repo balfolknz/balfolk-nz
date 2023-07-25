@@ -14,9 +14,13 @@ const FooterColumn = ({title, links}: ColumnProps) => {
         <h4 className="font-semibold">{title}</h4>
         <ul className="flex flex-col gap-2 font-normal">
             {links.map((link: string) => {
-                return <Link href={`/`} key={link}>
-                    {link}
-                </Link>
+                return (
+                    <p>
+                        < Link href={`/`} key={link}>
+                            {link}
+                        </Link>
+                    </p>
+                )
             })}
         </ul>
     </section>
@@ -28,9 +32,9 @@ function Footer() {
             <section className="flex flex-col gap-12 w-full">
                 <section className="flex items-start flex-col">
                     <Link href="/">
-                        <h1 className="font-cormorantSC">Balfork NZ</h1>
+                        <h2 className="logo font-cormorantSC">Balfork NZ</h2>
                     </Link>
-                    <p className="text-start text-sm font-normal mt-5 max-w-xs">
+                    <p className="text-start font-normal mt-5 max-w-xs">
                         Balfork NZ aims to revitalise the style of Balfork dancing within NZ!
                     </p>
                 </section>

@@ -27,8 +27,22 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase !important;
   letter-spacing: 0.5rem !important;
   color: a.$primary-dark;
-  margin-top: 0 !important;
-  margin-bottom: 1rem !important;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 0.8rem;
 }
 
 //Utilities
@@ -99,34 +113,38 @@ h1, h2, h3, h4, h5, h6 {
   padding-inline: 5rem;
 }
 
+// Logo
+.logo {
+  font-size: 1rem;
+}
+
 // Titles
 .title {
-  margin-bottom: 0 !important;
+  margin-bottom: 1rem !important;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 10px !important;
   text-transform: uppercase;
-  width: 40%;
-}
 
-.title:before, .title:after {
-  content: "";
-  flex-direction: row;
-  flex: 1 1;
-  border-bottom: 3px solid;
-}
+  &::before, &::after {
+    content: "";
+    flex-direction: row;
+    border-bottom: 3px solid a.$primary-light;
+    width: 6rem;
+  }
 
-.title:before {
-  margin-right: 10px
-}
+  &::before {
+    margin-right: 10px
+  }
 
-.title:after {
-  margin-left: 10px
-}
+  &::after {
+    margin-left: 10px;
+  }
 
+}
 
 // Screen Reader
 .sr-only {
@@ -140,3 +158,6 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   border: 0;
 }
+
+// Home - Meet the team
+@include c.imageWithTextOverlay(".teamCard__image", #FFFFFF, a.$primary-dark, 0.5rem)

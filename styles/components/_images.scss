@@ -1,11 +1,11 @@
-/// image_with_text_overlay will take an image and text and overlay the text over the image with effects
+/// imageWithTextOverlay will take an image and text and overlay the text over the image with effects
 /// parent_selector is the identifier of the parent element (the element holding the image and texts)
 /// border-colour is the colour of the border
 /// background-colour is the colour of the darkened image on hover (will be automatically darkened)
 /// text-gap is the amount of space between the title and the body
 /// Make sure the photo and text are on the same hierarchy (should be siblings)
 
-@mixin image_with_text_overlay($parent_selector, $border-colour, $background-colour, $text-gap) {
+@mixin imageWithTextOverlay($parent_selector, $border-colour, $background-colour, $text-gap) {
   #{$parent_selector} {
     background: mix($background-colour, #000000, 70%);  // This will darken any colour provided
     display: flex;
@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: default;
 
 
     &:hover {
@@ -92,7 +93,7 @@
       z-index: 1;
 
       &__title {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
         margin-bottom: 0;
       }

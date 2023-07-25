@@ -1,4 +1,4 @@
-import CityTemplate from "@/components/templates/city-template";
+import CityTemplate from "@/components/templates/CityTemplate";
 
 const DunedinPage = () => {
     return (
