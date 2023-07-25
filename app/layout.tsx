@@ -1,7 +1,8 @@
 import {Cormorant_SC} from 'next/font/google'
-import './globals.scss'
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import '../styles/reset.scss'
+import '../styles/globals.scss'
+import Navbar from "@/components/layout/navbar/Navbar";
+import Footer from "@/components/layout/footer/Footer";
 
 const cormorant_sc = Cormorant_SC({
     subsets: ['latin'],

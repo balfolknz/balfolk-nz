@@ -1,6 +1,8 @@
-import React from 'react';
 import Link from "next/link";
-import {footerLinks} from "@/constants";
+import {footerLinks} from "@/constants/footer.constants";
+
+import styles from "./Footer.module.scss"
+
 
 type ColumnProps = {
     title: string,
@@ -8,7 +10,7 @@ type ColumnProps = {
 }
 
 const FooterColumn = ({title, links}: ColumnProps) => {
-    return <section className="footerColumn">
+    return <section className={`${styles.footerColumn}`}>
         <h4 className="font-semibold">{title}</h4>
         <ul className="flex flex-col gap-2 font-normal">
             {links.map((link: string) => {
@@ -22,7 +24,7 @@ const FooterColumn = ({title, links}: ColumnProps) => {
 
 function Footer() {
     return (
-        <footer className="flexStart footer">
+        <footer className={`flexStart | ${styles.footer}`}>
             <section className="flex flex-col gap-12 w-full">
                 <section className="flex items-start flex-col">
                     <Link href="/">
@@ -38,7 +40,7 @@ function Footer() {
                     return <FooterColumn title={footerLink.title} links={footerLink.links}></FooterColumn>
                 })}
             </section>
-            <section className="flexBetween footer_copyright">
+            <section className={`flexBetween ${styles.footerCopyright}`}>
                 <p>© 2023 Balfork NZ. All rights reserved</p>
                 <p className="text-gray">
                     <span className="text-black font-semibold">Welcome!</span>

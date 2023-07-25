@@ -3,3 +3,4 @@ type navlinkConfig = {
     key: string,
     text: string
 }
+

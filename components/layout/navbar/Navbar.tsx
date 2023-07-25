@@ -1,16 +1,13 @@
-import React from 'react';
 import Link from "next/link";
-import {NavLinks} from "@/constants";
+import {NavLinks} from "@/constants/navbar.constants";
+
+import styles from "./Navbar.module.scss"
+
 
 function Navbar() {
     return (
-        <nav className="flexBetween navbar">
+        <nav className={`flexBetween ${styles.navbar}`}>
             <Link href="/">
-                {/*<Image src="/logo.svg"*/}
-                {/*       alt="Balfork NZ"*/}
-                {/*       height={43}*/}
-                {/*       width={115}*/}
-                {/*/>*/}
                 <h1 className="font-cormorantSC">Balfork NZ</h1>
             </Link>
             <section className="flex-1 flexEnd gap-10">

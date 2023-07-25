@@ -1,0 +1,105 @@
+/// image_with_text_overlay will take an image and text and overlay the text over the image with effects
+/// parent_selector is the identifier of the parent element (the element holding the image and texts)
+/// border-colour is the colour of the border
+/// background-colour is the colour of the darkened image on hover (will be automatically darkened)
+/// text-gap is the amount of space between the title and the body
+/// Make sure the photo and text are on the same hierarchy (should be siblings)
+
+@mixin image_with_text_overlay($parent_selector, $border-colour, $background-colour, $text-gap) {
+  #{$parent_selector} {
+    background: mix($background-colour, #000000, 70%);  // This will darken any colour provided
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    &:hover {
+      #{$parent_selector}__photo {
+        opacity: 0.5;
+
+        -webkit-mask-image: linear-gradient(  // mask image for google chrome
+                        rgb(0 0 0 / 1),
+                        rgb(0 0 0 / 0.5) 30%,
+                        rgb(0 0 0 / 0),
+        );
+
+        mask-image: linear-gradient(
+                        rgb(0 0 0 / 1),
+                        rgb(0 0 0 / 0.5) 30%,
+                        rgb(0 0 0 / 0),
+        );
+      }
+
+      #{$parent_selector}__text {
+        opacity: 1;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4%;
+      bottom: 4%;
+      left: 4%;
+      right: 4%;
+    }
+
+    &::before {
+      transform: scale(0, 1);
+      transition: transform ease-in-out 350ms;
+      border-top: 1px solid $border-colour;
+      border-bottom: 1px solid $border-colour;
+    }
+
+    &::after {
+      transform: scale(1, 0);
+      transition: transform ease-in-out 350ms;
+      border-left: 1px solid $border-colour;
+      border-right: 1px solid $border-colour;
+    }
+
+    &:hover::before {
+      transform: scale(1.065, 1);
+    }
+
+    &:hover::after {
+      transform: scale(1, 1.065);
+    }
+
+    &__photo {
+      max-width: 100%;
+      display: block;
+      transition: opacity ease-in-out 350ms;
+      object-fit: cover;
+    }
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      opacity: 0;
+      transition: opacity ease-in-out 350ms;
+      display: flex;
+      flex-direction: column;
+      gap: $text-gap;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      &__title {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 0;
+      }
+
+      &__body {
+
+      }
+    }
+  }
+}

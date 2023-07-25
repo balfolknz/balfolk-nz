@@ -1,0 +1,25 @@
+@use "/styles/components" as c;
+@use "/styles/abstracts" as a;
+
+.heroTitle {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.heroButton {
+  @include c.hover-fill-button(a.$primary-light, #fff)
+}
+
+.aboutUs__description {
+  @apply flex items-center justify-start flex-col;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}

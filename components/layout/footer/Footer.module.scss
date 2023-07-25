@@ -1,0 +1,12 @@
+.footer {
+  @apply flex-col w-full gap-20 bg-light-white;
+  padding-inline: 5rem;
+}
+
+.footerCopyright {
+  @apply max-sm:flex-col w-full text-sm font-normal pt-2 mb-4 border-t-2 border-amber-700;
+}
+
+.footerColumn {
+  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+}

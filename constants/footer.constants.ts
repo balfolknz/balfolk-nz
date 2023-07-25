@@ -1,10 +1,3 @@
-export const NavLinks: navlinkConfig[] = [
-    {href: '/', key: 'home', text: 'Home'},
-    {href: '/', key: 'auckland', text: 'Auckland'},
-    {href: '/', key: 'dunedin', text: 'Dunedin'},
-    {href: '/', key: 'wellington', text: 'Wellington'},
-];
-
 export const footerLinks = [
     {
         title: 'NZ',

@@ -1,8 +1,13 @@
+@use "./components" as c;
+@use "./abstracts" as a;
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 * {
   margin: 0;
@@ -12,7 +17,10 @@
 
 body {
   font-family: Inter;
-  padding-inline: 5rem;
+}
+
+main {
+  min-height: 80vh;
 }
 
 .flexCenter {
@@ -76,30 +84,34 @@ body {
   @apply text-left w-full px-5 py-2 text-sm hover:bg-light-white-100 self-start whitespace-nowrap capitalize;
 }
 
-/* Footer */
-.footer {
-  @apply flex-col paddings w-full gap-20 bg-light-white;
+/* Page */
+.page {
+  padding-inline: 5rem;
 }
 
-.footer_copyright {
-  @apply max-sm:flex-col w-full text-sm font-normal pt-2 border-t-2 border-amber-700;
+.title:before, .title:after {
+  content: "";
+  flex-direction: row;
+  flex: 1 1;
+  border-bottom: 3px solid;
 }
 
-.footer_column {
-  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+.title:before {
+  margin-right: 10px
 }
 
-/* Modal */
-.modal {
-  @apply fixed z-10 left-0 right-0 top-0 bottom-0 mx-auto bg-black/80;
+.title:after {
+  margin-left: 10px
 }
 
-.modal_wrapper {
-  @apply flex justify-start items-center flex-col absolute h-[95%] w-full bottom-0 bg-white rounded-t-3xl lg:px-40 px-8 pt-14 pb-72 overflow-auto;
+.sr-only { // Screen Reader only
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
-
-/* Navbar */
-.navbar {
-  @apply py-5 px-8 border-b border-nav-border gap-4;
-}
-
