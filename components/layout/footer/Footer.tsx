@@ -6,18 +6,18 @@ import styles from "./Footer.module.scss"
 
 type ColumnProps = {
     title: string,
-    links: Array<string>;
+    links: Array<footerLink>;
 }
 
 const FooterColumn = ({title, links}: ColumnProps) => {
     return <section className={`${styles.footerColumn}`}>
         <h4 className="font-semibold">{title}</h4>
         <ul className="flex flex-col gap-2 font-normal">
-            {links.map((link: string) => {
+            {links.map((link: footerLink) => {
                 return (
                     <p>
-                        < Link href={`/`} key={link}>
-                            {link}
+                        <Link href={link.path} key={link.name}>
+                            {link.name}
                         </Link>
                     </p>
                 )
@@ -40,7 +40,7 @@ function Footer() {
                 </section>
             </section>
             <section className="flex justify-between gap-12 w-full items-start">
-                {footerLinks.map((footerLink) => {
+                {footerLinks.footerLinks.map((footerLink) => {
                     return <FooterColumn title={footerLink.title} links={footerLink.links}></FooterColumn>
                 })}
             </section>

@@ -1,35 +1,55 @@
-export const footerLinks = [
-    {
-        title: 'NZ',
-        links: [
-            'About Us',
-        ],
-    },
-    {
-        title: 'Auckland',
-        links: [
-            'About Us',
-            'Class times',
-            'Media',
-            'Contact us'
-        ],
-    },
-    {
-        title: 'Dunedin',
-        links: [
-            'About Us',
-            'Class times',
-            'Media',
-            'Contact us'
-        ],
-    },
-    {
-        title: 'Wellington',
-        links: [
-            'About Us',
-            'Class times',
-            'Media',
-            'Contact us'
-        ],
-    },
-];
+export const footerLinks: allFooterLinks = {
+    "footerLinks": [
+        {
+            title: 'NZ',
+            links: [
+                {
+                    "name": "About Us",
+                    "path": "/#about-us"
+                },
+            ],
+        },
+        {
+            title: 'Auckland',
+            links: [
+                {
+                    "name": "About Us",
+                    "path": "/auckland#about-us"
+                },
+                {
+                    "name": "Class Times",
+                    "path": "/auckland#class-times"
+                },
+                {
+                    "name": "Media",
+                    "path": "/auckland#media"
+                },
+                {
+                    "name": "Contact Us",
+                    "path": "/auckland#contact-us"
+                },
+            ],
+        },
+        {
+            title: 'Dunedin',
+            links: [
+                {
+                    "name": "About Us",
+                    "path": "/dunedin#about-us"
+                },
+                {
+                    "name": "Class Times",
+                    "path": "/dunedin#class-times"
+                },
+                {
+                    "name": "Media",
+                    "path": "/dunedin#media"
+                },
+                {
+                    "name": "Contact Us",
+                    "path": "/dunedin#contact-us"
+                },
+            ],
+        },
+    ]
+}

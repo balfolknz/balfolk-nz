@@ -7,10 +7,26 @@ type CityTemplateProps = {
 const CityTemplate = ({title}: CityTemplateProps) => {
     return <section className="">
         {title}
-        <h1>About us</h1>
-        <h1>Class times</h1>
-        <h1>Media</h1>
-        <h1>Contact us</h1>
+
+        {/* About Us*/}
+        <section className="aboutUs" id="about-us">
+            <h1>About us</h1>
+        </section>
+
+        {/* Class Times */}
+        <section className="classTimes" id="class-times">
+            <h1>Class Times</h1>
+        </section>
+
+        {/* Media */}
+        <section className="media" id="media">
+            <h1>Media</h1>
+        </section>
+
+        {/* Contact Us */}
+        <section className="contactUs" id="contact-us">
+            <h1>Contact Us</h1>
+        </section>
     </section>
 }
 
