@@ -4,12 +4,6 @@ import styles from "./page.module.scss"
 import Link from "next/link";
 import TeamCard from "@/components/home/TeamCard";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faMagnifyingGlass,
-    faCircleStop
-} from "@fortawesome/free-solid-svg-icons";
-
 const Page = () => {
     return (
         <>
@@ -21,13 +15,13 @@ const Page = () => {
             </HeroImage>
             <section className="flex flex-start flex-col mb-16 page gap-20 mt-6">
                 <section className="aboutUs | flexStart flex-col gap-5" id="about-us">
-                    <section className={`${styles.aboutUs__description}`}>
+                    <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
                         <h1 className={`title`}>About Us</h1>
                         <p>{aboutContent.shortDescription}</p>
                     </section>
 
-                    <section className={`${styles.aboutUs__description}`}>
-                        <h3>What is Balfolk Dancing?</h3>
+                    <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__verbose}`}>
+                        <h3>What is Balfolk NZ?</h3>
                         <p>{aboutContent.verboseDescription}</p>
                     </section>
                 </section>

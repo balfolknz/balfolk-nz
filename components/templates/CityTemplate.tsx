@@ -8,12 +8,13 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
 type CityTemplateProps = {
     city: string,
+    aboutInfo: aboutInfo,
     mediaInfo: mediaInfo,
     allClassInfo: allClassInfo,
     contactInfo: contactInfo
 }
 
-const CityTemplate = ({city, mediaInfo, allClassInfo, contactInfo}: CityTemplateProps) => {
+const CityTemplate = ({city, mediaInfo, allClassInfo, contactInfo, aboutInfo}: CityTemplateProps) => {
     return <section className={`${styles.page} | flex gap-6 | mt-6`}>
         <section className={`${styles.page__left}`}>
             {city}
@@ -22,6 +23,10 @@ const CityTemplate = ({city, mediaInfo, allClassInfo, contactInfo}: CityTemplate
             {/* About Us*/}
             <section className={`aboutUs | ${styles.section}`} id="about-us">
                 <h2 className={`title`}>About us</h2>
+                <section className={`px-20`}>
+                    <p>{aboutInfo.description}</p>
+                </section>
+                {/*<section class></section>*/}
             </section>
 
             {/* Class Times */}

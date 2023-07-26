@@ -49,8 +49,9 @@ p {
   font-size: 0.65rem;
 }
 
-//Utilities
+// Utilities
 
+// Flex
 .flexCenter {
   @apply flex justify-center items-center;
 }
@@ -65,6 +66,11 @@ p {
 
 .flexEnd {
   @apply flex items-center justify-end;
+}
+
+// Grid
+.gridTwoCol {
+  @apply grid lg:grid-cols-2 sm:grid-cols-2 auto-rows-auto gap-x-8 gap-y-5
 }
 
 .text-small {

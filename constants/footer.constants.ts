@@ -55,5 +55,14 @@ export const footerLinks: allFooterLinks = {
                 },
             ],
         },
+        {
+            title: 'More',
+            links: [
+                {
+                    "name": "FAQs",
+                    "path": "/more#questions"
+                },
+            ],
+        },
     ]
 }

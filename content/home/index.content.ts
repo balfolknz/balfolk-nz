@@ -1,6 +1,6 @@
 export const aboutContent: aboutContent = {
-    'shortDescription': "Balfolk NZ's home description",
-    'verboseDescription': "Balfolk NZ's long winded description"
+    'shortDescription': "interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus",
+    'verboseDescription': `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ornare quam viverra orci sagittis. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Arcu dictum varius duis at. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tristique nulla aliquet enim tortor. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in.`
 }
 
 export const allTeamContent: allTeamContent = {
@@ -10,7 +10,7 @@ export const allTeamContent: allTeamContent = {
             "lastName": "Grace",
             "job": "Dance Teacher",
             "imagePath": "/images/home/team/Kate.jpg",
-            "description": "Kate Grace Description"
+            "description": "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla"
         },
         {
             "firstName": "Michael",
@@ -18,7 +18,7 @@ export const allTeamContent: allTeamContent = {
             "job": "Dance Teacher",
             "imagePath": "/images/home/team/Michael.jpg",
             "description":
-                "Michael Parmenter Description"
+                "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla"
         },
     ]
 }
