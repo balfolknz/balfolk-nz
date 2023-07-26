@@ -1,23 +1,39 @@
+"use client"
+
 import HeroImage from "@/components/common/heroImage/heroImage";
-import {aboutContent, allTeamContent, learnMoreButtons} from "@/content/home/index.content";
+import {aboutContent, allTeamContent, heroImagePaths, learnMoreButtons} from "@/content/home/index.content";
 import styles from "./page.module.scss"
 import Link from "next/link";
 import TeamCard from "@/components/home/TeamCard";
+import Carousel from "react-material-ui-carousel";
 
 const Page = () => {
     return (
         <>
-            <HeroImage image={"/images/home/main2.jpg"}>
-                <section className={`flex flex-col gap-2 items-center justify-center`}>
-                    <section className={`flex flex-col`}>
-                        <h1 className={`font-cormorantSC | ${styles.heroTitle}`}>Balfolk</h1>
-                        <h3 className={`font-cormorantSC | ${styles.heroSubtitle}`}>Aotearoa/NZ</h3>
-                    </section>
-                    <button className={`${styles.heroButton}`}>
-                        <Link href="/#about-us" className={`${styles.heroButton__text}`}>Learn more</Link>
-                    </button>
-                </section>
-            </HeroImage>
+            <Carousel
+                interval={4000}
+                animation={"slide"}
+                duration={750}
+            >
+                {
+                    heroImagePaths.map((imagePath, i) => {
+                        return (
+                            <HeroImage image={imagePath} key={i}>
+                                <section className={`flex flex-col gap-2 items-center justify-center`}>
+                                    <section className={`flex flex-col`}>
+                                        <h1 className={`font-cormorantSC | ${styles.heroTitle}`}>Balfolk</h1>
+                                        <h3 className={`font-cormorantSC | ${styles.heroSubtitle}`}>Aotearoa/NZ</h3>
+                                    </section>
+                                    <button className={`${styles.heroButton}`}>
+                                        <Link href="/#about-us" className={`${styles.heroButton__text}`}>Learn
+                                            more</Link>
+                                    </button>
+                                </section>
+                            </HeroImage>
+                        )
+                    })
+                }
+            </Carousel>
             <section className="flex flex-start flex-col page">
                 <section className={`${styles.aboutUs} | flexStart flex-col gap-5`} id="about-us">
                     <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
