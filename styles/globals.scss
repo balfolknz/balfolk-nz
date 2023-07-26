@@ -118,6 +118,10 @@ p {
   @apply text-left w-full px-5 py-2 text-sm hover:bg-light-white-100 self-start whitespace-nowrap capitalize;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Page */
 .page {
   padding-inline: 5rem;

@@ -58,6 +58,7 @@ const Page = () => {
                                     firstName={teamContent.firstName}
                                     lastName={teamContent.lastName}
                                     description={teamContent.description}
+                                    key={teamContent.lastName}
                                 />
                             )
                         })}
