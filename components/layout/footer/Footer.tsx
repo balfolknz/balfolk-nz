@@ -30,7 +30,7 @@ const FooterColumn = ({title, links}: ColumnProps) => {
 
 function Footer() {
     return (
-        <footer className={`flexStart | ${styles.footer}`}>
+        <footer className={`flexCenter | ${styles.footer}`}>
             <section className="flex flex-col gap-12 w-full">
                 <section className="flex items-start flex-col">
                     <Link href="/">
@@ -41,15 +41,15 @@ function Footer() {
                     </p>
                 </section>
             </section>
-            <section className="flex justify-between gap-12 w-full items-start">
+            <section className="flex justify-between gap-12 w-full items-start text-center">
                 {footerLinks.footerLinks.map((footerLink) => {
                     return <FooterColumn title={footerLink.title} links={footerLink.links}></FooterColumn>
                 })}
             </section>
             <section className={`flexBetween ${styles.footerCopyright}`}>
                 <p>© 2023 Balfolk NZ. All rights reserved</p>
-                <p className="text-gray">
-                    <span className="text-black font-semibold">Welcome!</span>
+                <p className="">
+                    <span className="font-semibold">Welcome!</span>
                 </p>
             </section>
         </footer>

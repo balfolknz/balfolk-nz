@@ -11,8 +11,12 @@
 }
 
 .footerCopyright {
-  @apply max-sm:flex-col w-full text-sm font-normal pt-2 mb-4;
-  border-top: 1px solid a.$primary-dark;
+  @apply max-sm:flex-col w-full text-sm font-normal items-center;
+  padding-inline: 3rem;
+  background: a.$primary-dark;
+  color: a.$primary-light-100;
+  width: 100vw;
+  height: 2rem;
 }
 
 .footerColumn {
