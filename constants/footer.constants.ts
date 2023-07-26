@@ -7,6 +7,10 @@ export const footerLinks: allFooterLinks = {
                     "name": "About Us",
                     "path": "/#about-us"
                 },
+                {
+                    "name": "Learn More",
+                    "path": "/#learn-more"
+                },
             ],
         },
         {

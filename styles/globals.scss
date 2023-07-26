@@ -15,7 +15,11 @@
 }
 
 body {
-  font-family: Inter;
+  @apply font-libreBaskerville;
+  overscroll-behavior: none;
+  scrollbar-gutter: auto;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 main {
@@ -25,24 +29,24 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.5rem !important;
   color: a.$primary-dark;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 h2 {
-  font-size: 1.8rem;
-}
-
-h3 {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
 p {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
 }
 
 //Utilities
@@ -115,6 +119,7 @@ p {
 
 // Logo
 .logo {
+  @apply font-cormorantSC text-primary-dark;
   font-size: 1rem;
 }
 

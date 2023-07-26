@@ -14,3 +14,12 @@ type teamContent = {
 type allTeamContent = {
     allTeams: Array<teamContent>
 }
+
+type learnMoreButton = {
+    name: string,
+    path: string
+}
+
+type learnMoreButtons = {
+    allButtons: Array<learnMoreButton>
+}

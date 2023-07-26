@@ -8,7 +8,10 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                cormorantSC: 'var(--font-cormorant_sc)',
+                cormorantSC: 'var(--font-cormorant-sc)',
+                cormorantGaramond: 'var(--font-cormorant-garamond)',
+                dancingScript: 'var(--font-dancing-script)',
+                libreBaskerville: 'var(--font-libre-baskerville)',
             },
             colors: {
                 'nav-border': '#EBEAEA',

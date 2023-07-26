@@ -11,14 +11,13 @@ type teamCardProps = {
 
 const TeamCard = ({image, job, firstName, lastName, description}: teamCardProps) => {
     return (
-        <section className={`${styles.teamCard} max-w-full flex-1 | flex gap-3`}>
-            <section className={`teamCard__image`}>
+        <section className={`${styles.teamCard} max-w-full flex-1 | flex gap-3 flex-col`}>
+            <section className={`teamCard__image | ${styles.teamCard__image}`}>
                 <Image
                     priority
                     src={image}
-                    width={300}
-                    height={300}
-                    className={`teamCard__image__photo`}
+                    fill={true}
+                    className={`teamCard__image__photo | ${styles.teamCard__image__photo}`}
                     alt={job}
                 />
                 <section className={`teamCard__image__text`}>
@@ -30,9 +29,7 @@ const TeamCard = ({image, job, firstName, lastName, description}: teamCardProps)
 
             <section className={`teamcard__content | flex flex-col`}>
                 <h3 className={`pb-1`}>
-                    {firstName}
-                    <br/>
-                    {lastName}
+                    {firstName} {lastName}
                 </h3>
                 <p className={`italic`}>{description}</p>
             </section>

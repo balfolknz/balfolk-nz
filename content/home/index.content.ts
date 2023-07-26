@@ -22,3 +22,17 @@ export const allTeamContent: allTeamContent = {
         },
     ]
 }
+
+
+export const learnMoreButtons: learnMoreButtons = {
+    "allButtons": [
+        {
+            "name": "Auckland",
+            "path": "/auckland#about-us",
+        },
+        {
+            "name": "Dunedin",
+            "path": "/dunedin#about-us",
+        },
+    ]
+}
