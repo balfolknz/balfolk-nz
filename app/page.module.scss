@@ -2,14 +2,26 @@
 @use "/styles/abstracts" as a;
 
 .heroTitle {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .heroButton {
-  @include c.hover-fill-button(a.$primary-light, #fff)
+  @include c.hover-fill-button(a.$primary-light, #fff);
+  width: 50%;
+  text-align: center;
+  &__text {
+    font-size: 1rem;
+  }
 }
 
 .aboutUs__description {

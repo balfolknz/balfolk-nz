@@ -4,3 +4,9 @@ type navlinkConfig = {
     text: string
 }
 
+type allNavLinks = {
+    home: navlinkConfig,
+    centres: Array<navlinkConfig>
+    more: navlinkConfig
+}
+

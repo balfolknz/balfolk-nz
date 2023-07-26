@@ -8,10 +8,15 @@ const Page = () => {
     return (
         <>
             <HeroImage image={"/images/home/main2.jpg"}>
-                <h1 className={`font-cormorantSC | ${styles.heroTitle}`}>Balfolk NZ</h1>
-                <button className={`${styles.heroButton}`}>
-                    <Link href="/#about-us">Learn more</Link>
-                </button>
+                <section className={`flex flex-col gap-2 items-center justify-center`}>
+                    <section className={`flex flex-col`}>
+                        <h1 className={`font-cormorantSC | ${styles.heroTitle}`}>Balfolk</h1>
+                        <h3 className={`font-cormorantSC | ${styles.heroSubtitle}`}>Aotearoa/NZ</h3>
+                    </section>
+                    <button className={`${styles.heroButton}`}>
+                        <Link href="/#about-us" className={`${styles.heroButton__text}`}>Learn more</Link>
+                    </button>
+                </section>
             </HeroImage>
             <section className="flex flex-start flex-col mb-16 page gap-20 mt-6">
                 <section className="aboutUs | flexStart flex-col gap-5" id="about-us">

@@ -8,14 +8,14 @@ export const allTeamContent: allTeamContent = {
         {
             "firstName": "Kate",
             "lastName": "Grace",
-            "job": "Dance Teacher",
+            "job": "Director",
             "imagePath": "/images/home/team/Kate.jpg",
             "description": "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla"
         },
         {
             "firstName": "Michael",
             "lastName": "Parmenter",
-            "job": "Dance Teacher",
+            "job": "Director",
             "imagePath": "/images/home/team/Michael.jpg",
             "description":
                 "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla"

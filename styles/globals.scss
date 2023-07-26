@@ -183,6 +183,10 @@ p {
   }
 }
 
+.activeLink {
+  color: a.$primary-light;
+}
+
 // Home - Meet the team
 @include c.imageWithTextOverlay(".teamCard__image", #FFFFFF, #000000, 0.5rem);
 
