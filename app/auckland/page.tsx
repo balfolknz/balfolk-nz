@@ -1,8 +1,12 @@
 import CityTemplate from "@/components/templates/CityTemplate";
+import {allMedia} from "@/content/auckland/media.content";
 
 const AucklandPage = () => {
     return (
-        <CityTemplate title="Auckland"></CityTemplate>
+        <CityTemplate
+            city="Auckland"
+            mediaInfo={allMedia}
+        />
     );
 }
 

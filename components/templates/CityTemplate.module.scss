@@ -1,0 +1,23 @@
+@use "styles/abstracts" as a;
+
+.page {
+  padding-inline: 7rem;
+
+  &__left {
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: a.$primary-dark;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+
+  &__right {
+    .section {
+      @apply flex flex-col gap-3 items-center justify-start
+    }
+  }
+}
+

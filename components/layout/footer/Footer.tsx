@@ -10,20 +10,22 @@ type ColumnProps = {
 }
 
 const FooterColumn = ({title, links}: ColumnProps) => {
-    return <section className={`${styles.footerColumn}`}>
-        <h3 className="font-semibold">{title}</h3>
-        <ul className="flex flex-col gap-2 font-normal">
-            {links.map((link: footerLink) => {
-                return (
-                    <p>
-                        <Link href={link.path} key={link.name}>
-                            {link.name}
-                        </Link>
-                    </p>
-                )
-            })}
-        </ul>
-    </section>
+    return (
+        <section className={`${styles.footerColumn}`} key={title}>
+            <h3 className="font-semibold">{title}</h3>
+            <ul className="flex flex-col gap-2 font-normal">
+                {links.map((link: footerLink) => {
+                    return (
+                        <p>
+                            <Link href={link.path} key={link.name}>
+                                {link.name}
+                            </Link>
+                        </p>
+                    )
+                })}
+            </ul>
+        </section>
+    )
 }
 
 function Footer() {

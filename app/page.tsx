@@ -4,6 +4,12 @@ import styles from "./page.module.scss"
 import Link from "next/link";
 import TeamCard from "@/components/home/TeamCard";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faMagnifyingGlass,
+    faCircleStop
+} from "@fortawesome/free-solid-svg-icons";
+
 const Page = () => {
     return (
         <>

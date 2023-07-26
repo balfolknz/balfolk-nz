@@ -125,12 +125,12 @@ p {
 
 // Titles
 .title {
+  width: 100%;
   margin-bottom: 1rem !important;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
   letter-spacing: 10px !important;
   text-transform: uppercase;
 
@@ -138,15 +138,15 @@ p {
     content: "";
     flex-direction: row;
     border-bottom: 3px solid a.$primary-light;
-    width: 6rem;
+    width: 4rem;
   }
 
   &::before {
-    margin-right: 10px
+    margin-right: 0.7rem
   }
 
   &::after {
-    margin-left: 10px;
+    margin-left: 0.7rem;
   }
 
 }
@@ -162,6 +162,11 @@ p {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+//Icons
+.icon {
+  font-size: 1rem;
 }
 
 // Home - Meet the team

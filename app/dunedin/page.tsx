@@ -1,8 +1,12 @@
 import CityTemplate from "@/components/templates/CityTemplate";
+import {allMedia} from "@/content/dunedin/media.content";
 
 const DunedinPage = () => {
     return (
-        <CityTemplate title="Dunedin"></CityTemplate>
+        <CityTemplate
+            city="Dunedin"
+            mediaInfo={allMedia}
+        />
     );
 }
 
