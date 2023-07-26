@@ -21,8 +21,8 @@ export const footerLinks: allFooterLinks = {
                     "path": "/auckland#about-us"
                 },
                 {
-                    "name": "Class Times",
-                    "path": "/auckland#class-times"
+                    "name": "Classes",
+                    "path": "/auckland#classes"
                 },
                 {
                     "name": "Media",
@@ -42,8 +42,8 @@ export const footerLinks: allFooterLinks = {
                     "path": "/dunedin#about-us"
                 },
                 {
-                    "name": "Class Times",
-                    "path": "/dunedin#class-times"
+                    "name": "Classes",
+                    "path": "/dunedin#classes"
                 },
                 {
                     "name": "Media",

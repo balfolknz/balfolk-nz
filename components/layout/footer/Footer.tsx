@@ -37,7 +37,7 @@ function Footer() {
                         <h2 className="logo">Balfolk NZ</h2>
                     </Link>
                     <p className="text-start font-normal mt-5">
-                        Balfolk NZ aims to revitalise the style of balfolk dancing within NZ!
+                        Balfolk NZ aims to revitalise the style of Balfolk dancing within NZ!
                     </p>
                 </section>
             </section>

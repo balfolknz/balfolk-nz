@@ -166,8 +166,20 @@ p {
 
 //Icons
 .icon {
-  font-size: 1rem;
+  font-size: 2rem;
+}
+
+//Links
+.link {
+  &:hover {
+    color: a.$primary-light;
+    text-decoration: underline;
+  }
 }
 
 // Home - Meet the team
-@include c.imageWithTextOverlay(".teamCard__image", #FFFFFF, a.$primary-dark, 0.5rem)
+@include c.imageWithTextOverlay(".teamCard__image", #FFFFFF, #000000, 0.5rem);
+
+
+// Template - Media - Playlists
+@include c.imageWithTextOverlay(".playlist__image", #FFFFFF, #000000, 0.5rem);
