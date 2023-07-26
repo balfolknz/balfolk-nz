@@ -1,4 +1,4 @@
-# Balfork NZ website
+# Balfolk NZ website
 To make this website as scalable, but simple to use as possible, I'll be leveraging the services of other platforms.
 
 1. The website itself will be custom made using NextJS. NextJS will provide optimal performance but also easy scaling. <br>

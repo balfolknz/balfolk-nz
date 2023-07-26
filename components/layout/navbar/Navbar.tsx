@@ -8,7 +8,7 @@ function Navbar() {
     return (
         <nav className={`flexBetween ${styles.navbar}`}>
             <Link href="/">
-                <p className="logo">Balfork NZ</p>
+                <p className="logo">Balfolk NZ</p>
             </Link>
             <section className="flex-1 flexEnd gap-10">
                 <ul className="flex gap-7">

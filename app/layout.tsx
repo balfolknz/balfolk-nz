@@ -30,8 +30,8 @@ const libre_baskerville = Libre_Baskerville({
 });
 
 export const metadata = {
-    title: 'Balfork NZ',
-    description: 'The official website for Balfork - New Zealand!',
+    title: 'Balfolk NZ',
+    description: 'The official website for Balfolk - New Zealand!',
 }
 
 export default function RootLayout({

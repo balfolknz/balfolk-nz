@@ -1,6 +1,6 @@
 export const aboutContent: aboutContent = {
-    'shortDescription': "Balfork NZ's home description",
-    'verboseDescription': "Balfork NZ's long winded description"
+    'shortDescription': "Balfolk NZ's home description",
+    'verboseDescription': "Balfolk NZ's long winded description"
 }
 
 export const allTeamContent: allTeamContent = {

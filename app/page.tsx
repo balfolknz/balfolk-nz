@@ -14,7 +14,7 @@ const Page = () => {
     return (
         <>
             <HeroImage image={"/images/home/main2.jpg"}>
-                <h1 className={`font-cormorantSC | ${styles.heroTitle}`}>Balfork NZ</h1>
+                <h1 className={`font-cormorantSC | ${styles.heroTitle}`}>Balfolk NZ</h1>
                 <button className={`${styles.heroButton}`}>
                     <Link href="/#about-us">Learn more</Link>
                 </button>
@@ -27,7 +27,7 @@ const Page = () => {
                     </section>
 
                     <section className={`${styles.aboutUs__description}`}>
-                        <h3>What is Balfork Dancing?</h3>
+                        <h3>What is Balfolk Dancing?</h3>
                         <p>{aboutContent.verboseDescription}</p>
                     </section>
                 </section>

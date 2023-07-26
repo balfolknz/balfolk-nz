@@ -4,7 +4,7 @@ import {allMedia} from "@/content/dunedin/media.content";
 const DunedinPage = () => {
     return (
         <CityTemplate
-            city="Dunedin"
+            city="Dunedin123"
             mediaInfo={allMedia}
         />
     );

@@ -34,10 +34,10 @@ function Footer() {
             <section className="flex flex-col gap-12 w-full">
                 <section className="flex items-start flex-col">
                     <Link href="/">
-                        <h2 className="logo">Balfork NZ</h2>
+                        <h2 className="logo">Balfolk NZ</h2>
                     </Link>
                     <p className="text-start font-normal mt-5">
-                        Balfork NZ aims to revitalise the style of Balfork dancing within NZ!
+                        Balfolk NZ aims to revitalise the style of balfolk dancing within NZ!
                     </p>
                 </section>
             </section>
@@ -47,7 +47,7 @@ function Footer() {
                 })}
             </section>
             <section className={`flexBetween ${styles.footerCopyright}`}>
-                <p>© 2023 Balfork NZ. All rights reserved</p>
+                <p>© 2023 Balfolk NZ. All rights reserved</p>
                 <p className="text-gray">
                     <span className="text-black font-semibold">Welcome!</span>
                 </p>
