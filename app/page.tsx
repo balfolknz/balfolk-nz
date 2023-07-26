@@ -18,8 +18,8 @@ const Page = () => {
                     </button>
                 </section>
             </HeroImage>
-            <section className="flex flex-start flex-col mb-16 page gap-20 mt-6">
-                <section className="aboutUs | flexStart flex-col gap-5" id="about-us">
+            <section className="flex flex-start flex-col page">
+                <section className={`${styles.aboutUs} | flexStart flex-col gap-5`} id="about-us">
                     <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
                         <h1 className={`title`}>About Us</h1>
                         <p>{aboutContent.shortDescription}</p>

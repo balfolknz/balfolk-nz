@@ -15,18 +15,35 @@ type CityTemplateProps = {
 }
 
 const CityTemplate = ({city, mediaInfo, allClassInfo, contactInfo, aboutInfo}: CityTemplateProps) => {
-    return <section className={`${styles.page} | flex gap-6 | mt-6`}>
+    return <section className={`${styles.page} | flex gap-6`}>
         <section className={`${styles.page__left}`}>
             {city}
         </section>
-        <section className={`${styles.page__right} | flex flex-col gap-10 w-full`}>
+        <section className={`${styles.page__right} | flex flex-col w-full`}>
             {/* About Us*/}
-            <section className={`aboutUs | ${styles.section}`} id="about-us">
+            <section className={`aboutUs | ${styles.section} ${styles.about}`} id="about-us">
                 <h2 className={`title`}>About us</h2>
-                <section className={`px-20`}>
-                    <p>{aboutInfo.description}</p>
+                <section className={`flex flex-col gap-5 px-10 justify-center items-center w-full`}>
+                    <section className={``}>
+                        <p>{aboutInfo.description}</p>
+                    </section>
+                    <section className={`${styles.about__images} | flex flex-row gap-3`}>
+                        {aboutInfo.groupPhotoPaths.map(photoPath => {
+                            return (
+                                <section className={`relative`}>
+                                    <Image
+                                        priority
+                                        width={300}
+                                        height={300}
+                                        src={photoPath}
+                                        className={`${styles.about__photo}`}
+                                        alt={"Group photo"}
+                                    />
+                                </section>
+                            )
+                        })}
+                    </section>
                 </section>
-                {/*<section class></section>*/}
             </section>
 
             {/* Class Times */}
@@ -87,26 +104,26 @@ const CityTemplate = ({city, mediaInfo, allClassInfo, contactInfo, aboutInfo}: C
             {/* Media */}
             <section className={`${styles.media} | ${styles.section}`} id="media">
                 <h2 className={`title`}>Media</h2>
-
-                <section className="videos flex flex-col items-center justify-start">
+                <section className={`videos flex flex-col items-center justify-start gap-5 | ${styles.videos}`}>
                     <h3>Some of our favourite dances</h3>
-                    <section className="flex flex-row gap-4 justify-center">
+                    <section className="flex flex-row gap-5 justify-center">
                         {mediaInfo.allVideos.map((video: videoInfo) => {
                             return (
-                                <section className={`flex flex-col items-center`}>
+                                <section className={`flex flex-col items-center gap-2`}>
                                     <p className={`font-bold`}>{video.title}</p>
-                                    <Iframe url={video.url}
-                                            id=""
-                                            className=""
-                                            display="block"
-                                            position="relative"/>
+                                    <section className={`${styles.videos__video}`}>
+                                        <Iframe url={video.url}
+                                                id=""
+                                                display="block"
+                                                position="relative"/>
+                                    </section>
                                 </section>
                             )
                         })}
                     </section>
                 </section>
 
-                <section className="playlists flex flex-col items-center justify-start w-10/12">
+                <section className="playlists flex flex-col items-center justify-start gap-5 w-10/12">
                     <h3>
                         <a href={mediaInfo.youtubeChannel} target="_blank" className={`link`}>
                             See some of our other dances
@@ -142,8 +159,16 @@ const CityTemplate = ({city, mediaInfo, allClassInfo, contactInfo, aboutInfo}: C
 
             {/* Contact Us */}
             <section className={`${styles.section} ${styles.contactUs} | `} id="contact-us">
-                <h2 className={`title`}>Contact Us</h2>
-                <section className={`flex flex-row gap-6 mb-4 | ${styles.socials}`}>
+                <section className={`flex flex-col gap-2 justify-center items-center text-center`}>
+                    <h2 className={`title`}>Contact Us</h2>
+                    <p className={`italic`}>
+                        Feel free to reach out to us via our email address below, or by visiting any of our
+                        socials. <br/>
+                        We're always happy to answer any questions you might have! <br/>
+                        Swing by for a class as well if you want to give Balfolk dancing a go
+                    </p>
+                </section>
+                <section className={`flex flex-row gap-6 | ${styles.socials}`}>
                     <a href={contactInfo.facebookLink} target={"_blank"}>
                         <FontAwesomeIcon icon={faFacebook} className={`icon`}/>
                     </a>

@@ -27,7 +27,11 @@ module.exports = {
                 'gray-50': '#D9D9D9',
 
                 'primary-dark': '#542e23',
-                'primary-light': '#aa7e65'
+                'primary-dark-100': '#e8d0c9',
+
+                'primary-light': '#aa7e65',
+                'primary-light-500': '#d0b7aa',
+                'primary-light-250': '#d0b7aa'
             },
             boxShadow: {
                 menu: '0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)',

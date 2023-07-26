@@ -2,10 +2,11 @@
 @use "styles/components" as c;
 
 .page {
-  padding-inline: 7rem;
+  margin-inline: 7rem;
+  height: 100%;
 
   &__left {
-    height: 100%;
+    min-height: 100%;
     text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
@@ -20,7 +21,14 @@
       @apply flex flex-col gap-6 items-center justify-start
     }
 
+    .about {
+      padding-block: 3rem;
+    }
+
     .classes {
+      background: a.$primary-light-100;
+      padding-block: 3rem;
+
       .times {
         .table {
           max-width: 40rem;
@@ -41,19 +49,32 @@
 
 
     .media {
+      padding-block: 3rem;
+      background: a.$primary-dark-100;
+
+      .videos {
+        &__video {
+          border: 1px solid a.$primary-dark;
+        }
+      }
+
       .playlist {
         &__image {
           height: 10rem;
           width: 100%;
 
           &__photo {
+            border: 1px solid a.$primary-dark;
           }
         }
       }
     }
 
     .contactUs {
-      @apply gap-2
+      background: white;
+      padding-block: 3rem;
+
+      @apply gap-6
     }
 
   }

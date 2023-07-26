@@ -24,21 +24,33 @@
   }
 }
 
-.aboutUs__description {
-  @apply flex items-center justify-start flex-col;
+.aboutUs {
+  padding-block: 3rem;
+  &__description {
+    @apply flex items-center justify-start flex-col;
 
-  &__short {
-    padding-inline: 10rem;
+    &__short {
+      padding-inline: 10rem;
+    }
+
+    &__verbose {
+      padding-inline: 8rem;
+    }
   }
 
-  &__verbose {
-    padding-inline: 8rem;
-  }
 }
 
 .meetOurTeam {
-  padding-inline: 10rem;
+  background: a.$primary-light-100;
+  margin-inline: 7rem;
+  padding-inline: 3rem;
+  padding-block: 3rem;
+
   &__cards {
 
   }
+}
+
+.learnMore {
+  padding-block: 3rem;
 }
