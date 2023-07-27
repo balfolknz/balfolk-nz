@@ -169,6 +169,12 @@ p {
     margin-left: 0.7rem;
   }
 
+  @media screen and (max-width: 768px) {
+    &::before, &::after {
+      width: 2rem;
+    }
+  }
+
 }
 
 // Screen Reader
