@@ -4,6 +4,10 @@
 .page {
   height: 100%;
 
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
+
   &__left, &__right {
     display: flex;
     min-width: 20%;
