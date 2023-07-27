@@ -20,6 +20,7 @@
   @include c.hover-fill-button(a.$primary-light, #fff);
   width: 50%;
   text-align: center;
+
   &__text {
     font-size: 1rem;
   }
@@ -27,6 +28,7 @@
 
 .aboutUs {
   padding-block: 3rem;
+
   &__description {
     @apply flex items-center justify-start flex-col;
 
@@ -54,4 +56,11 @@
 
 .learnMore {
   padding-block: 3rem;
+
+  @media screen and (max-width: 768px) {
+    &::before, &::after {
+      display: none;
+    }
+
+  }
 }

@@ -9,7 +9,6 @@
     min-width: 20%;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 5%;
   }
 
   &__left {
@@ -17,9 +16,6 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: a.$primary-dark;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    padding-bottom: 10%;
 
     &__text {
       position: sticky;
@@ -105,35 +101,51 @@
   }
 
   &__right {
-    padding-bottom: 15%;
+    display: none;
+  }
+}
 
-    &__nav {
-      position: sticky;
-      top: 10%;
-      @include c.card(#fff);
+@media screen and (min-width: 768px) {
+  .page {
+    &__left {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+      justify-content: center;
+      padding-top: 5rem;
+      padding-bottom: 10%;
+    }
 
-      &__link {
-        padding-block: 1rem;
-        padding-inline: 2rem;
-        border-top: 1px solid a.$primary-dark-500;
-        width: 100%;
+    &__right {
+      display: flex;
+      padding-bottom: 15%;
 
-        &__noBorder {
-          border: none;
-        }
+      &__nav {
+        position: sticky;
+        top: 10%;
+        @include c.card(#fff);
 
-        &:hover {
-          transition: 0.1s ease-in-out;
-          text-decoration: underline;
-          background: a.$primary-dark-750;
-          color: white;
-        }
+        &__link {
+          padding-block: 1rem;
+          padding-inline: 2rem;
+          border-top: 1px solid a.$primary-dark-500;
+          width: 100%;
 
-        p {
-          text-align: center;
+          &__noBorder {
+            border: none;
+          }
+
+          &:hover {
+            transition: 0.1s ease-in-out;
+            text-decoration: underline;
+            background: a.$primary-dark-750;
+            color: white;
+          }
+
+          p {
+            text-align: center;
+          }
         }
       }
     }
   }
 }
-

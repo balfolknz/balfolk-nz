@@ -14,7 +14,6 @@ type ColumnProps = {
 
 const FooterColumn = ({title, links}: ColumnProps) => {
     const currentRoute = usePathname();
-    console.log(currentRoute)
 
     return (
         <section className={`${styles.footerColumn}`} key={title.name}>
@@ -42,25 +41,25 @@ const FooterColumn = ({title, links}: ColumnProps) => {
 
 function Footer() {
     return (
-        <footer className={`flexCenter | ${styles.footer}`}>
+        <footer className={`flex flex-row items-center justify-center md:flex-col | ${styles.footer}`}>
             <section className="flex flex-col gap-12 w-full">
-                <section className="flex items-start flex-col">
+                <section className="flex items-center flex-col md:items-start">
                     <Link href="/">
                         <h2 className="logo">Balfolk NZ</h2>
                     </Link>
-                    <p className="text-start font-normal mt-5">
+                    <p className="text-center font-normal mt-5 md:text-start">
                         Balfolk NZ aims to revitalise the style of Balfolk dancing within NZ!
                     </p>
                 </section>
             </section>
-            <section className="flex justify-between gap-12 w-full items-start text-center">
+            <section className="flex justify-between gap-12 w-full items-center text-center flex-col md:flex-row md:items-start">
                 {footerLinks.footerLinks.map((footerLink) => {
                     return <FooterColumn title={footerLink.title} links={footerLink.links}></FooterColumn>
                 })}
             </section>
             <section className={`flexBetween ${styles.footerCopyright}`}>
                 <p>© 2023 Balfolk NZ. All rights reserved</p>
-                <p className="">
+                <p className={`${styles.footerCopyright__right}`}>
                     <span className="font-semibold">Welcome!</span>
                 </p>
             </section>

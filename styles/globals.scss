@@ -21,6 +21,8 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background: a.$primary-light-100;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -34,21 +36,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1rem;
-  letter-spacing: 3px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
 }
 
 p {
-  font-size: 0.65rem;
-  max-width: 65ch;
+  font-size: 1rem;
+  max-width: 25ch;
   text-align: left;
 }
 
@@ -82,10 +85,6 @@ p {
   0 2px 4px rgba(0, 0, 0, 0.1),
   0 4px 8px rgba(0, 0, 0, 0.1),
   0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.text-small {
-  @apply text-sm font-medium;
 }
 
 .paddings {
@@ -141,7 +140,7 @@ p {
 // Logo
 .logo {
   @apply font-cormorantSC text-primary-dark;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 // Titles
@@ -213,3 +212,32 @@ p {
 
 // Template - Media - Playlists
 @include c.imageWithTextOverlay(".playlist__image", #FFFFFF, #000000, 0.5rem);
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    max-width: 65ch;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+
+}

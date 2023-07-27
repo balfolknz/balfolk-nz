@@ -17,12 +17,22 @@
 }
 
 .footerCopyright {
-  @apply max-sm:flex-col w-full text-sm font-normal items-center;
+  @apply max-sm:flex-col w-full text-sm font-normal items-center py-5 text-center md:py-2 md:text-left;
   padding-inline: 3rem;
   background: a.$primary-dark;
   color: a.$primary-light-100;
   width: 100vw;
-  height: 2rem;
+  height: 100%;
+
+  p {
+    @apply text-center md:text-left
+  }
+
+  &__right {
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+  }
 }
 
 .footerColumn {
