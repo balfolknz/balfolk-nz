@@ -1,4 +1,4 @@
-import {Cormorant_SC, Cormorant_Garamond, Dancing_Script, Libre_Baskerville} from 'next/font/google'
+import {Cormorant_Garamond, Cormorant_SC, Dancing_Script, Libre_Baskerville} from 'next/font/google'
 import '../styles/reset.scss'
 import '../styles/globals.scss'
 import Navbar from "@/components/layout/navbar/Navbar";
@@ -40,12 +40,13 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en" className={`${cormorant_sc.variable} ${dancing_script.variable} ${libre_baskerville.variable} ${cormorant_garamond.variable}`}>
+        <html lang="en"
+              className={`${cormorant_sc.variable} ${dancing_script.variable} ${libre_baskerville.variable} ${cormorant_garamond.variable}`}>
         <body>
         <Navbar/>
-        <main>
-            {children}
-        </main>
+            <main>
+                {children}
+            </main>
         <Footer/>
         </body>
         </html>
