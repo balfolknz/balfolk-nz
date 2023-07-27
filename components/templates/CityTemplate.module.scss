@@ -115,16 +115,22 @@
       &__link {
         padding-block: 1rem;
         padding-inline: 2rem;
-        border-top: 1px solid a.$primary-dark-100;
+        border-top: 1px solid a.$primary-dark-500;
         width: 100%;
-        text-align: center;
 
         &__noBorder {
           border: none;
         }
 
         &:hover {
+          transition: 0.1s ease-in-out;
           text-decoration: underline;
+          background: a.$primary-dark-750;
+          color: white;
+        }
+
+        p {
+          text-align: center;
         }
       }
     }

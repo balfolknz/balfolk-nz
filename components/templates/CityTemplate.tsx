@@ -198,13 +198,34 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
 
             <section className={`${styles.page__right}`}>
                 <section className={`${styles.page__right__nav} | flex flex-col items-center justify-center`}>
-                    <p className={`${styles.page__right__nav__link} ${styles.page__right__nav__link__noBorder}`}><Link href={rootPath + "/#classes"}>Classes</Link>
-                    </p>
-                    <p className={`${styles.page__right__nav__link}`}><Link href={rootPath + "/#contact-us"}>Contact
-                        Us</Link></p>
-                    <p className={`${styles.page__right__nav__link}`}><Link href={rootPath + "/#media"}>Media</Link></p>
-                    <p className={`${styles.page__right__nav__link}`}><Link href={rootPath + "/#gallery"}>Gallery</Link>
-                    </p>
+                    <Link href={rootPath + "/#classes"}
+                          className={`${styles.page__right__nav__link} ${styles.page__right__nav__link__noBorder}`}
+                    >
+                        <p>
+                            Classes
+                        </p>
+                    </Link>
+                    <Link href={rootPath + "/#contact-us"}
+                          className={`${styles.page__right__nav__link}`}
+                    >
+                        <p>
+                            Contact Us
+                        </p>
+                    </Link>
+                    <Link href={rootPath + "/#media"}
+                          className={`${styles.page__right__nav__link}`}
+                    >
+                        <p>
+                            Media
+                        </p>
+                    </Link>
+                    <Link href={rootPath + "/#gallery"}
+                          className={`${styles.page__right__nav__link}`}
+                    >
+                        <p>
+                            Gallery
+                        </p>
+                    </Link>
                 </section>
             </section>
         </section>
