@@ -67,7 +67,7 @@ const Page = () => {
 
                 <section className={`${styles.learnMore} | md:w-8/12`} id="learn-more">
                     <h1 className={`title`}>Learn more</h1>
-                    <section className="flex flex-col gap-5 justify-center items-center md:flex-row">
+                    <section className="flex flex-col gap-5 justify-center items-center">
                         <section className={`flex gap-3 justify-center items-center w-full flex-col md:flex-row | ${styles.learnMore__links}`}>
                             {learnMoreButtons.allButtons.map((buttonContent) => {
                                 return (

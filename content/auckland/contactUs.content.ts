@@ -1,5 +1,5 @@
 export const contactInfo:contactInfo = {
-    email: "balforkauckland@gmail.com",
+    email: "balfolkauckland@gmail.com",
     facebookLink: "https://www.facebook.com/",
     youtubeLink: "https://www.youtube.com/",
 }

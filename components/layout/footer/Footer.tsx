@@ -41,7 +41,7 @@ const FooterColumn = ({title, links}: ColumnProps) => {
 
 function Footer() {
     return (
-        <footer className={`flex flex-row items-center justify-center md:flex-col | ${styles.footer}`}>
+        <footer className={`flex flex-col items-center justify-center | ${styles.footer}`}>
             <section className="flex flex-col gap-12 w-full">
                 <section className="flex items-center flex-col md:items-start">
                     <Link href="/">

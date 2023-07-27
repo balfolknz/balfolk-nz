@@ -66,6 +66,30 @@ export const footerLinks: allFooterLinks = {
         },
         {
             title: {
+                name: 'Wellington',
+                path: '/wellington'
+            },
+            links: [
+                {
+                    name: "Classes",
+                    path: "/wellington#classes"
+                },
+                {
+                    name: "Contact Us",
+                    path: "/wellington#contact-us"
+                },
+                {
+                    name: "Media",
+                    path: "/wellington#media"
+                },
+                {
+                    name: "Gallery",
+                    path: "/wellington#gallery"
+                },
+            ],
+        },
+        {
+            title: {
                 name: 'More',
                 path: '/more'
             },
