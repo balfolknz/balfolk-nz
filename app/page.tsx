@@ -25,7 +25,7 @@ const Page = () => {
                                         <h3 className={`font-cormorantSC | ${styles.heroSubtitle}`}>Aotearoa/NZ</h3>
                                     </section>
                                     <button className={`${styles.heroButton}`}>
-                                        <Link href="/#about-us" className={`${styles.heroButton__text}`}>Learn
+                                        <Link href="/#gallery" className={`${styles.heroButton__text}`}>Learn
                                             more</Link>
                                     </button>
                                 </section>
@@ -35,14 +35,14 @@ const Page = () => {
                 }
             </Carousel>
             <section className="flex flex-start flex-col page">
-                <section className={`${styles.aboutUs} | flexStart flex-col gap-5`} id="about-us">
+                <section className={`${styles.aboutUs} | flexStart flex-col gap-10`} id="gallery">
                     <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
                         <h1 className={`title`}>About Us</h1>
                         <p>{aboutContent.shortDescription}</p>
                     </section>
 
                     <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__verbose}`}>
-                        <h3>What is Balfolk NZ?</h3>
+                        <h3 className={`text-left w-full`}>What is Balfolk NZ?</h3>
                         <p>{aboutContent.verboseDescription}</p>
                     </section>
                 </section>

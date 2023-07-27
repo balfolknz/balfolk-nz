@@ -19,8 +19,7 @@ To make this website as scalable, but simple to use as possible, I'll be leverag
 
 
 Each section will have
-1. About us
-2. Class times
-3. Contact
-4. Photos
-5. Exemplar dances/performances
+1. Classes
+2. Contact Us
+3. Media
+4. Gallery

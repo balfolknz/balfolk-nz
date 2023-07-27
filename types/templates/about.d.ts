@@ -1,4 +1,3 @@
-type aboutInfo = {
-    description: string,
+type galleryInfo = {
     groupPhotoPaths: Array<string>,
 }

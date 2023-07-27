@@ -1,14 +1,15 @@
 import CityTemplate from "@/components/templates/CityTemplate";
 import {allMedia} from "@/content/dunedin/media.content";
-import {allClasses} from "@/content/dunedin/classTimes.content";
+import {allClasses} from "@/content/dunedin/classes.content";
 import {contactInfo} from "@/content/dunedin/contactUs.content";
-import {aboutInfo} from "@/content/dunedin/about.content";
+import {galleryInfo} from "@/content/dunedin/gallery.content";
 
 const DunedinPage = () => {
     return (
         <CityTemplate
             city="Dunedin"
-            aboutInfo={aboutInfo}
+            rootPath={"dunedin"}
+            galleryInfo={galleryInfo}
             mediaInfo={allMedia}
             allClassInfo={allClasses}
             contactInfo={contactInfo}

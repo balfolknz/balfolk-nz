@@ -16,7 +16,7 @@ const FooterColumn = ({title, links}: ColumnProps) => {
             <ul className="flex flex-col gap-2 font-normal">
                 {links.map((link: footerLink) => {
                     return (
-                        <p>
+                        <p className={`text-center`}>
                             <Link href={link.path} key={link.name}>
                                 {link.name}
                             </Link>

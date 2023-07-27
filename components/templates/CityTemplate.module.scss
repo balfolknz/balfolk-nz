@@ -2,26 +2,37 @@
 @use "styles/components" as c;
 
 .page {
-  margin-inline: 7rem;
   height: 100%;
 
+  &__left, &__right {
+    display: flex;
+    min-width: 13rem;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   &__left {
-    min-height: 100%;
-    text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: a.$primary-dark;
     writing-mode: vertical-lr;
     text-orientation: upright;
+
+    &__text {
+      //position: fixed;
+    }
   }
 
-  &__right {
+  &__center {
+    overflow: auto;
+
     .section {
       @apply flex flex-col gap-6 items-center justify-start
     }
 
-    .about {
+    .gallery {
       padding-block: 3rem;
     }
 
@@ -77,6 +88,16 @@
       @apply gap-6
     }
 
+  }
+
+  &__right {
+    &__nav {
+      &__link {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 

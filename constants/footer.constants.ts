@@ -5,7 +5,7 @@ export const footerLinks: allFooterLinks = {
             links: [
                 {
                     "name": "About Us",
-                    "path": "/#about-us"
+                    "path": "/#gallery"
                 },
                 {
                     "name": "Learn More",
@@ -17,20 +17,20 @@ export const footerLinks: allFooterLinks = {
             title: 'Auckland',
             links: [
                 {
-                    "name": "About Us",
-                    "path": "/auckland#about-us"
-                },
-                {
                     "name": "Classes",
                     "path": "/auckland#classes"
+                },
+                {
+                    "name": "Contact Us",
+                    "path": "/auckland#contact-us"
                 },
                 {
                     "name": "Media",
                     "path": "/auckland#media"
                 },
                 {
-                    "name": "Contact Us",
-                    "path": "/auckland#contact-us"
+                    "name": "Gallery",
+                    "path": "/auckland#gallery"
                 },
             ],
         },
@@ -38,20 +38,20 @@ export const footerLinks: allFooterLinks = {
             title: 'Dunedin',
             links: [
                 {
-                    "name": "About Us",
-                    "path": "/dunedin#about-us"
-                },
-                {
                     "name": "Classes",
                     "path": "/dunedin#classes"
+                },
+                {
+                    "name": "Contact Us",
+                    "path": "/dunedin#contact-us"
                 },
                 {
                     "name": "Media",
                     "path": "/dunedin#media"
                 },
                 {
-                    "name": "Contact Us",
-                    "path": "/dunedin#contact-us"
+                    "name": "Gallery",
+                    "path": "/dunedin#gallery"
                 },
             ],
         },

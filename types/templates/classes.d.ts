@@ -6,6 +6,7 @@ type classInfo = {
 }
 
 type allClassInfo = {
+    description: string,
     allClasses: Array<classInfo>,
     eventsLink: string,
 }
