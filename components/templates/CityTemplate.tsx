@@ -20,7 +20,7 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
     return (
         <section className={`${styles.page} | flex flex-col md:flex-row`}>
             <section className={`${styles.page__left} | flex flex-col gap-2 items-center justify-center`}>
-                <h1 className={`${styles.page__left__text}`}>
+                <h1 className={`${styles.page__left__text} | text-center`}>
                     {city}
                 </h1>
             </section>
@@ -29,12 +29,13 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
             <section className={`${styles.page__center} | flex flex-col w-full`}>
 
                 {/* Classes */}
-                <section className={`${styles.classes} | flex flex-col gap-8 items-center justify-center | px-5`}
-                         id="classes">
-                    <section className={`${styles.text}`}>
+                <section
+                    className={`${styles.classes} | flex flex-col gap-8 items-center justify-center | px-10 md:px-5`}
+                    id="classes">
+                    <section className={`${styles.text} w-full`}>
                         <h2 className={`title`}>Classes</h2>
                         <section className={``}>
-                            <p>{allClassInfo.description}</p>
+                            <p className={`text-center md:text-left ${styles.description}`}>{allClassInfo.description}</p>
                         </section>
                     </section>
 
@@ -71,18 +72,18 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                     </section>
 
                     <section className={`${styles.events} | ${styles.section}`}>
-                        <section className={`flex gap-3 justify-center`}>
-                            <button className={`${styles.button}`}>
+                        <section className={`flex gap-3 justify-center flex-col md:flex-row`}>
+                            <button type={`button`} className={`${styles.button}`}>
                                 <a href={allClassInfo.eventsLink} target={"_blank"}>
-                                    <p>
+                                    <p className={`text-center md:text-left`}>
                                         View Events
                                     </p>
                                 </a>
                             </button>
 
-                            <button className={`${styles.button}`}>
+                            <button type={`button`} className={`${styles.button}`}>
                                 <a href={contactInfo.facebookLink} target={"_blank"}>
-                                    <p>
+                                    <p className={`text-center md:text-left`}>
                                         Visit our Facebook Page
                                     </p>
                                 </a>
@@ -116,11 +117,12 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                 </section>
 
                 {/* Media */}
-                <section className={`${styles.media} | ${styles.section} | mt-10`} id="media">
-                    <h2 className={`title`}>Media</h2>
-                    <section className={`videos flex flex-col items-center justify-start gap-5 | ${styles.videos}`}>
-                        <h3>Some of our favourite dances</h3>
-                        <section className="flex flex-row gap-5 justify-center">
+                <section className={`${styles.media} | ${styles.section} | mt-10 px-8 w-full md:px-0`} id="media">
+                    <h2 className={`title text-center md:text-left`}>Media</h2>
+                    <section
+                        className={`videos flex flex-col items-center justify-start gap-5 w-full | ${styles.videos}`}>
+                        <h3 className={`text-center md:text-left`}>Some of our favourite dances</h3>
+                        <section className="flex gap-5 justify-center flex-col md:flex-row">
                             {mediaInfo.allVideos.map((video: videoInfo) => {
                                 return (
                                     <section className={`flex flex-col items-center gap-2`}>
@@ -140,10 +142,10 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                     <section className="playlists flex flex-col items-center justify-start gap-5 w-10/12">
                         <h3>
                             <a href={mediaInfo.youtubeChannel} target="_blank" className={`link`}>
-                                See some of our other dances
+                                <h3 className={`text-center md:text-left`}>See some of our other dances</h3>
                             </a>
                         </h3>
-                        <section className="flex flex-row gap-4 justify-center min-w-full">
+                        <section className="flex flex-col gap-4 justify-center min-w-full md:flex-row">
                             {mediaInfo.allPlaylists.map((playlist: playlistInfo) => {
                                 return (
                                     <section className={`playlist__image | ${styles.playlist__image}`}>
@@ -175,7 +177,7 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                 <section className={`${styles.section} ${styles.gallery}`} id="gallery">
                     <h2 className={`title`}>Gallery</h2>
                     <section className={`flex flex-col px-10 justify-center items-center w-full`}>
-                        <section className={`${styles.about__images} | flex flex-row gap-3`}>
+                        <section className={`${styles.about__images} | flex flex-col gap-3 md:flex-row`}>
                             {galleryInfo.groupPhotoPaths.map(photoPath => {
                                 return (
                                     <section className={`relative`}>

@@ -8,7 +8,7 @@
     display: flex;
     min-width: 20%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   &__left {
@@ -16,6 +16,10 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     color: a.$primary-dark;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 2rem;
+    }
 
     &__text {
       position: sticky;
@@ -37,6 +41,10 @@
     .classes {
       background: a.$primary-light-100;
       padding-block: 3rem;
+
+      .description {
+        max-width: 100%;
+      }
 
       .times {
         .table {
@@ -63,8 +71,7 @@
 
       .events {
         .button {
-          @include c.hover-fill-button(a.$primary-light, #fff)
-
+          @include c.hover-fill-button(a.$primary-light, #fff);
         }
       }
     }
@@ -107,6 +114,10 @@
 
 @media screen and (min-width: 768px) {
   .page {
+    &__left, &__right {
+      align-items: flex-start;
+    }
+
     &__left {
       writing-mode: vertical-lr;
       text-orientation: upright;
@@ -118,6 +129,7 @@
     &__right {
       display: flex;
       padding-bottom: 15%;
+      padding-top: 5rem;
 
       &__nav {
         position: sticky;

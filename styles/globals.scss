@@ -18,7 +18,7 @@ body {
   @apply font-libreBaskerville;
   overscroll-behavior: none;
   scrollbar-gutter: auto;
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
   background: a.$primary-light-100;
   display: flex;
@@ -76,7 +76,7 @@ p {
 
 // Grid
 .gridTwoCol {
-  @apply grid lg:grid-cols-2 sm:grid-cols-2 auto-rows-auto gap-x-12 gap-y-8
+  @apply grid lg:grid-cols-2 sm:grid-cols-1 auto-rows-auto gap-x-12 gap-y-16 md:gap-y-12
 }
 
 // Card-like box shadow

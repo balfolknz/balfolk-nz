@@ -37,4 +37,10 @@
 
 .footerColumn {
   @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+
+  .footerNav {
+    @media screen and (max-width:768px) {
+      display: none;
+    }
+  }
 }

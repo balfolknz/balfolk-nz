@@ -22,7 +22,7 @@ const FooterColumn = ({title, links}: ColumnProps) => {
             >
                 {title.name}
             </Link>
-            <ul className="flex flex-col gap-2 font-normal">
+            <ul className={`flex flex-col gap-2 font-normal | ${styles.footerNav}`}>
                 {links.map((link: footerLink) => {
                     return (
                         <p className={`text-center`}>
@@ -52,7 +52,7 @@ function Footer() {
                     </p>
                 </section>
             </section>
-            <section className="flex justify-between gap-12 w-full items-center text-center flex-col md:flex-row md:items-start">
+            <section className="flex justify-between gap-3 w-full items-center text-center flex-col md:flex-row md:items-start md:gap-12">
                 {footerLinks.footerLinks.map((footerLink) => {
                     return <FooterColumn title={footerLink.title} links={footerLink.links}></FooterColumn>
                 })}

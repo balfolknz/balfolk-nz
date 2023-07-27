@@ -1,4 +1,9 @@
 .page {
-  padding-inline: 10rem;
+  padding-inline: 3rem;
   padding-block: 3rem;
+
+  @media screen and (min-width: 768px) {
+    padding-inline: 10rem;
+    padding-block: 3rem;
+  }
 }
