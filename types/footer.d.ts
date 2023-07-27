@@ -4,7 +4,7 @@ type footerLink = {
 }
 
 type footerLinks = {
-    title: string,
+    title: footerLink,
     links: Array<footerLink>
 }
 

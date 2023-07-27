@@ -8,6 +8,12 @@
   z-index: 100;
   position: relative;
 
+  a {
+    &:hover {
+      color: a.$primary-light;
+    }
+  }
+
 }
 
 .footerCopyright {

@@ -1,6 +1,7 @@
 @use "/styles/components" as c;
 @use "/styles/abstracts" as a;
 
+
 .heroTitle {
   font-size: 4rem;
   color: white;
@@ -41,7 +42,7 @@
 }
 
 .meetOurTeam {
-  background: a.$primary-light-100;
+  @include c.card(#fff);
   margin-inline: 7rem;
   padding-inline: 3rem;
   padding-block: 3rem;

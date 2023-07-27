@@ -28,10 +28,14 @@ module.exports = {
 
                 'primary-dark': '#542e23',
                 'primary-dark-100': '#e8d0c9',
+                'primary-dark-75': '#ead4cd',
+                'primary-dark-50': '#f2e5e1',
 
                 'primary-light': '#aa7e65',
                 'primary-light-500': '#d0b7aa',
-                'primary-light-250': '#d0b7aa'
+                'primary-light-250': '#ebe1db',
+                'primary-light-100': '#f6f1ee',
+                'primary-light-50': '#fbf9f8',
             },
             boxShadow: {
                 menu: '0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)',

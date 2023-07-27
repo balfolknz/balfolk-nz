@@ -46,6 +46,19 @@
         .table {
           max-width: 40rem;
 
+          th, td {
+            @apply font-libreBaskerville;
+          }
+
+          th {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+          }
+
+          td {
+            font-size: 0.65rem;
+          }
+
           &__header {
             text-transform: uppercase;
           }
@@ -62,8 +75,8 @@
 
 
     .media {
+      @include c.card(a.$primary-dark-75);
       padding-block: 3rem;
-      background: a.$primary-dark-100;
 
       .videos {
         &__video {
@@ -84,9 +97,8 @@
     }
 
     .contactUs {
-      background: white;
+      @include c.card(#fff);
       padding-block: 3rem;
-
       @apply gap-6
     }
 
@@ -98,8 +110,19 @@
     &__nav {
       position: sticky;
       top: 10%;
+      @include c.card(#fff);
 
       &__link {
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        border-top: 1px solid a.$primary-dark-100;
+        width: 100%;
+        text-align: center;
+
+        &__noBorder {
+          border: none;
+        }
+
         &:hover {
           text-decoration: underline;
         }

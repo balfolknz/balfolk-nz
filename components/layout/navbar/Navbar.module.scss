@@ -1,8 +1,17 @@
+@use "styles/abstracts" as a;
+
 .navbar {
   @apply py-2 border-b border-nav-border flex items-center w-full px-8 md:px-20 md:py-5;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 100;
+  background: white;
+
+  a {
+    &:hover {
+      color: a.$primary-light;
+    }
+  }
 
 }
 

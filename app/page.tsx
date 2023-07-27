@@ -34,7 +34,7 @@ const Page = () => {
                     })
                 }
             </Carousel>
-            <section className="flex flex-start flex-col page">
+            <section className="flex flex-start flex-col items-center page">
                 <section className={`${styles.aboutUs} | flexStart flex-col gap-10`} id="gallery">
                     <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
                         <h1 className={`title`}>About Us</h1>
@@ -65,16 +65,21 @@ const Page = () => {
                     </section>
                 </section>
 
-                <section className={`${styles.learnMore}`} id="learn-more">
+                <section className={`${styles.learnMore} | w-8/12`} id="learn-more">
                     <h1 className={`title`}>Learn more</h1>
-                    <section className={`flex gap-3 mt-5 justify-center | ${styles.learnMore__links}`}>
-                        {learnMoreButtons.allButtons.map((buttonContent) => {
-                            return (
-                                <button className={`${styles.heroButton}`}>
-                                    <Link href={buttonContent.path}>{buttonContent.name}</Link>
-                                </button>
-                            )
-                        })}
+                    <section className="flex flex-col gap-5 justify-center items-center">
+                        <section className={`flex gap-3 justify-center items-center w-full | ${styles.learnMore__links}`}>
+                            {learnMoreButtons.allButtons.map((buttonContent) => {
+                                return (
+                                    <button className={`${styles.heroButton}`}>
+                                        <Link href={buttonContent.path}>{buttonContent.name}</Link>
+                                    </button>
+                                )
+                            })}
+                        </section>
+                        <button className={`${styles.heroButton}`}>
+                            <Link href={"/more#faq"}>FAQs</Link>
+                        </button>
                     </section>
                 </section>
             </section>

@@ -40,7 +40,10 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
 
                     <section className={`${styles.times} | ${styles.section}`}>
                         <TableContainer component={Paper} className={`${styles.table}`}>
-                            <Table stickyHeader aria-label="class times">
+                            <Table
+                                stickyHeader
+                                aria-label="class times"
+                            >
                                 <TableHead>
                                     <TableRow className={`${styles.table__header}`}>
                                         <TableCell align="center">Style</TableCell>
@@ -113,7 +116,7 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                 </section>
 
                 {/* Media */}
-                <section className={`${styles.media} | ${styles.section}`} id="media">
+                <section className={`${styles.media} | ${styles.section} | mt-10`} id="media">
                     <h2 className={`title`}>Media</h2>
                     <section className={`videos flex flex-col items-center justify-start gap-5 | ${styles.videos}`}>
                         <h3>Some of our favourite dances</h3>
@@ -194,8 +197,8 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
             </section>
 
             <section className={`${styles.page__right}`}>
-                <section className={`${styles.page__right__nav} | flex flex-col gap-2 items-center justify-center`}>
-                    <p className={`${styles.page__right__nav__link}`}><Link href={rootPath + "/#classes"}>Classes</Link>
+                <section className={`${styles.page__right__nav} | flex flex-col items-center justify-center`}>
+                    <p className={`${styles.page__right__nav__link} ${styles.page__right__nav__link__noBorder}`}><Link href={rootPath + "/#classes"}>Classes</Link>
                     </p>
                     <p className={`${styles.page__right__nav__link}`}><Link href={rootPath + "/#contact-us"}>Contact
                         Us</Link></p>

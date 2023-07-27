@@ -20,6 +20,7 @@ body {
   scrollbar-gutter: auto;
   max-width: 100%;
   overflow-x: hidden;
+  background: a.$primary-light-100;
 }
 
 main {
@@ -73,6 +74,14 @@ p {
 // Grid
 .gridTwoCol {
   @apply grid lg:grid-cols-2 sm:grid-cols-2 auto-rows-auto gap-x-12 gap-y-8
+}
+
+// Card-like box shadow
+.cardBoxShadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1),
+  0 2px 4px rgba(0, 0, 0, 0.1),
+  0 4px 8px rgba(0, 0, 0, 0.1),
+  0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .text-small {
@@ -179,6 +188,11 @@ p {
 //Icons
 .icon {
   font-size: 2rem;
+  color: a.$primary-dark;
+
+  &:hover {
+    color: a.$primary-light;
+  }
 }
 
 //Links

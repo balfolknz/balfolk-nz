@@ -1,23 +1,35 @@
+"use client";
+
 import Link from "next/link";
 import {footerLinks} from "@/constants/footer.constants";
 
 import styles from "./Footer.module.scss"
+import {usePathname} from "next/navigation";
 
 
 type ColumnProps = {
-    title: string,
+    title: footerLink,
     links: Array<footerLink>;
 }
 
 const FooterColumn = ({title, links}: ColumnProps) => {
+    const currentRoute = usePathname();
+    console.log(currentRoute)
+
     return (
-        <section className={`${styles.footerColumn}`} key={title}>
-            <h3 className="font-semibold">{title}</h3>
+        <section className={`${styles.footerColumn}`} key={title.name}>
+            <Link href={title.path} key={title.name}
+                  className={`${currentRoute === title.path ? "activeLink" : "notActiveLink"} | font-semibold text-primary-dark`}
+            >
+                {title.name}
+            </Link>
             <ul className="flex flex-col gap-2 font-normal">
                 {links.map((link: footerLink) => {
                     return (
                         <p className={`text-center`}>
-                            <Link href={link.path} key={link.name}>
+                            <Link href={link.path} key={link.name}
+                                  className={``}
+                            >
                                 {link.name}
                             </Link>
                         </p>

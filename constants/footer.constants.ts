@@ -1,66 +1,78 @@
 export const footerLinks: allFooterLinks = {
     "footerLinks": [
         {
-            title: 'NZ',
+            title: {
+                name: 'NZ',
+                path: '/'
+            },
             links: [
                 {
-                    "name": "About Us",
-                    "path": "/#gallery"
+                    name: "About Us",
+                    path: "/#gallery"
                 },
                 {
-                    "name": "Learn More",
-                    "path": "/#learn-more"
+                    name: "Learn More",
+                    path: "/#learn-more"
                 },
             ],
         },
         {
-            title: 'Auckland',
+            title: {
+                name: 'Auckland',
+                path: '/auckland'
+            },
             links: [
                 {
-                    "name": "Classes",
-                    "path": "/auckland#classes"
+                    name: "Classes",
+                    path: "/auckland#classes"
                 },
                 {
-                    "name": "Contact Us",
-                    "path": "/auckland#contact-us"
+                    name: "Contact Us",
+                    path: "/auckland#contact-us"
                 },
                 {
-                    "name": "Media",
-                    "path": "/auckland#media"
+                    name: "Media",
+                    path: "/auckland#media"
                 },
                 {
-                    "name": "Gallery",
-                    "path": "/auckland#gallery"
+                    name: "Gallery",
+                    path: "/auckland#gallery"
                 },
             ],
         },
         {
-            title: 'Dunedin',
+            title: {
+                name: 'Dunedin',
+                path: '/dunedin'
+            },
             links: [
                 {
-                    "name": "Classes",
-                    "path": "/dunedin#classes"
+                    name: "Classes",
+                    path: "/dunedin#classes"
                 },
                 {
-                    "name": "Contact Us",
-                    "path": "/dunedin#contact-us"
+                    name: "Contact Us",
+                    path: "/dunedin#contact-us"
                 },
                 {
-                    "name": "Media",
-                    "path": "/dunedin#media"
+                    name: "Media",
+                    path: "/dunedin#media"
                 },
                 {
-                    "name": "Gallery",
-                    "path": "/dunedin#gallery"
+                    name: "Gallery",
+                    path: "/dunedin#gallery"
                 },
             ],
         },
         {
-            title: 'More',
+            title: {
+                name: 'More',
+                path: '/more'
+            },
             links: [
                 {
-                    "name": "FAQs",
-                    "path": "/more#questions"
+                    name: "FAQs",
+                    path: "/more#questions"
                 },
             ],
         },
