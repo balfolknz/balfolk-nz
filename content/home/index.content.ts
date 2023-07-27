@@ -33,11 +33,11 @@ export const learnMoreButtons: learnMoreButtons = {
     "allButtons": [
         {
             "name": "Auckland",
-            "path": "/auckland#gallery",
+            "path": "/auckland",
         },
         {
             "name": "Dunedin",
-            "path": "/dunedin#gallery",
+            "path": "/dunedin",
         },
     ]
 }

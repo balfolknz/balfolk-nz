@@ -19,7 +19,7 @@ type CityTemplateProps = {
 const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, galleryInfo}: CityTemplateProps) => {
     return (
         <section className={`${styles.page} | flex flex-col md:flex-row`}>
-            <section className={`${styles.page__left}`}>
+            <section className={`${styles.page__left} | flex flex-col gap-2 items-center justify-center`}>
                 <h1 className={`${styles.page__left__text}`}>
                     {city}
                 </h1>
