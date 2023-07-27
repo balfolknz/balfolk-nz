@@ -10,7 +10,7 @@ import {PageWrapper} from "@/components/animations/PageWrapper";
 
 const Page = () => {
     return (
-        <>
+        <section className={`${styles.homePage}`}>
             <PageWrapper>
                 <Carousel
                     interval={4000}
@@ -36,7 +36,7 @@ const Page = () => {
                         })
                     }
                 </Carousel>
-                <section className="flex flex-start flex-col items-center page w-full">
+                <section className={`flex flex-start flex-col items-center page w-full`}>
                     <section className={`${styles.aboutUs} | flexStart flex-col gap-10`} id="gallery">
                         <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
                             <h1 className={`title`}>About Us</h1>
@@ -88,7 +88,7 @@ const Page = () => {
                     </section>
                 </section>
             </PageWrapper>
-        </>
+        </section>
     )
 }
 
