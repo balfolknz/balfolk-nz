@@ -8,7 +8,7 @@ const WellingtonPage = () => {
     return (
         <CityTemplate
             city="Wellington"
-            rootPath={"Wellington"}
+            rootPath={"wellington"}
             galleryInfo={galleryInfo}
             mediaInfo={allMedia}
             allClassInfo={allClasses}

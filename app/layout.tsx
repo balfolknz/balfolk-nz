@@ -32,6 +32,9 @@ const libre_baskerville = Libre_Baskerville({
 export const metadata = {
     title: 'Balfolk NZ',
     description: 'The official website for Balfolk - New Zealand!',
+    icons: {
+        icon: '/icons/favicon.jpg',
+    },
 }
 
 export default function RootLayout({
