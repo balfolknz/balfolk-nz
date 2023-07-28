@@ -1,6 +1,6 @@
 # Balfolk NZ
 > Created by Jason Liu <br>
-> This app has been deployed as version 1.0
+> This app has been deployed as version 1.1.1
 <br><br>
 
 ### What is Balfolk NZ?
@@ -9,7 +9,7 @@ It'll serve as a convenient location for different people to learn more about Ba
 It was made so that the content is separated from the code, making it easier to update its content by non-developers.
 <br><br>
 
-### What technologies does Glass use?
+### What technologies does Balfolk NZ use?
 - **_NextJS_** is used to create the frontend and backend (this is a framework built on top of React)
 - **_TailwindCSS_** is used to help with building the CSS  
 - **_Vercel_** is used to deploy the website to the internet 
