@@ -150,16 +150,18 @@
           padding-inline: 2rem;
           border-top: 1px solid a.$primary-dark-500;
           width: 100%;
+          cursor: pointer;
+          letter-spacing: 1px;
+          text-transform: uppercase;
 
           &__noBorder {
             border: none;
           }
 
           &:hover {
-            transition: 0.1s ease-in-out;
-            text-decoration: underline;
+            transition: 0.2s ease-in-out;
             background: a.$primary-dark-750;
-            color: white;
+            color: a.$primary-dark-50;
           }
 
           p {

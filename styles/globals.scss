@@ -219,6 +219,13 @@ p {
 // Template - Media - Playlists
 @include c.imageWithTextOverlay(".playlist__image", #FFFFFF, #000000, 0.5rem);
 
+// Scrollspy
+.active-scroll-spy {
+  transition: 0.1s ease-in-out;
+  background: a.$primary-dark-750;
+  color: a.$primary-dark-50;
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 1rem;

@@ -31,6 +31,7 @@
     "react-dom": "18.2.0",
     "react-iframe": "^1.8.5",
     "react-material-ui-carousel": "^3.4.2",
+    "react-ui-scrollspy": "^2.3.0",
     "sass": "^1.64.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
