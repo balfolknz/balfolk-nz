@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faYoutube} from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link";
-import {PageWrapper} from "@/components/animations/PageWrapper";
+import {PageWrapperAnimation} from "@/components/animations/PageWrapperAnimation";
 
 type CityTemplateProps = {
     city: string,
@@ -19,7 +19,7 @@ type CityTemplateProps = {
 
 const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, galleryInfo}: CityTemplateProps) => {
     return (
-        <PageWrapper>
+        <PageWrapperAnimation>
             <section className={`${styles.page} | flex flex-col px-3 md:flex-row`}>
                 <section className={`${styles.page__left} | flex flex-col gap-2 items-center justify-center`}>
                     <h1 className={`${styles.page__left__text} | text-center`}>
@@ -233,7 +233,7 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                     </section>
                 </section>
             </section>
-        </PageWrapper>
+        </PageWrapperAnimation>
     );
 }
 

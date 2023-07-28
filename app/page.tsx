@@ -6,12 +6,12 @@ import styles from "./page.module.scss"
 import Link from "next/link";
 import TeamCard from "@/components/home/TeamCard";
 import Carousel from "react-material-ui-carousel";
-import {PageWrapper} from "@/components/animations/PageWrapper";
+import {PageWrapperAnimation} from "@/components/animations/PageWrapperAnimation";
 
 const Page = () => {
     return (
         <section className={`${styles.homePage}`}>
-            <PageWrapper>
+            <PageWrapperAnimation>
                 <Carousel
                     interval={4000}
                     animation={"slide"}
@@ -87,7 +87,7 @@ const Page = () => {
                         </section>
                     </section>
                 </section>
-            </PageWrapper>
+            </PageWrapperAnimation>
         </section>
     )
 }

@@ -1,10 +1,10 @@
 import styles from "./page.module.scss"
 import {questions} from "@/content/more/questions.content";
-import {PageWrapper} from "@/components/animations/PageWrapper";
+import {PageWrapperAnimation} from "@/components/animations/PageWrapperAnimation";
 
 const MorePage = () => {
     return (
-        <PageWrapper>
+        <PageWrapperAnimation>
             <section className={`${styles.page} `}>
                 <section className={`${styles.faq} | flex flex-col gap-6 justify-center items-center`}>
                     <h2 className={`title`}>FAQs</h2>
@@ -25,7 +25,7 @@ const MorePage = () => {
                     </section>
                 </section>
             </section>
-        </PageWrapper>
+        </PageWrapperAnimation>
     )
 }
 
