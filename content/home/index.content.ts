@@ -39,5 +39,9 @@ export const learnMoreButtons: learnMoreButtons = {
             "name": "Dunedin",
             "path": "/dunedin",
         },
+        {
+            "name": "Wellington",
+            "path": "/wellington",
+        },
     ]
 }

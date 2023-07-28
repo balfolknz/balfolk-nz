@@ -6,9 +6,9 @@ const MorePage = () => {
     return (
         <PageWrapperAnimation>
             <section className={`${styles.page} `}>
-                <section className={`${styles.faq} | flex flex-col gap-6 justify-center items-center`}>
+                <section className={`${styles.faq} | flex flex-col gap-6 justify-center items-center`} id={"faqs"}>
                     <h2 className={`title`}>FAQs</h2>
-                    <section className={`gridTwoCol | px-5`} id={"questions"}>
+                    <section className={`gridTwoCol | px-5`}>
                         {questions.questions.map((question: questionContent) => {
                             return (
                                 <section className={`${styles.questionWrapper} gap-4 `}>

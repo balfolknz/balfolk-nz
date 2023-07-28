@@ -37,7 +37,7 @@ const Page = () => {
                     }
                 </Carousel>
                 <section className={`flex flex-start flex-col items-center page w-full`}>
-                    <section className={`${styles.aboutUs} | flexStart flex-col gap-10`} id="gallery">
+                    <section className={`${styles.aboutUs} | flexStart flex-col gap-10`} id="about-us">
                         <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
                             <h1 className={`title`}>About Us</h1>
                             <p>{aboutContent.shortDescription}</p>

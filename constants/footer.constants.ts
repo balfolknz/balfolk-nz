@@ -8,7 +8,7 @@ export const footerLinks: allFooterLinks = {
             links: [
                 {
                     name: "About Us",
-                    path: "/#gallery"
+                    path: "/#about-us"
                 },
                 {
                     name: "Learn More",
@@ -96,7 +96,7 @@ export const footerLinks: allFooterLinks = {
             links: [
                 {
                     name: "FAQs",
-                    path: "/more#questions"
+                    path: "/more#faqs"
                 },
             ],
         },
