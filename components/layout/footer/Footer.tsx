@@ -48,7 +48,7 @@ function Footer() {
                         <h2 className="logo">Balfolk NZ</h2>
                     </Link>
                     <p className="font-normal mt-5 md:text-start">
-                        Balfolk NZ aims to revitalise the style of Balfolk dancing within NZ!
+                        We aim to revitalise the style of Balfolk dancing within New Zealand/Aotearoa
                     </p>
                 </section>
             </section>
@@ -58,7 +58,7 @@ function Footer() {
                     return <FooterColumn title={footerLink.title} links={footerLink.links}></FooterColumn>
                 })}
                 <p className={`${styles.footer__links__final}`}>
-                    Everyone of all ages, skill levels and experiences are welcome to come along!
+                    Everyone of all ages, experience and skill levels are welcome to come along!
                     <br/><br/>
                     We're always happy to see new faces :)
                 </p>
