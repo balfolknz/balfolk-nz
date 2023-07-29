@@ -104,9 +104,9 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
 
                         {/* Contact Us */}
                         <section className={`${styles.section} ${styles.contactUs} | `} id="contact-us">
-                            <section className={`flex flex-col gap-2 justify-center items-center text-center`}>
+                            <section className={`flex flex-col gap-2 justify-center items-center`}>
                                 <h2 className={`title`}>Contact Us</h2>
-                                <p className={`italic`}>
+                                <p className={`italic | text-left`}>
                                     Feel free to reach out to us via our email address below, or by visiting any of our
                                     socials. <br/>
                                     We're always happy to answer any questions you might have! <br/>
