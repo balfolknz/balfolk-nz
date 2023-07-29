@@ -214,6 +214,10 @@ p {
   }
 }
 
+a {
+  cursor: pointer;
+}
+
 .activeLink {
   color: a.$primary-light;
 }

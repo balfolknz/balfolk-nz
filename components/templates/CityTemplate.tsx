@@ -159,25 +159,25 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                                 <section className="flex flex-col gap-4 justify-center min-w-full md:flex-row">
                                     {mediaInfo.allPlaylists.map((playlist: playlistInfo) => {
                                         return (
-                                            <section className={`playlist__image | ${styles.playlist__image}`}>
-                                                <Image
-                                                    priority
-                                                    src={playlist.thumbnailPath}
-                                                    fill={true}
-                                                    className={`playlist__image__photo | ${styles.playlist__image__photo}`}
-                                                    alt={playlist.title}
-                                                />
-                                                <section className={`playlist__image__text | text-center`}>
-                                                    <a href={playlist.url} target="_blank">
+                                            <a href={playlist.url} target="_blank" className={`w-full`}>
+                                                <section className={`playlist__image | ${styles.playlist__image}`}>
+                                                    <Image
+                                                        priority
+                                                        src={playlist.thumbnailPath}
+                                                        fill={true}
+                                                        className={`playlist__image__photo w-full | ${styles.playlist__image__photo}`}
+                                                        alt={playlist.title}
+                                                    />
+                                                    <section className={`playlist__image__text | text-center`}>
                                                         <section className="playlist__image__text__title">
                                                             <p>{playlist.title}</p>
                                                         </section>
                                                         <section className="playlist__image__text__body">
                                                             <p>{playlist.description}</p>
                                                         </section>
-                                                    </a>
+                                                    </section>
                                                 </section>
-                                            </section>
+                                            </a>
                                         )
                                     })}
                                 </section>
