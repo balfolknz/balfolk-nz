@@ -8,6 +8,8 @@ This is the official website used for Balfolk NZ. <br>
 It'll serve as a convenient location for different people to learn more about Balfolk dancing and how they can get involved in NZ. <br>
 It was made so that the content is separated from the code, making it easier to update its content by non-developers.
 <br><br>
+It's also installable on your phone as a shortcut, as it's been converted to a PWA. <br>
+This makes the app more accessible by mobile users (and was just fun to do)
 
 ### What technologies does Balfolk NZ use?
 - **_NextJS_** is used to create the frontend and backend (this is a framework built on top of React)
