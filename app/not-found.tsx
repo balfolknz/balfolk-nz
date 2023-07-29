@@ -17,7 +17,7 @@ export default function NotFound() {
                         <p>You can also use the navigation bar or footer to find a specific page</p>
                     </section>
                     <button className={`${styles.button}`}>
-                        <p>Home page</p>
+                        <Link className={`link`} href={"/"}>Home page</Link>
                     </button>
                 </section>
             </section>

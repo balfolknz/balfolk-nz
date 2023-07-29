@@ -29,7 +29,7 @@ export default function GlobalError({
                     </section>
                     <section className={`flex flex-row justify0center items-center gap-3`}>
                         <button className={`${styles.button}`}>
-                            <p>Home page</p>
+                            <Link className={`link`} href={"/"}>Home page</Link>
                         </button>
                         <button className={`${styles.button}`} onClick={() => reset()}>
                             <p>Refresh Page</p>
