@@ -8,8 +8,9 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faYoutube} from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link";
-import {PageWrapperAnimation} from "@/components/animations/PageWrapperAnimation";
+import {PageWrapperAnimation} from "@/components/animations/common/PageWrapperAnimation";
 import ScrollSpy from "react-ui-scrollspy";
+import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
 
 type CityTemplateProps = {
     city: string,
@@ -103,111 +104,118 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                         </section>
 
                         {/* Contact Us */}
-                        <section className={`${styles.section} ${styles.contactUs} | `} id="contact-us">
-                            <section className={`flex flex-col gap-2 justify-center items-center`}>
-                                <h2 className={`title`}>Contact Us</h2>
-                                <p className={`italic | text-left`}>
-                                    Feel free to reach out to us via our email address below, or by visiting any of our
-                                    socials. <br/>
-                                    We're always happy to answer any questions you might have! <br/>
-                                    Swing by for a class as well if you want to give Balfolk dancing a go
-                                </p>
+                        <FadeInLeftAnimation>
+                            <section className={`${styles.section} ${styles.contactUs} | `} id="contact-us">
+                                <section className={`flex flex-col gap-2 justify-center items-center`}>
+                                    <h2 className={`title`}>Contact Us</h2>
+                                    <p className={`italic | text-left`}>
+                                        Feel free to reach out to us via our email address below, or by visiting any of
+                                        our
+                                        socials. <br/>
+                                        We're always happy to answer any questions you might have! <br/>
+                                        Swing by for a class as well if you want to give Balfolk dancing a go
+                                    </p>
+                                </section>
+                                <section className={`flex flex-row gap-6 | ${styles.socials}`}>
+                                    <a href={contactInfo.facebookLink} target={"_blank"}>
+                                        <FontAwesomeIcon icon={faFacebook} className={`icon`}/>
+                                    </a>
+                                    <a href={contactInfo.youtubeLink} target={"_blank"}>
+                                        <FontAwesomeIcon icon={faYoutube} className={`icon`}/>
+                                    </a>
+                                    <a href={`mailto:${contactInfo.email}`} target={"_blank"}>
+                                        <FontAwesomeIcon icon={faEnvelope} className={`icon`}/>
+                                    </a>
+                                </section>
                             </section>
-                            <section className={`flex flex-row gap-6 | ${styles.socials}`}>
-                                <a href={contactInfo.facebookLink} target={"_blank"}>
-                                    <FontAwesomeIcon icon={faFacebook} className={`icon`}/>
-                                </a>
-                                <a href={contactInfo.youtubeLink} target={"_blank"}>
-                                    <FontAwesomeIcon icon={faYoutube} className={`icon`}/>
-                                </a>
-                                <a href={`mailto:${contactInfo.email}`} target={"_blank"}>
-                                    <FontAwesomeIcon icon={faEnvelope} className={`icon`}/>
-                                </a>
-                            </section>
-                        </section>
+                        </FadeInLeftAnimation>
 
                         {/* Media */}
-                        <section className={`${styles.media} | ${styles.section} | mt-10 px-8 w-full`}
-                                 id="media">
-                            <h2 className={`title`}>Media</h2>
-                            <section
-                                className={`flex flex-col justify-start gap-5 w-full | ${styles.videos}`}>
-                                <h3 className={``}>Some of our favourite dances</h3>
-                                <section className="flex gap-3 flex-col w-full md:flex-row">
-                                    {mediaInfo.allVideos.map((video: videoInfo) => {
-                                        return (
-                                            <section className={`flex flex-col gap-4 w-full`}>
-                                                <p className={`font-bold`}>{video.title}</p>
-                                                <section className={`${styles.videos__video}`}>
-                                                    <Iframe url={video.url}
-                                                            id=""
-                                                            display="block"
-                                                            position="relative"
-                                                            width="100%"
-                                                    />
-                                                </section>
-                                            </section>
-                                        )
-                                    })}
-                                </section>
-                            </section>
-
-                            <section className="playlists flex flex-col justify-start gap-5 w-full mt-5">
-                                <h3>
-                                    <a href={mediaInfo.youtubeChannel} target="_blank" className={`link`}>
-                                        <h3 className={``}>See some of our other dances</h3>
-                                    </a>
-                                </h3>
-                                <section className="flex flex-col gap-3 justify-center min-w-full md:flex-row">
-                                    {mediaInfo.allPlaylists.map((playlist: playlistInfo) => {
-                                        return (
-                                            <a href={playlist.url} target="_blank" className={`w-full`}>
-                                                <section className={`playlist__image | ${styles.playlist__image}`}>
-                                                    <Image
-                                                        priority
-                                                        src={playlist.thumbnailPath}
-                                                        fill={true}
-                                                        className={`playlist__image__photo w-full | ${styles.playlist__image__photo}`}
-                                                        alt={playlist.title}
-                                                    />
-                                                    <section className={`playlist__image__text | text-center`}>
-                                                        <section className="playlist__image__text__title">
-                                                            <p>{playlist.title}</p>
-                                                        </section>
-                                                        <section className="playlist__image__text__body">
-                                                            <p>{playlist.description}</p>
-                                                        </section>
+                        <FadeInLeftAnimation>
+                            <section className={`${styles.media} | ${styles.section} | mt-10 px-8 w-full`}
+                                     id="media">
+                                <h2 className={`title`}>Media</h2>
+                                <section
+                                    className={`flex flex-col justify-start gap-5 w-full | ${styles.videos}`}>
+                                    <h3 className={``}>Some of our favourite dances</h3>
+                                    <section className="flex gap-3 flex-col w-full md:flex-row">
+                                        {mediaInfo.allVideos.map((video: videoInfo) => {
+                                            return (
+                                                <section className={`flex flex-col gap-4 w-full`}>
+                                                    <p className={`font-bold`}>{video.title}</p>
+                                                    <section className={`${styles.videos__video}`}>
+                                                        <Iframe url={video.url}
+                                                                id=""
+                                                                display="block"
+                                                                position="relative"
+                                                                width="100%"
+                                                        />
                                                     </section>
                                                 </section>
-                                            </a>
-                                        )
-                                    })}
+                                            )
+                                        })}
+                                    </section>
+                                </section>
+
+                                <section className="playlists flex flex-col justify-start gap-5 w-full mt-5">
+                                    <h3>
+                                        <a href={mediaInfo.youtubeChannel} target="_blank" className={`link`}>
+                                            <h3 className={``}>See some of our other dances</h3>
+                                        </a>
+                                    </h3>
+                                    <section className="flex flex-col gap-3 justify-center min-w-full md:flex-row">
+                                        {mediaInfo.allPlaylists.map((playlist: playlistInfo) => {
+                                            return (
+                                                <a href={playlist.url} target="_blank" className={`w-full`}>
+                                                    <section className={`playlist__image | ${styles.playlist__image}`}>
+                                                        <Image
+                                                            priority
+                                                            src={playlist.thumbnailPath}
+                                                            fill={true}
+                                                            className={`playlist__image__photo w-full | ${styles.playlist__image__photo}`}
+                                                            alt={playlist.title}
+                                                        />
+                                                        <section className={`playlist__image__text | text-center`}>
+                                                            <section className="playlist__image__text__title">
+                                                                <p>{playlist.title}</p>
+                                                            </section>
+                                                            <section className="playlist__image__text__body">
+                                                                <p>{playlist.description}</p>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </a>
+                                            )
+                                        })}
+                                    </section>
                                 </section>
                             </section>
-                        </section>
+                        </FadeInLeftAnimation>
 
                         {/* Gallery */}
-                        <section className={`${styles.section} ${styles.gallery}`} id="gallery">
-                            <h2 className={`title`}>Gallery</h2>
-                            <section className={`flex flex-col px-10 justify-center items-center w-full`}>
-                                <section className={`${styles.about__images} | flex flex-col gap-3 md:flex-row`}>
-                                    {galleryInfo.groupPhotoPaths.map(photoPath => {
-                                        return (
-                                            <section className={`relative`}>
-                                                <Image
-                                                    priority
-                                                    width={300}
-                                                    height={300}
-                                                    src={photoPath}
-                                                    className={`${styles.gallery__photo}`}
-                                                    alt={"Group photo"}
-                                                />
-                                            </section>
-                                        )
-                                    })}
+                        <FadeInLeftAnimation>
+                            <section className={`${styles.section} ${styles.gallery}`} id="gallery">
+                                <h2 className={`title`}>Gallery</h2>
+                                <section className={`flex flex-col px-10 justify-center items-center w-full`}>
+                                    <section className={`${styles.about__images} | flex flex-col gap-3 md:flex-row`}>
+                                        {galleryInfo.groupPhotoPaths.map(photoPath => {
+                                            return (
+                                                <section className={`relative`}>
+                                                    <Image
+                                                        priority
+                                                        width={300}
+                                                        height={300}
+                                                        src={photoPath}
+                                                        className={`${styles.gallery__photo}`}
+                                                        alt={"Group photo"}
+                                                    />
+                                                </section>
+                                            )
+                                        })}
+                                    </section>
                                 </section>
                             </section>
-                        </section>
+                        </FadeInLeftAnimation>
                     </ScrollSpy>
 
                 </section>

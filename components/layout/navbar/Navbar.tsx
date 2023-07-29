@@ -8,7 +8,7 @@ import {usePathname} from "next/navigation";
 import {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
-import {NavbarAnimation} from "@/components/animations/NavbarAnimation";
+import {BounceInAnimation} from "@/components/animations/navbar/BounceInAnimation";
 
 
 function Navbar() {
@@ -55,7 +55,7 @@ function Navbar() {
 
             <section
                 className={`${styles.right__links} flex-1 flexEnd gap-10 flex-col w-full md:flex-row | ${showNavBar ? "" : "hidden"} w-full md:flex-row border-t-2 border-primary-dark md:border-none`}>
-                <NavbarAnimation isVisible={showNavBar}>
+                <BounceInAnimation isVisible={showNavBar}>
                     <ul className={`flex w-full gap-5 flex-col items-center pt-5 md:pt-0 md:flex-row md:gap-10`}>
                         <li>
                             <p>
@@ -100,7 +100,7 @@ function Navbar() {
                             </p>
                         </li>
                     </ul>
-                </NavbarAnimation>
+                </BounceInAnimation>
             </section>
         </nav>
     );

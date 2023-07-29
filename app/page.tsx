@@ -6,7 +6,8 @@ import styles from "./page.module.scss"
 import Link from "next/link";
 import TeamCard from "@/components/home/TeamCard";
 import Carousel from "react-material-ui-carousel";
-import {PageWrapperAnimation} from "@/components/animations/PageWrapperAnimation";
+import {PageWrapperAnimation} from "@/components/animations/common/PageWrapperAnimation";
+import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
 
 const Page = () => {
     return (
@@ -37,55 +38,67 @@ const Page = () => {
                     }
                 </Carousel>
                 <section className={`flex flex-start flex-col items-center page w-full`}>
-                    <section className={`${styles.aboutUs} | flexStart flex-col gap-10`} id="about-us">
-                        <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
-                            <h1 className={`title`}>About Us</h1>
-                            <p>{aboutContent.shortDescription}</p>
-                        </section>
 
-                        <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__verbose}`}>
-                            <h3 className={`text-left mb-3`}>What is Balfolk NZ?</h3>
-                            <p>{aboutContent.verboseDescription}</p>
-                        </section>
-                    </section>
+                    {/* About Us */}
+                    <FadeInLeftAnimation>
+                        <section className={`${styles.aboutUs} | flexStart flex-col gap-10`} id="about-us">
+                            <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__short}`}>
+                                <h1 className={`title`}>About Us</h1>
+                                <p>{aboutContent.shortDescription}</p>
+                            </section>
 
-                    <section className={`${styles.meetOurTeam}`} id="meet-our-team">
-                        <h1 className={`title`}>Meet our Team!</h1>
-                        <section
-                            className={`flex gap-10 mt-5 flex-col md:flex-row md:gap-3 | ${styles.meetOurTeam__cards}`}>
-                            {allTeamContent.allTeams.map((teamContent) => {
-                                return (
-                                    <TeamCard
-                                        image={teamContent.imagePath}
-                                        job={teamContent.job}
-                                        firstName={teamContent.firstName}
-                                        lastName={teamContent.lastName}
-                                        description={teamContent.description}
-                                        key={teamContent.lastName}
-                                    />
-                                )
-                            })}
-                        </section>
-                    </section>
-
-                    <section className={`${styles.learnMore} | md:w-8/12`} id="learn-more">
-                        <h1 className={`title`}>Learn more</h1>
-                        <section className="flex flex-col gap-5 justify-center items-center">
                             <section
-                                className={`flex gap-3 justify-center items-center w-full flex-col md:flex-row | ${styles.learnMore__links}`}>
-                                {learnMoreButtons.allButtons.map((buttonContent) => {
+                                className={`${styles.aboutUs__description} ${styles.aboutUs__description__verbose}`}>
+                                <h3 className={`text-left mb-3`}>What is Balfolk NZ?</h3>
+                                <p>{aboutContent.verboseDescription}</p>
+                            </section>
+                        </section>
+                    </FadeInLeftAnimation>
+
+                    {/* Meet our team */}
+                    <FadeInLeftAnimation>
+                        <section className={`${styles.meetOurTeam}`} id="meet-our-team">
+                            <h1 className={`title`}>Meet our Team!</h1>
+                            <section
+                                className={`flex gap-10 mt-5 flex-col md:flex-row md:gap-3 | ${styles.meetOurTeam__cards}`}>
+                                {allTeamContent.allTeams.map((teamContent) => {
                                     return (
-                                        <button className={`${styles.heroButton}`}>
-                                            <Link href={buttonContent.path}>{buttonContent.name}</Link>
-                                        </button>
+                                        <TeamCard
+                                            image={teamContent.imagePath}
+                                            job={teamContent.job}
+                                            firstName={teamContent.firstName}
+                                            lastName={teamContent.lastName}
+                                            description={teamContent.description}
+                                            key={teamContent.lastName}
+                                        />
                                     )
                                 })}
                             </section>
-                            <button className={`${styles.heroButton}`}>
-                                <Link href={"/more#faq"}>FAQs</Link>
-                            </button>
                         </section>
-                    </section>
+                    </FadeInLeftAnimation>
+
+                    {/* Learn More */}
+                    <FadeInLeftAnimation>
+                        <section className={`${styles.learnMore}`} id="learn-more">
+                            <h1 className={`title`}>Learn more</h1>
+                            <section className="flex flex-col gap-5 justify-center items-center">
+                                <section
+                                    className={`flex gap-3 justify-center items-center w-full flex-col md:flex-row | ${styles.learnMore__links}`}>
+                                    {learnMoreButtons.allButtons.map((buttonContent) => {
+                                        return (
+                                            <button className={`${styles.heroButton}`}>
+                                                <Link href={buttonContent.path}>{buttonContent.name}</Link>
+                                            </button>
+                                        )
+                                    })}
+                                </section>
+                                <button className={`${styles.heroButton}`}>
+                                    <Link href={"/more#faq"}>FAQs</Link>
+                                </button>
+                            </section>
+                        </section>
+                    </FadeInLeftAnimation>
+
                 </section>
             </PageWrapperAnimation>
         </section>

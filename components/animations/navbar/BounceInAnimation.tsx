@@ -2,7 +2,7 @@
 
 import {AnimatePresence, motion} from "framer-motion";
 
-export const NavbarAnimation = ({isVisible, children}: any) => {
+export const BounceInAnimation = ({isVisible, children}: any) => {
     return (
         <>
             <AnimatePresence>

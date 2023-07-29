@@ -1,6 +1,6 @@
 import styles from "./page.module.scss"
 import {questions} from "@/content/more/questions.content";
-import {PageWrapperAnimation} from "@/components/animations/PageWrapperAnimation";
+import {PageWrapperAnimation} from "@/components/animations/common/PageWrapperAnimation";
 
 const MorePage = () => {
     return (
