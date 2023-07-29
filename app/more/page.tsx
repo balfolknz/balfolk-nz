@@ -13,10 +13,10 @@ const MorePage = () => {
                             return (
                                 <section className={`${styles.questionWrapper} gap-4 `}>
                                     <section
-                                        className={`${styles.questionWrapper__question} | text-center md:text-left`}>
+                                        className={`${styles.questionWrapper__question} | text-left`}>
                                         <h3>{question.question}</h3>
                                     </section>
-                                    <section className={`${styles.questionWrapper__answer} | text-center md:text-left`}>
+                                    <section className={`${styles.questionWrapper__answer} | text-left`}>
                                         <p>{question.answer}</p>
                                     </section>
                                 </section>
