@@ -30,6 +30,7 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  @apply break-normal;
   font-weight: 400 !important;
   text-transform: uppercase !important;
   color: a.$primary-dark;
@@ -165,6 +166,7 @@ p {
 }
 
 .title {
+  @apply break-normal;
   width: 100%;
   margin-bottom: 1rem !important;
   display: flex;
