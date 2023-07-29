@@ -33,7 +33,7 @@ export const metadata = {
     title: 'Balfolk NZ',
     description: 'The official website for Balfolk - New Zealand!',
     icons: {
-        icon: '/icons/favicon.jpg',
+        icon: '/favicon.ico',
     },
 }
 
@@ -45,11 +45,18 @@ export default function RootLayout({
     return (
         <html lang="en"
               className={`${cormorant_sc.variable} ${dancing_script.variable} ${libre_baskerville.variable} ${cormorant_garamond.variable}`}>
+        <head>
+            <title>Balfolk NZ</title>
+            <link rel="manifest" href="/manifest.json"/>
+            <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
+            <link rel="shortcut icon" href="/favicon.ico" />
+            <meta name="theme-color" content="#542e23" />
+        </head>
         <body>
         <Navbar/>
-            <main>
-                {children}
-            </main>
+        <main>
+            {children}
+        </main>
         <Footer/>
         </body>
         </html>

@@ -1,0 +1,38 @@
+{
+  "theme_color": "#542e23",
+  "background_color": "#f6f1ee",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Balfolk NZ",
+  "short_name": "BD-NZ",
+  "description": "The official application for Balfolk Dancing New Zealand/Aotearoa",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/maskable.png",
+      "sizes": "48x48",
+      "type": "image/x-icon",
+      "purpose": "maskable"
+    }
+  ]
+}
