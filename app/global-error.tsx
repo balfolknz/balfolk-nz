@@ -5,11 +5,14 @@ import styles from "@/app/not-found.module.scss";
 import Link from "next/link";
 
 export default function GlobalError({
+                                        error,
                                         reset,
                                     }: {
     error: Error
     reset: () => void
 }) {
+    console.log(error)
+
     return (
         <html>
         <body>
