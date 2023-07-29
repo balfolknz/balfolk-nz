@@ -44,7 +44,7 @@ const Page = () => {
                         </section>
 
                         <section className={`${styles.aboutUs__description} ${styles.aboutUs__description__verbose}`}>
-                            <h3 className={`text-center w-8/12 mb-3 md:text-left md:w-full`}>What is Balfolk NZ?</h3>
+                            <h3 className={`text-left mb-3`}>What is Balfolk NZ?</h3>
                             <p>{aboutContent.verboseDescription}</p>
                         </section>
                     </section>

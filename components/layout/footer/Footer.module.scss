@@ -14,6 +14,22 @@
     }
   }
 
+  &__links {
+    &__final {
+      text-align: left;
+      height: 100%;
+      padding-top: 1rem;
+      font-style: italic;
+
+      @media screen and (min-width: 768px)  {
+        border-left: 1px solid a.$primary-light;
+        padding-left: 2rem;
+        max-width: 10rem;
+        padding-top: 0;
+      }
+    }
+  }
+
 }
 
 .footerCopyright {
@@ -36,7 +52,7 @@
 }
 
 .footerColumn {
-  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+  @apply flex-1 flex flex-col gap-3 text-sm min-w-max min-h-full;
 
   .footerNav {
     @media screen and (max-width:768px) {

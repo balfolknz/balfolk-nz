@@ -45,7 +45,7 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                             <section className={`${styles.text} w-full`}>
                                 <h2 className={`title`}>Classes</h2>
                                 <section className={``}>
-                                    <p className={`text-center md:text-left ${styles.description}`}>{allClassInfo.description}</p>
+                                    <p className={`text-left ${styles.description}`}>{allClassInfo.description}</p>
                                 </section>
                             </section>
 
@@ -69,10 +69,10 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                                                     <TableRow
                                                         key={classInfo.day}
                                                     >
-                                                        <TableCell align="center">{classInfo.style}</TableCell>
-                                                        <TableCell align="center">{classInfo.day}</TableCell>
-                                                        <TableCell align="center">{classInfo.time}</TableCell>
-                                                        <TableCell align="center">{classInfo.address}</TableCell>
+                                                        <TableCell align="left">{classInfo.style}</TableCell>
+                                                        <TableCell align="left">{classInfo.day}</TableCell>
+                                                        <TableCell align="left">{classInfo.time}</TableCell>
+                                                        <TableCell align="left">{classInfo.address}</TableCell>
                                                     </TableRow>
                                                 )
                                             })}
@@ -127,22 +127,24 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                         </section>
 
                         {/* Media */}
-                        <section className={`${styles.media} | ${styles.section} | mt-10 px-8 w-full md:px-0`}
+                        <section className={`${styles.media} | ${styles.section} | mt-10 px-8 w-full`}
                                  id="media">
-                            <h2 className={`title text-center md:text-left`}>Media</h2>
+                            <h2 className={`title`}>Media</h2>
                             <section
-                                className={`videos flex flex-col items-center justify-start gap-5 w-full | ${styles.videos}`}>
-                                <h3 className={`text-center md:text-left`}>Some of our favourite dances</h3>
-                                <section className="flex gap-5 justify-center flex-col md:flex-row">
+                                className={`flex flex-col justify-start gap-5 w-full | ${styles.videos}`}>
+                                <h3 className={``}>Some of our favourite dances</h3>
+                                <section className="flex gap-3 flex-col w-full md:flex-row">
                                     {mediaInfo.allVideos.map((video: videoInfo) => {
                                         return (
-                                            <section className={`flex flex-col items-center gap-2`}>
+                                            <section className={`flex flex-col gap-4 w-full`}>
                                                 <p className={`font-bold`}>{video.title}</p>
                                                 <section className={`${styles.videos__video}`}>
                                                     <Iframe url={video.url}
                                                             id=""
                                                             display="block"
-                                                            position="relative"/>
+                                                            position="relative"
+                                                            width="100%"
+                                                    />
                                                 </section>
                                             </section>
                                         )
@@ -150,13 +152,13 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                                 </section>
                             </section>
 
-                            <section className="playlists flex flex-col items-center justify-start gap-5 w-10/12">
+                            <section className="playlists flex flex-col justify-start gap-5 w-full mt-5">
                                 <h3>
                                     <a href={mediaInfo.youtubeChannel} target="_blank" className={`link`}>
-                                        <h3 className={`text-center md:text-left`}>See some of our other dances</h3>
+                                        <h3 className={``}>See some of our other dances</h3>
                                     </a>
                                 </h3>
-                                <section className="flex flex-col gap-4 justify-center min-w-full md:flex-row">
+                                <section className="flex flex-col gap-3 justify-center min-w-full md:flex-row">
                                     {mediaInfo.allPlaylists.map((playlist: playlistInfo) => {
                                         return (
                                             <a href={playlist.url} target="_blank" className={`w-full`}>

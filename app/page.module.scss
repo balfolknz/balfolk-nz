@@ -34,10 +34,8 @@
   padding-block: 3rem;
 
   &__description {
-    @apply flex items-center justify-start flex-col;
-
     &__short {
-      padding-inline: 10rem;
+      padding-inline: 8rem;
     }
 
     &__verbose {
