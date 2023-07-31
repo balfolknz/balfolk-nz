@@ -14,7 +14,7 @@ const Page = () => {
         <section className={`${styles.homePage}`}>
             <PageWrapperAnimation>
                 <Carousel
-                    interval={4000}
+                    interval={6000}
                     animation={"slide"}
                     duration={750}
                 >
