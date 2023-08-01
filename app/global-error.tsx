@@ -1,7 +1,7 @@
 'use client'
 
 import {PageWrapperAnimation} from "@/components/animations/common/PageWrapperAnimation";
-import styles from "@/app/not-found.module.scss";
+import styles from "@/app/global-error.module.scss";
 import Link from "next/link";
 
 export default function GlobalError({

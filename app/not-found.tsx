@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "./not-found.module.scss";
+import styles from "@/app/not-found.module.scss";
 import {PageWrapperAnimation} from "@/components/animations/common/PageWrapperAnimation";
 import Link from "next/link";
 

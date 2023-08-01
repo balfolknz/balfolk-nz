@@ -11,6 +11,7 @@ import Link from "next/link";
 import {PageWrapperAnimation} from "@/components/animations/common/PageWrapperAnimation";
 import ScrollSpy from "react-ui-scrollspy";
 import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
+import parse from 'html-react-parser';
 
 type CityTemplateProps = {
     city: string,
@@ -42,11 +43,14 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                         {/* Classes */}
                         <section
                             className={`${styles.classes} | flex flex-col gap-8 items-center justify-center | px-10 md:px-5`}
-                            id="classes">
+                            id="classes"
+                        >
                             <section className={`${styles.text} w-full`}>
                                 <h2 className={`title`}>Classes</h2>
                                 <section className={``}>
-                                    <p className={`text-left ${styles.description}`}>{allClassInfo.description}</p>
+                                    <p className={`text-left ${styles.description}`}>
+                                        {parse(allClassInfo.description)}
+                                    </p>
                                 </section>
                             </section>
 
