@@ -45,10 +45,10 @@ function Footer() {
             <section className="flex flex-col gap-12 w-full">
                 <section className="flex flex-col md:items-start">
                     <Link href="/">
-                        <h2 className="logo">Balfolk NZ</h2>
+                        <span className="logo">Balfolk</span> <span className={"logoSmall"}>Aotearoa/NZ</span>
                     </Link>
                     <p className="font-normal mt-5 md:text-start">
-                        We aim to revitalise the style of Balfolk dancing within New Zealand/Aotearoa
+                        We aim to revitalise the style of Balfolk dancing within Aotearoa/New Zealand
                     </p>
                 </section>
             </section>

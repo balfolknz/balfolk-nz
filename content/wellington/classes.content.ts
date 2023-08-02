@@ -1,24 +1,22 @@
 export const allClasses: allClassInfo = {
-    description: "in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget",
+    description:
+    `
+    <article>
+    <h3 style="text-align: center; letter-spacing: 2px;">Coming soon!</h3>
+    <p style="margin-top: 1rem">
+    We're going to be starting another branch in Wellington very soon! <br>
+    If you want to know more, feel free to email our team at 
+    <a className="activeLink" href="mailto:balfolkwellington@gmail.com">Balfolk Wellington </a> with any questions 
+     that you might have</p>
+    </article>
+    `,
     allClasses: [
         {
-            style: "Wellington Dancing",
-            day: "Monday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
-        },
-        {
-            style: "Wellington Dancing",
-            day: "Tuesday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
-        },
-        {
-            style: "Wellington Dancing",
-            day: "Wednesday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
+            style: "Coming Soon!",
+            day: "Coming Soon!",
+            time: "Coming Soon!",
+            address: "Coming Soon"
         },
     ],
-    eventsLink: "https://www.facebook.com/"
+    eventsLink: ""
 }

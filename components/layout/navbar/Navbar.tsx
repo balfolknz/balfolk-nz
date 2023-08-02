@@ -35,7 +35,7 @@ function Navbar() {
         <nav className={`flexBetween ${styles.navbar} flex-col md:flex-row`}>
             <section className={`flex justify-between items-center w-full`}>
                 <Link href="/">
-                    <p className="logo">Balfolk NZ</p>
+                    <span className="logo">Balfolk</span> <span className={"logoSmall"}>Aotearoa/NZ</span>
                 </Link>
 
                 {/* Toggle navbar icon for small devices*/}

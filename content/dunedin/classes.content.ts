@@ -28,5 +28,5 @@ export const allClasses: allClassInfo = {
             address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
         },
     ],
-    eventsLink: "https://www.facebook.com/"
+    eventsLink: "https://www.eventfinda.co.nz/user/kategrace"
 }
