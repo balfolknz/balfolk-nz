@@ -16,7 +16,7 @@ const Page = () => {
                 <Carousel
                     interval={6000}
                     animation={"slide"}
-                    duration={850}
+                    duration={700}
                 >
                     {
                         heroImagePaths.map((imagePath, i) => {
