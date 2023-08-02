@@ -15,9 +15,12 @@ const HeroImage = ({image, children}: heroImageProps) => (
                 priority
                 src={image}
                 layout="fill"
-                objectFit="cover"
-                objectPosition="center"
                 className={`${heroImage}`}
+                style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+
+            }}
                 alt={""}
             />
         </section>

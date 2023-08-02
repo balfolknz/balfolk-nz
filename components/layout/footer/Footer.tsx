@@ -64,7 +64,7 @@ function Footer() {
                 </p>
             </section>
             <section className={`flexBetween ${styles.footerCopyright}`}>
-                <p>© 2023 Balfolk NZ. All rights reserved</p>
+                <p>© 2023 Balfolk Aotearoa/NZ. All rights reserved</p>
                 <p className={`${styles.footerCopyright__right}`}>
                     <span className="">Welcome!</span>
                 </p>

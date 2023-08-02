@@ -1,6 +1,8 @@
 export const heroImagePaths: string[] = [
-    "/images/home/main2.jpg",
     "/images/home/main1.jpg",
+    "/images/home/main2.jpg",
+    "/images/home/main3.jpg",
+    "/images/home/main4.jpg",
 ]
 
 export const aboutContent: aboutContent = {
@@ -14,14 +16,14 @@ export const allTeamContent: allTeamContent = {
             "firstName": "Kate",
             "lastName": "Grace",
             "job": "Director",
-            "imagePath": "/images/home/team/Kate.jpg",
+            "imagePath": "/images/common/placeholder.svg",
             "description": "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla"
         },
         {
             "firstName": "Michael",
             "lastName": "Parmenter",
             "job": "Director",
-            "imagePath": "/images/home/team/Michael.jpg",
+            "imagePath": "/images/common/placeholder.svg",
             "description":
                 "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla"
         },

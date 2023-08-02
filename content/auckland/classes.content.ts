@@ -4,14 +4,14 @@ export const allClasses: allClassInfo = {
         {
             style: "Auckland Dancing",
             day: "Monday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
+            time: "",
+            address: ""
         },
         {
             style: "Auckland Dancing",
             day: "Tuesday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
+            time: "",
+            address: ""
         },
     ],
     eventsLink: "https://www.facebook.com/"

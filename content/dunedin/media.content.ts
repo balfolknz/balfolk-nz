@@ -1,10 +1,10 @@
 export const allVideos: Array<videoInfo> = [
     {
-        "url": "https://www.youtube.com/embed/lED1vIbaivA/",
+        "url": "https://www.youtube.com/embed",
         "title": "Dunedin Dance 1"
     },
     {
-        "url": "https://www.youtube.com/embed/dJrdXRZ3PUE",
+        "url": "https://www.youtube.com/embed",
         "title": "Dunedin Dance 2"
     }
 ]
@@ -14,19 +14,19 @@ export const allPlaylists: Array<playlistInfo> = [
         "url": "https://www.youtube.com/",
         "title": "Dunedin Playlist 1",
         "description": "Dunedin Description 1",
-        "thumbnailPath": "/images/dunedin/playlists/playlist1.png"
+        "thumbnailPath": "/images/common/placeholder.svg"
     },
     {
         "url": "https://www.youtube.com/",
         "title": "Dunedin Playlist 2",
         "description": "Dunedin Description 2",
-        "thumbnailPath": "/images/dunedin/playlists/playlist2.png"
+        "thumbnailPath": "/images/common/placeholder.svg"
     },
     {
         "url": "https://www.youtube.com/",
         "title": "Dunedin Playlist 3",
         "description": "Dunedin Description 3",
-        "thumbnailPath": "/images/dunedin/playlists/playlist3.jpg"
+        "thumbnailPath": "/images/common/placeholder.svg"
     }
 ]
 

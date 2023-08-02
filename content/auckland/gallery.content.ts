@@ -1,7 +1,7 @@
-export const galleryInfo:galleryInfo = {
+export const galleryInfo: galleryInfo = {
     groupPhotoPaths: [
-        "/images/auckland/gallery/vertical-group.png",
-        "/images/auckland/gallery/vertical-group.png",
-        "/images/auckland/gallery/vertical-group.png",
+        "/images/common/placeholder.svg",
+        "/images/common/placeholder.svg",
+        "/images/common/placeholder.svg",
     ],
 }

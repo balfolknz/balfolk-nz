@@ -13,20 +13,20 @@ export const allPlaylists: Array<playlistInfo> = [
     {
         "url": "",
         "title": "Coming soon!",
-        "description": "Coming soon!",
-        "thumbnailPath": "/images/Wellington/playlists/playlist1.png"
+        "description": "",
+        "thumbnailPath": "/images/common/placeholder.svg"
     },
     {
         "url": "",
         "title": "Coming soon!",
-        "description": "Coming soon!",
-        "thumbnailPath": "/images/Wellington/playlists/playlist2.png"
+        "description": "",
+        "thumbnailPath": "/images/common/placeholder.svg"
     },
     {
         "url": "",
-        "title": "Coming soon!",
+        "title": "",
         "description": "Coming soon!",
-        "thumbnailPath": "/images/Wellington/playlists/playlist3.jpg"
+        "thumbnailPath": "/images/common/placeholder.svg"
     }
 ]
 
