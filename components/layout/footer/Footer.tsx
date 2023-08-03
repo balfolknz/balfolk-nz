@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import {footerLinks} from "@/constants/footer.constants";
-
 import styles from "./Footer.module.scss"
 import {usePathname} from "next/navigation";
+import Image from "next/image";
 
 
 type ColumnProps = {
@@ -45,7 +45,14 @@ function Footer() {
             <section className="flex flex-col gap-12 w-full">
                 <section className="flex flex-col md:items-start">
                     <Link href="/">
-                        <span className="logo">Balfolk</span> <span className={"logoSmall"}>Aotearoa/NZ</span>
+                        <Image
+                            priority
+                            src={"logo.svg"}
+                            className={``}
+                            alt={"logo"}
+                            width={150}
+                            height={100}
+                        />
                     </Link>
                     <p className="font-normal mt-5 md:text-start">
                         We aim to revitalise the style of Balfolk dancing within Aotearoa/New Zealand

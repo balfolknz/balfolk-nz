@@ -9,6 +9,7 @@ import {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 import {BounceInAnimation} from "@/components/animations/navbar/BounceInAnimation";
+import Image from "next/image";
 
 
 function Navbar() {
@@ -35,9 +36,15 @@ function Navbar() {
         <nav className={`flexBetween ${styles.navbar} flex-col md:flex-row`}>
             <section className={`flex justify-between items-center w-full`}>
                 <Link href="/">
-                    <span className="logo">Balfolk</span> <span className={"logoSmall"}>Aotearoa/NZ</span>
+                    <Image
+                        priority
+                        src={"logo.svg"}
+                        className={``}
+                        alt={"logo"}
+                        width={150}
+                        height={100}
+                    />
                 </Link>
-
                 {/* Toggle navbar icon for small devices*/}
                 <section className={`md:hidden flexEnd`}>
                     <button className={`p-2 text-gray-100 rounded-md outline-none focus:border-gray`}
