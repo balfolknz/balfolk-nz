@@ -1,8 +1,6 @@
 export const heroImagePaths: string[] = [
-    "/images/home/main1.jpg",
+    "/images/home/main5.jpg",
     "/images/home/main2.jpg",
-    "/images/home/main3.jpg",
-    "/images/home/main4.jpg",
 ]
 
 export const aboutContent: aboutContent = {
