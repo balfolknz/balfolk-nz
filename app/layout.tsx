@@ -46,7 +46,6 @@ export default function RootLayout({
         <html lang="en"
               className={`${cormorant_sc.variable} ${dancing_script.variable} ${libre_baskerville.variable} ${cormorant_garamond.variable}`}>
         <head>
-            <title>Balfolk Aotearoa/NZ</title>
             <link rel="manifest" href="/manifest.json"/>
             <link rel="apple-touch-icon" href="/icons-white/apple-touch-icon.png"></link>
             <link rel="shortcut icon" href="/icons-white/favicon.ico" />
