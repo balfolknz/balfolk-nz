@@ -45,10 +45,10 @@ const CityTemplate = ({city, rootPath, mediaInfo, allClassInfo, contactInfo, gal
                             className={`${styles.classes} | flex flex-col gap-8 items-center justify-center | px-10 md:px-5`}
                             id="classes"
                         >
-                            <section className={`${styles.text} w-full`}>
+                            <section className={`${styles.text}`}>
                                 <h2 className={`title`}>Classes</h2>
                                 <section className={``}>
-                                    <p className={`text-left ${styles.description}`}>
+                                    <p className={`text-left ${styles.description} flex flex-column justify-center items-center`}>
                                         {parse(allClassInfo.description)}
                                     </p>
                                 </section>

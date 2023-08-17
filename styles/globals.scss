@@ -52,9 +52,10 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   max-width: 25ch;
   text-align: left;
+  line-height: 1.6
 }
 
 ::-webkit-scrollbar {
@@ -67,14 +68,14 @@ p {
   border-radius: 12px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: a.$mediumSize) {
   .logo {
     font-size: 1rem;
   }
 
   p {
     font-size: 0.75rem;
-    max-width: 65ch;
+    max-width: 75ch;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -188,7 +189,7 @@ p {
     margin-left: 0.7rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: a.$mediumSize) {
     &::before, &::after {
       width: 2rem;
     }

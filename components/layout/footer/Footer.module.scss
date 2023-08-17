@@ -21,7 +21,7 @@
       padding-top: 1rem;
       font-style: italic;
 
-      @media screen and (min-width: 768px)  {
+      @media screen and (min-width: a.$mediumSize)  {
         border-left: 1px solid a.$primary-light;
         padding-left: 2rem;
         max-width: 10rem;
@@ -45,7 +45,7 @@
   }
 
   &__right {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:a.$mediumSize) {
       display: none;
     }
   }
@@ -55,7 +55,7 @@
   @apply flex-1 flex flex-col gap-3 text-sm min-w-max min-h-full;
 
   .footerNav {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:a.$mediumSize) {
       display: none;
     }
   }

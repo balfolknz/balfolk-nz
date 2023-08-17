@@ -52,7 +52,7 @@
   padding-block: 3rem;
   min-width: 100%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: a.$mediumSize) {
     padding-inline: 2.2rem;
   }
 
@@ -64,7 +64,7 @@
 .learnMore {
   padding-block: 3rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: a.$mediumSize) {
     &::before, &::after {
       display: none;
     }
