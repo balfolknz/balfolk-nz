@@ -141,13 +141,6 @@ p {
 
 
 // Components
-// Card-like box shadow
-.cardBoxShadow {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1),
-  0 2px 4px rgba(0, 0, 0, 0.1),
-  0 4px 8px rgba(0, 0, 0, 0.1),
-  0 8px 16px rgba(0, 0, 0, 0.1);
-}
 
 // Modal
 .modal-head-text {
@@ -177,7 +170,7 @@ p {
   &::before, &::after {
     content: "";
     flex-direction: row;
-    border-bottom: 3px solid a.$primary-light;
+    border-bottom: 3px solid a.$secondary-dark;
     width: 4rem;
   }
 

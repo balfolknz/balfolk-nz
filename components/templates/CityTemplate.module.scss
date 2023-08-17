@@ -92,7 +92,7 @@
 
 
     .media {
-      @include c.card(a.$primary-dark-75);
+      @include c.card(a.$primary-light-250);
       padding-block: 3rem;
 
       .videos {
