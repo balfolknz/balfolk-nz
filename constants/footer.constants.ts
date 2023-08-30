@@ -111,8 +111,24 @@ export const footerLinks: allFooterLinks = {
       },
       links: [
         {
-          name: "FAQs",
-          path: "/more#faqs",
+          name: "About",
+          path: "/newsroom#about",
+        },
+        {
+          name: "Team",
+          path: "/newsroom#our-team",
+        },
+        {
+          name: "Press Mentions",
+          path: "/newsroom#press-mentions",
+        },
+        {
+          name: "Kits",
+          path: "/newsroom#kits",
+        },
+        {
+          name: "Contact",
+          path: "/newsroom#contact",
         },
       ],
     },
