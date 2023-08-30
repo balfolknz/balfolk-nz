@@ -57,11 +57,11 @@
   .firstRow {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
 
     @media screen and (min-width: a.$mediumSize) {
       display: grid;
-      grid-gap: 3rem;
+      grid-gap: 5rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 100%;
     }
