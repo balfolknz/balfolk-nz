@@ -84,3 +84,14 @@ export const allPressMentions: allPressMentions = {
     },
   ],
 };
+
+export const kitData: Array<kitData> = [
+  {
+    name: "Media Kit",
+    downloadPath: "",
+  },
+  {
+    name: "Brand Kit",
+    downloadPath: "",
+  },
+];

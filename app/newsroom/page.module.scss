@@ -47,9 +47,11 @@
 
 .content {
   padding-inline: 3rem;
+  gap: 5rem;
 
   @media screen and (min-width: a.$mediumSize) {
     padding-inline: 10rem;
+    margin-block: 8rem;
   }
 
   .firstRow {
@@ -115,6 +117,53 @@
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
         }
       }
+    }
+  }
+}
+
+.kits {
+  &__banner {
+    padding-block: 8%;
+    padding-inline: 5rem;
+
+    @media screen and (min-width: a.$mediumSize) {
+      padding-inline: 20%;
+    }
+
+    .downloadButton {
+      border: 1px solid a.$primary-light !important;
+      padding: 0.8rem 1.2rem;
+      cursor: pointer;
+      border-radius: 3rem;
+      transition: 0.25s ease-in-out;
+      background-color: a.$primary-light;
+      color: #fff !important;
+      width: 100%;
+      text-align: center;
+
+      &__text {
+        font-size: 1rem;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .kits__icon {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.contact {
+  &__banner {
+    padding-block: 8%;
+    padding-inline: 5rem;
+
+    @media screen and (min-width: a.$mediumSize) {
+      padding-inline: 20%;
     }
   }
 }

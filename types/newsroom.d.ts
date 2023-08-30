@@ -13,3 +13,8 @@ type pressMention = {
 type allPressMentions = {
   allPressMentions: Array<pressMention>
 }
+
+type kitData = {
+  name: string,
+  downloadPath: string
+}
