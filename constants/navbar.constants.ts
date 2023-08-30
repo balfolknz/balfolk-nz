@@ -1,9 +1,15 @@
 export const NavLinks: allNavLinks = {
-    home: {href: '/', key: 'home', text: 'Home'},
+
+    left: [
+        {href: '/', key: 'home', text: 'Home'},
+    ],
     centres: [
         {href: '/auckland', key: 'auckland', text: 'Auckland'},
         {href: '/dunedin', key: 'dunedin', text: 'Dunedin'},
         {href: '/wellington', key: 'wellington', text: 'Wellington'},
     ],
-    more: {href: '/more', key: 'misc', text: 'More'}
+    right: [
+        {href: '/more', key: 'misc', text: 'More'},
+        {href: '/newsroom', key: 'newsroom', text: 'Newsroom'},
+    ]
 };

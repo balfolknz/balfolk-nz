@@ -1,13 +1,15 @@
 type footerLink = {
-    name: string,
-    path: string
-}
+  name: string;
+  path: string;
+};
 
 type footerLinks = {
-    title: footerLink,
-    links: Array<footerLink>
-}
+  title: footerLink;
+  links: Array<footerLink>;
+};
 
 type allFooterLinks = {
-    footerLinks: Array<footerLinks>
-}
+  left: Array<footerLinks>;
+  center: Array<footerLinks>;
+  right: Array<footerLinks>;
+};

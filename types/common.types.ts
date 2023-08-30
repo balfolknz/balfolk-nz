@@ -5,8 +5,7 @@ type navlinkConfig = {
 }
 
 type allNavLinks = {
-    home: navlinkConfig,
+    left: Array<navlinkConfig>,
     centres: Array<navlinkConfig>
-    more: navlinkConfig
+    right: Array<navlinkConfig>
 }
-

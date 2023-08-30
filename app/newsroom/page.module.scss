@@ -1,0 +1,11 @@
+@use "/styles/abstracts" as a;
+
+.page {
+  padding-inline: 3rem;
+  padding-block: 3rem;
+
+  @media screen and (min-width: a.$mediumSize) {
+    padding-inline: 10rem;
+    padding-block: 3rem;
+  }
+}

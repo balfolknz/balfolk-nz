@@ -1,104 +1,132 @@
 export const footerLinks: allFooterLinks = {
-    "footerLinks": [
+  left: [
+    {
+      title: {
+        name: "NZ",
+        path: "/",
+      },
+      links: [
         {
-            title: {
-                name: 'NZ',
-                path: '/'
-            },
-            links: [
-                {
-                    name: "About Us",
-                    path: "/#about-us"
-                },
-                {
-                    name: "Learn More",
-                    path: "/#learn-more"
-                },
-            ],
+          name: "About Us",
+          path: "/#about-us",
         },
         {
-            title: {
-                name: 'Auckland',
-                path: '/auckland'
-            },
-            links: [
-                {
-                    name: "Classes",
-                    path: "/auckland#classes"
-                },
-                {
-                    name: "Contact Us",
-                    path: "/auckland#contact-us"
-                },
-                {
-                    name: "Media",
-                    path: "/auckland#media"
-                },
-                {
-                    name: "Gallery",
-                    path: "/auckland#gallery"
-                },
-            ],
+          name: "Learn More",
+          path: "/#learn-more",
+        },
+      ],
+    },
+  ],
+  center: [
+    {
+      title: {
+        name: "Auckland",
+        path: "/auckland",
+      },
+      links: [
+        {
+          name: "Classes",
+          path: "/auckland#classes",
         },
         {
-            title: {
-                name: 'Dunedin',
-                path: '/dunedin'
-            },
-            links: [
-                {
-                    name: "Classes",
-                    path: "/dunedin#classes"
-                },
-                {
-                    name: "Contact Us",
-                    path: "/dunedin#contact-us"
-                },
-                {
-                    name: "Media",
-                    path: "/dunedin#media"
-                },
-                {
-                    name: "Gallery",
-                    path: "/dunedin#gallery"
-                },
-            ],
+          name: "Contact Us",
+          path: "/auckland#contact-us",
         },
         {
-            title: {
-                name: 'Wellington',
-                path: '/wellington'
-            },
-            links: [
-                {
-                    name: "Classes",
-                    path: "/wellington#classes"
-                },
-                {
-                    name: "Contact Us",
-                    path: "/wellington#contact-us"
-                },
-                {
-                    name: "Media",
-                    path: "/wellington#media"
-                },
-                {
-                    name: "Gallery",
-                    path: "/wellington#gallery"
-                },
-            ],
+          name: "Media",
+          path: "/auckland#media",
         },
         {
-            title: {
-                name: 'More',
-                path: '/more'
-            },
-            links: [
-                {
-                    name: "FAQs",
-                    path: "/more#faqs"
-                },
-            ],
+          name: "Gallery",
+          path: "/auckland#gallery",
         },
-    ]
-}
+      ],
+    },
+    {
+      title: {
+        name: "Dunedin",
+        path: "/dunedin",
+      },
+      links: [
+        {
+          name: "Classes",
+          path: "/dunedin#classes",
+        },
+        {
+          name: "Contact Us",
+          path: "/dunedin#contact-us",
+        },
+        {
+          name: "Media",
+          path: "/dunedin#media",
+        },
+        {
+          name: "Gallery",
+          path: "/dunedin#gallery",
+        },
+      ],
+    },
+    {
+      title: {
+        name: "Wellington",
+        path: "/wellington",
+      },
+      links: [
+        {
+          name: "Classes",
+          path: "/wellington#classes",
+        },
+        {
+          name: "Contact Us",
+          path: "/wellington#contact-us",
+        },
+        {
+          name: "Media",
+          path: "/wellington#media",
+        },
+        {
+          name: "Gallery",
+          path: "/wellington#gallery",
+        },
+      ],
+    },
+  ],
+  right: [
+    {
+      title: {
+        name: "More",
+        path: "/more",
+      },
+      links: [
+        {
+          name: "FAQs",
+          path: "/more#faqs",
+        },
+      ],
+    },
+    {
+      title: {
+        name: "Newsroom",
+        path: "/newsroom",
+      },
+      links: [
+        {
+          name: "FAQs",
+          path: "/more#faqs",
+        },
+      ],
+    },
+    {
+      title: {
+        name: "",
+        path: "",
+      },
+      links: [
+        {
+          name: "",
+          path: "",
+        },
+      ],
+    },
+  ],
+};

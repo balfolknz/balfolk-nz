@@ -15,21 +15,83 @@
   }
 
   &__links {
+    display: grid;
+    grid-template-areas:
+      "left"
+      "right";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 100%;
+    justify-items: start;
+    width: 100%;
+    gap: 2rem;
+
+    @media screen and (min-width: a.$mediumSize) {
+      grid-template-areas: "left right";
+      grid-template-rows: 100%;
+      grid-template-columns: 30% 70%;
+      gap: 4rem;
+    }
+
+    &__left {
+      grid-area: left;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      @media screen and (min-width: a.$mediumSize) {
+        gap: 4rem;
+      }
+
+      &__left {
+        width: 100%;
+      }
+
+      &__center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        @media screen and (min-width: a.$mediumSize) {
+          flex-direction: row;
+          gap: 1rem;
+        }
+      }
+
+      &__right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        @media screen and (min-width: a.$mediumSize) {
+          flex-direction: row;
+          gap: 1rem;
+        }
+      }
+    }
+
+    &__right {
+      grid-area: right;
+    }
+
     &__final {
       text-align: left;
       height: 100%;
       padding-top: 1rem;
       font-style: italic;
+      border-top: 1px solid a.$primary-light;
 
-      @media screen and (min-width: a.$mediumSize)  {
+      @media screen and (min-width: a.$mediumSize) {
+        border-top: none;
         border-left: 1px solid a.$primary-light;
-        padding-left: 2rem;
-        max-width: 10rem;
+        padding-left: 5rem;
         padding-top: 0;
       }
     }
   }
-
 }
 
 .footerCopyright {
@@ -41,21 +103,21 @@
   height: 100%;
 
   p {
-    @apply text-center md:text-left
+    @apply text-center md:text-left;
   }
 
   &__right {
-    @media screen and (max-width:a.$mediumSize) {
+    @media screen and (max-width: a.$mediumSize) {
       display: none;
     }
   }
 }
 
 .footerColumn {
-  @apply flex-1 flex flex-col gap-3 text-sm min-w-max min-h-full;
+  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
 
   .footerNav {
-    @media screen and (max-width:a.$mediumSize) {
+    @media screen and (max-width: a.$mediumSize) {
       display: none;
     }
   }
