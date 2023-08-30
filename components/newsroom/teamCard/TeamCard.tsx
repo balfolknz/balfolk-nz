@@ -18,7 +18,7 @@ const TeamCard = ({
 }: teamCardProps) => {
   return (
     <section
-      className={`${styles.teamCard} w-full flex-1 | flex gap-3 flex-row justify-start items-start`}
+      className={`${styles.teamCard} w-full flex-1 | flex gap-3 flex-col md:flex-row justify-start items-center md:items-start`}
     >
       <div className={`${styles.teamCard__image} relative`}>
         <Image src={image} width={200} height={200} alt={job} />

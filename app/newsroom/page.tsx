@@ -88,7 +88,7 @@ const NewsroomPage = () => {
         <section className={`${styles.content} mb-10 flex flex-col gap-12`}>
           <FadeInLeftAnimation>
             <section className={`${styles.firstRow}`}>
-              <section id="about" className="w-100 flex-1">
+              <section id="about" className="w-100 h-100">
                 <h1 className={`title`}>About Us</h1>
                 <p>{parse(aboutContent.description)}</p>
               </section>
