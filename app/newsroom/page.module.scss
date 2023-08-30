@@ -1,11 +1,106 @@
 @use "/styles/abstracts" as a;
+@use "/styles/components" as c;
 
-.page {
-  padding-inline: 3rem;
-  padding-block: 3rem;
+.banner {
+  padding-block: 10%;
 
-  @media screen and (min-width: a.$mediumSize) {
-    padding-inline: 10rem;
-    padding-block: 3rem;
+  &__title {
+    font-weight: 1000;
+    font-size: 2rem;
+    line-height: 95%;
+    transform: scaleY(1.2);
+
+    @media screen and (min-width: a.$mediumSize) {
+      font-size: 5rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 1000;
+    font-size: 2rem;
+    line-height: 95%;
+    transform: scaleY(1.2);
+
+    @media screen and (min-width: a.$mediumSize) {
+      font-size: 5rem;
+    }
+  }
+
+  &__navbar {
+    position: absolute;
+    bottom: 30%;
+    padding: 0.8rem;
+    border-radius: 40px;
+    padding-left: 3rem;
+
+    a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+    }
+
+    a:hover {
+      color: a.$primary-dark;
+    }
+  }
+}
+
+.content {
+  padding-inline: 10rem;
+
+  .firstRow {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 3rem;
+
+    @media screen and (min-width: a.$mediumSize) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100%;
+    }
+  }
+
+  .pressMentions {
+    &__content {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 100%;
+      width: 100%;
+
+      .title {
+        @apply break-normal;
+        width: 100%;
+        margin-bottom: 1rem !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 10px !important;
+        text-transform: uppercase;
+        text-align: left;
+        justify-self: start;
+      }
+
+      .allNewsButton {
+        border: 1px solid a.$primary-light !important;
+        padding: 0.8rem 1.2rem;
+        cursor: pointer;
+        border-radius: 3rem;
+        transition: 0.25s ease-in-out;
+        background-color: a.$primary-light;
+        color: #fff !important;
+        width: 20%;
+        text-align: center;
+
+        &__text {
+          font-size: 1rem;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1)
+        }
+      }
+    }
   }
 }

@@ -1,4 +1,4 @@
-import {Cormorant_Garamond, Cormorant_SC, Dancing_Script, Libre_Baskerville} from 'next/font/google'
+import {Cormorant_Garamond, Cormorant_SC, Dancing_Script, Libre_Baskerville, Roboto_Flex} from 'next/font/google'
 import '../styles/reset.scss'
 import '../styles/globals.scss'
 import Navbar from "@/components/layout/navbar/Navbar";
@@ -29,6 +29,12 @@ const libre_baskerville = Libre_Baskerville({
     variable: '--font-libre-baskerville',
 });
 
+const roboto_flex = Roboto_Flex({
+  subsets: ["latin"],
+  weight: ["1000"],
+  variable: "--font-roboto-flex",
+});
+
 export const metadata = {
     title: 'Balfolk Aotearoa/NZ',
     description: 'The official website for Balfolk - Aotearoa/New Zealand!',
@@ -43,21 +49,24 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <html lang="en"
-              className={`${cormorant_sc.variable} ${dancing_script.variable} ${libre_baskerville.variable} ${cormorant_garamond.variable}`}>
+      <html
+        lang="en"
+        className={`${cormorant_sc.variable} ${dancing_script.variable} ${libre_baskerville.variable} ${cormorant_garamond.variable} ${roboto_flex.variable}`}
+      >
         <head>
-            <link rel="manifest" href="/manifest.json"/>
-            <link rel="apple-touch-icon" href="/icons-white/apple-touch-icon.png"></link>
-            <link rel="shortcut icon" href="/icons-white/favicon.ico" />
-            <meta name="theme-color" content="#542e23" />
+          <link rel="manifest" href="/manifest.json" />
+          <link
+            rel="apple-touch-icon"
+            href="/icons-white/apple-touch-icon.png"
+          ></link>
+          <link rel="shortcut icon" href="/icons-white/favicon.ico" />
+          <meta name="theme-color" content="#542e23" />
         </head>
         <body>
-        <Navbar/>
-        <main>
-            {children}
-        </main>
-        <Footer/>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
         </body>
-        </html>
-    )
+      </html>
+    );
 }

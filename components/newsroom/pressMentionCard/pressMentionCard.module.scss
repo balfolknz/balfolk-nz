@@ -1,0 +1,22 @@
+@use "styles/components" as c;
+@use "styles/abstracts" as a;
+
+.card {
+  border: 1px solid a.$primary-light;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: 0.25s ease-in;
+
+  .title {
+      transition: 0.25s ease-in;
+  }
+
+  &:hover {
+    background-color: a.$primary-light;
+    color: white !important;
+
+    .title {
+      color: white;
+    }
+  }
+}

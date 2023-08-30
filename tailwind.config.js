@@ -12,6 +12,7 @@ module.exports = {
         cormorantGaramond: "var(--font-cormorant-garamond)",
         dancingScript: "var(--font-dancing-script)",
         libreBaskerville: "var(--font-libre-baskerville)",
+        robotoFlex: "var(--font-roboto-flex)",
       },
       colors: {
         "nav-border": "#EBEAEA",
@@ -28,6 +29,7 @@ module.exports = {
 
         "primary-dark": "#542e23",
         "primary-dark-500": "#bf7a66",
+        "primary-dark-250": "#d3a294",
         "primary-dark-100": "#e8d0c9",
         "primary-dark-75": "#ead4cd",
         "primary-dark-50": "#f2e5e1",

@@ -1,0 +1,12 @@
+@use "/styles/abstracts" as a;
+
+.content {
+  padding-block: 4rem;
+  padding-inline: 10rem;
+
+  .pressMentions {
+    .pressMentionCard {
+      max-width: 48%;
+    }
+  }
+}
