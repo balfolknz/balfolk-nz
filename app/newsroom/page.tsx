@@ -204,7 +204,7 @@ const NewsroomPage = () => {
                 <div className="flex flex-col justify-center items-center gap-5">
                   <h2 className={`text-white text-center`}>For Media Inquiries</h2>
                   <a href={`mailto:balfolkdunedin@gmail.com`} target={"_blank"}>
-                    <p className="text-lg text-white">balfolkdunedin@gmail.com</p>
+                    <p className="text-lg text-white hover:underline">balfolkdunedin@gmail.com</p>
                   </a>
                 </div>
               </div>
