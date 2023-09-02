@@ -1,6 +1,6 @@
 export const allClasses: allClassInfo = {
   description: `
-    <article>
+    <p>
         <strong>European contredanses</strong><br/>
         European contredanses, often simply called contredanses are a style of historical dance that originated in Europe during the 17th and 18th centuries.
         English country dance and Scottish country dance are well known forms of contredanses. Contredanses typically involve groups of couples arranged in lines or squares and are characterized by a series of lively and coordinated group movements.  These dances played a significant in the evolution of social dance in Europe and transformed French dance.
@@ -9,7 +9,7 @@ export const allClasses: allClassInfo = {
         Balfolk dancing is a dynamic and inclusive genre of dance and music that draws from diverse European traditions. What sets it apart is its fusion of traditional elements with modern innovations and a willingness to adapt and evolve. Balfolk is characterized by its accessibility, emphasizing community, social interaction, experience and improvisation. Participants of all ages and skill levels come together to enjoy these dances.  This dance form encourages creativity and embraces change, making it a vibrant and ever-evolving experience.
         <br/><br/>
         <strong><em>Price:</em></strong> $40 for a block of 5 consecutive weeks - $10 casual attendance
-    </article>
+    </p>
     `,
   allClasses: [
     {
