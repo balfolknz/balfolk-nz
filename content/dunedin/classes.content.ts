@@ -1,32 +1,43 @@
 export const allClasses: allClassInfo = {
-    description:
-    `
+  description: `
     <article>
-    <strong>Historical Dancing: </strong> Historical dancing is I have no idea, let's describe it <br>
-    <strong>Balfolk Dancing: </strong> I know even less about Balfolk dancing but its really fun and group <br>
-    <br>
-    <strong>Prices: </strong> $10/week, or $40 for each 5 week block
+        <strong>European contredanses</strong><br/>
+        European contredanses, often simply called contredanses are a style of historical dance that originated in Europe during the 17th and 18th centuries.
+        English country dance and Scottish country dance are well known forms of contredanses. Contredanses typically involve groups of couples arranged in lines or squares and are characterized by a series of lively and coordinated group movements.  These dances played a significant in the evolution of social dance in Europe and transformed French dance.
+        <br/><br/>
+        <strong>Balfolk</strong><br/>
+        Balfolk dancing is a dynamic and inclusive genre of dance and music that draws from diverse European traditions. What sets it apart is its fusion of traditional elements with modern innovations and a willingness to adapt and evolve. Balfolk is characterized by its accessibility, emphasizing community, social interaction, experience and improvisation. Participants of all ages and skill levels come together to enjoy these dances.  This dance form encourages creativity and embraces change, making it a vibrant and ever-evolving experience.
+        <br/><br/>
+        <strong><em>Price:</em></strong> $40 for a block of 5 consecutive weeks - $10 casual attendance
     </article>
     `,
-    allClasses: [
-        {
-            style: "Historical Dancing",
-            day: "Monday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
-        },
-        {
-            style: "Balfolk Dancing",
-            day: "Tuesday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
-        },
-        {
-            style: "Balfolk Dancing",
-            day: "Wednesday",
-            time: "7:00pm - 8:30pm",
-            address: "Opoho Scout Group, 6 Warden Street, Opoho, Dunedin 9010"
-        },
-    ],
-    eventsLink: "https://www.eventfinda.co.nz/user/kategrace"
-}
+  allClasses: [
+    {
+      style: `English Country Dance <br/><strong>(Beginners)</strong>`,
+      day: "Monday",
+      time: "6:00pm - 7:00pm",
+      address: `Opoho Scout Hall <br/><br/>128 Opoho Road, <br/>Dunedin North`,
+    },
+    {
+      style: "English Country Dance <br/><strong>(Beyond Basics)</strong>",
+      day: "Monday",
+      time: "7:00pm - 8:30pm",
+      address: `Opoho Scout Hall <br/><br/>128 Opoho Road, <br/>Dunedin North`,
+    },
+    {
+      style: "Balfolk Immersion",
+      day: "Tuesday",
+      time: "7:00pm - 8:30pm",
+      address:
+        "Sacred Heart School Hall <br/>(Nga Maara Hall)<br/><br/>63 North Road, <br/>North East Valley",
+    },
+    {
+      style: "Balfolk Squad <br/><strong>(by invitation)</strong>",
+      day: "Wednesday",
+      time: "7:00pm - 8:30pm",
+      address:
+        "North East Valley Baptist Community Centre <br/><br/> 270 North Road, <br/> North East Valley",
+    },
+  ],
+  eventsLink: "https://www.eventfinda.co.nz/user/kategrace",
+};

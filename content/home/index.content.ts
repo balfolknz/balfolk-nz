@@ -4,9 +4,23 @@ export const heroImagePaths: string[] = [
 ];
 
 export const aboutContent: aboutContent = {
-  shortDescription:
-    "interdum velit euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus",
-  verboseDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In ornare quam viverra orci sagittis. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Arcu dictum varius duis at. Posuere urna nec tincidunt praesent semper feugiat nibh sed pulvinar. Tristique nulla aliquet enim tortor. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in.`,
+  shortDescription: `
+    <p>
+    Balfolk Aotearoa/NZ aims to welcome New Zealand to the wonders of Balfolk dancing.
+    <br/>Deeply rooted in group dances with lively music, Balfolk dancing is great for everyone of all ages and experiences.
+    </p>
+    `,
+  verboseDescription: `
+  <p>
+    At its core, Balfolk encompasses a variety of partner and group dances each with its own unique charm and rhythm. <br/>
+    The Balfolk repertoire mostly draws from the traditional European folk dances but also includes some recent creations.
+    <br/><br/>
+
+    In a Balfolk event, the elegance of valses, mazurkas, and bourrées intertwines with the calm or vibrant energy of ancient
+    circles dances and the energetic foot stomping quality of some contredanses.<br/>
+    Live music remains at the centerpiece of Balfolk dancing, composed of a wide genre of instruments
+  </p>
+  `,
 };
 
 export const allTeamContent: allTeamContent = {
