@@ -3,6 +3,7 @@ import styles from "./pressMentionCard.module.scss";
 const PressMentionCard = ({
   title,
   author,
+  company,
   date,
   shortDescription,
   link,
@@ -14,10 +15,10 @@ const PressMentionCard = ({
       <a className={``} href={`${link}`} target={"_blank"}>
         <h3 className={`pb-3 ${styles.title}`}>{title}</h3>
         <p>
-          By <strong>{author}</strong>
+          By <strong>{author}</strong> - <span className="italic">{company}</span>
         </p>
         <p>On {date}</p>
-        <p className="italic pt-2">{shortDescription}</p>
+        <p className="pt-2">{shortDescription}</p>
       </a>
     </section>
   );

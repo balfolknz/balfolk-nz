@@ -62,16 +62,28 @@ export const allTeamContent: allTeamContent = {
       lastName: "Parmenter",
       job: "Director",
       imagePath: "/images/common/placeholder.svg",
-      description:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
+      description: `
+      <p>
+        Michael Parmenter (Balfolk Auckland) has a long background in contemporary dance, having choreographed over 50 significant works for his own and other major companies. <br/>
+        He has developed the Partner Improvisation technique Piloting/TACTICS, has been dancing tango for 15 years and has recently been researching partner-dance history and promoting Balfolk dance in New Zealand. <br/><br/>
+        He was the 2022 Caroline Plummer Fellow in Community Dance at the University of Otago.
+      </p>
+      `,
     },
     {
       firstName: "Kate",
       lastName: "Grace",
       job: "Director",
       imagePath: "/images/common/placeholder.svg",
-      description:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
+      description: `
+        <p>
+          Kate Grace (Balfolk Dunedin) hails originally from France where her early encounters with dance included African dance and Contact Improvisation. <br/>
+          Upon moving to New Zealand in 1995 she taught African dance and drumming in Dunedin. <br/>
+          During a three year visit to France from 2005 she reconnected with dancers and musicians interested in the folk revival and upon returning to Dunedin, she ran classes teaching traditional French and European dances as well as historical dances from various time periods.  <br/><br/>
+
+          She has organised several French bals and Jane Austen Regency balls.
+        </p>
+        `,
     },
   ],
 };
@@ -79,52 +91,31 @@ export const allTeamContent: allTeamContent = {
 export const allPressMentions: allPressMentions = {
   allPressMentions: [
     {
-      title: "Press Mention 1",
-      author: "Author 1",
-      date: "Wednesday, August 01, 2023",
-      link: "https://newsroom.snap.com/",
+      title: "Back home, time to dance",
+      author: "John Lewis",
+      company: "Otago Daily Times",
+      date: "Thursday, August 28, 2022",
+      link: "https://www.odt.co.nz/entertainment/dance/back-home-time-dance",
       shortDescription:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
+        "Coming to the deep South as winter approaches means acclaimed dancer and choreographer Michael Parmenter is having to do stretches and warm-ups, just to prepare for his usual stretches and warm-ups.",
     },
     {
-      title: "Press Mention 2",
-      author: "Author 2",
-      date: "Wednesday, August 02, 2023",
-      link: "https://newsroom.snap.com/",
+      title: "Having a ball to celebrate residency end",
+      author: "John Lewis",
+      company: "Otago Daily Times",
+      date: "Wednesday, September 21, 2022",
+      link: "https://www.odt.co.nz/news/dunedin/campus/having-ball-celebrate-residency-end",
       shortDescription:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
+        "After six months of teaching in Dunedin, University of Otago Caroline Plummer Fellow and Balfolk Dunedin founder Michael Parmenter is holding a Spring Equinox Folk Ball and Festival, providing an opportunity for the community to dance together with live music.",
     },
     {
-      title: "Press Mention 3",
-      author: "Author 2",
-      date: "Wednesday, August 02, 2023",
-      link: "https://newsroom.snap.com/",
+      title: "Parmenter offers a fine farewell",
+      author: "Brenda Harwood",
+      company: "Otago Daily Times",
+      date: "Thursday, September 22, 2022",
+      link: "https://www.odt.co.nz/the-star/parmenter-offers-fine-farewell",
       shortDescription:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
-    },
-    {
-      title: "Press Mention 4",
-      author: "Author 2",
-      date: "Wednesday, August 02, 2023",
-      link: "https://newsroom.snap.com/",
-      shortDescription:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
-    },
-    {
-      title: "Press Mention 5",
-      author: "Author 2",
-      date: "Wednesday, August 02, 2023",
-      link: "https://newsroom.snap.com/",
-      shortDescription:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
-    },
-    {
-      title: "Press Mention 6",
-      author: "Author 2",
-      date: "Wednesday, August 02, 2023",
-      link: "https://newsroom.snap.com/",
-      shortDescription:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
+        "A special weekend of social dance and music, with workshops and performances, heralds the arrival of spring and the completion of leading dancer Michael Parmenter’s six month Caroline Plummer Dance Fellowship.",
     },
   ],
 };

@@ -6,19 +6,14 @@ export const heroImagePaths: string[] = [
 export const aboutContent: aboutContent = {
   shortDescription: `
     <p>
-    Balfolk Aotearoa/NZ aims to welcome New Zealand to the wonders of Balfolk dancing.
-    <br/>Deeply rooted in group dances with lively music, Balfolk dancing is great for everyone of all ages and experiences.
+      Balfolk is a revival of traditional European folk dances – both partner and group dances – that focuses on making these dances accessible to as wide a range of participants as possible.
     </p>
     `,
   verboseDescription: `
   <p>
-    At its core, Balfolk encompasses a variety of partner and group dances each with its own unique charm and rhythm. <br/>
-    The Balfolk repertoire mostly draws from the traditional European folk dances but also includes some recent creations.
-    <br/><br/>
-
-    In a Balfolk event, the elegance of valses, mazurkas, and bourrées intertwines with the calm or vibrant energy of ancient
-    circles dances and the energetic foot stomping quality of some contredanses.<br/>
-    Live music remains at the centerpiece of Balfolk dancing, composed of a wide genre of instruments
+    Balfolk is a revival of traditional European folk dances – both partner and group dances – that focuses on making these dances accessible to as wide a range of participants as possible. <br/><br/>
+    Dances are simplified and re-imagined with contemporary musical sensibilities and the experiential and participatory dimension is prioritized over performance of complex choreographies. <br/><br/>
+    Simple repeating patterns encourage the participation in inclusive group dances and basic structures become the basis for improvisation and individual creativity thus encouraging conversations about tradition, freedom and innovation.
   </p>
   `,
 };
@@ -30,16 +25,27 @@ export const allTeamContent: allTeamContent = {
       lastName: "Parmenter",
       job: "Director",
       imagePath: "/images/common/placeholder.svg",
-      description:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
+      description: `
+      <p>
+        Michael Parmenter (Balfolk Auckland) has a long background in contemporary dance, having choreographed over 50 significant works for his own and other major companies. <br/>
+        He has developed the Partner Improvisation technique Piloting/TACTICS, has been dancing tango for 15 years and has recently been researching partner-dance history and promoting Balfolk dance in New Zealand. <br/><br/>
+        He was the 2022 Caroline Plummer Fellow in Community Dance at the University of Otago.
+      </p>`,
     },
     {
       firstName: "Kate",
       lastName: "Grace",
       job: "Director",
       imagePath: "/images/common/placeholder.svg",
-      description:
-        "tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla",
+      description: `
+        <p>
+          Kate Grace (Balfolk Dunedin) hails originally from France where her early encounters with dance included African dance and Contact Improvisation. <br/>
+          Upon moving to New Zealand in 1995 she taught African dance and drumming in Dunedin. <br/>
+          During a three year visit to France from 2005 she reconnected with dancers and musicians interested in the folk revival and upon returning to Dunedin, she ran classes teaching traditional French and European dances as well as historical dances from various time periods.  <br/><br/>
+
+          She has organised several French bals and Jane Austen Regency balls.
+        </p>
+        `,
     },
   ],
 };

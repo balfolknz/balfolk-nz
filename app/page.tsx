@@ -50,7 +50,7 @@ const Page = () => {
 
                             <section
                                 className={`${styles.aboutUs__description} ${styles.aboutUs__description__verbose}`}>
-                                <h3 className={`text-left mb-3`}>What is Balfolk NZ?</h3>
+                                <h3 className={`text-left mb-3`}>What is Balfolk?</h3>
                                 <p>{parse(aboutContent.verboseDescription)}</p>
                             </section>
                         </section>

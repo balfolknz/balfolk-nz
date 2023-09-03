@@ -316,7 +316,7 @@ const CityTemplate = ({
                                 height={300}
                                 src={photoPath}
                                 className={`${styles.gallery__photo}`}
-                                alt={"Group photo"}
+                                alt={"Photo"}
                               />
                             </section>
                           );

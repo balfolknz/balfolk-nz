@@ -100,7 +100,7 @@ const NewsroomPage = () => {
               </section>
               <section className={`${styles.meetOurTeam}`} id="our-team">
                 <h1 className={`title`}>Our Team</h1>
-                <section className={`flex gap-10 mt-5 flex-col md:gap-6`}>
+                <section className={`flex gap-10 mt-5 flex-col md:gap-20`}>
                   {allTeamContent.allTeams.map((teamContent) => {
                     return (
                       <TeamCard
@@ -130,6 +130,7 @@ const NewsroomPage = () => {
                         <PressMentionCard
                           title={pressMention.title}
                           author={pressMention.author}
+                          company={pressMention.company}
                           shortDescription={pressMention.shortDescription}
                           date={pressMention.date}
                           link={pressMention.link}

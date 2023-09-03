@@ -21,6 +21,7 @@ const AllNewsPage = () => {
                     <PressMentionCard
                       title={pressMention.title}
                       author={pressMention.author}
+                      company={pressMention.company}
                       shortDescription={pressMention.shortDescription}
                       date={pressMention.date}
                       link={pressMention.link}

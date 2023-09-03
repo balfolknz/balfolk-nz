@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./teamCard.module.scss"
+import parse from "html-react-parser";
 
 type teamCardProps = {
     image: string,
@@ -31,7 +32,7 @@ const TeamCard = ({image, job, firstName, lastName, description}: teamCardProps)
                 <h3 className={`pb-1`}>
                     {firstName} {lastName}
                 </h3>
-                <p className={`italic`}>{description}</p>
+                <p className={``}>{parse(description)}</p>
             </section>
         </section>
 

@@ -58,8 +58,7 @@ function Footer() {
             />
           </Link>
           <p className="font-normal mt-5 md:text-start">
-            We aim to revitalise the style of Balfolk dancing within
-            Aotearoa/New Zealand
+            New ways of dancing old dances
           </p>
         </section>
       </section>

@@ -5,6 +5,7 @@ type newsroomAboutContent = {
 type pressMention = {
   title: string;
   author: string;
+  company: string;
   date: string;
   shortDescription: string;
   link: string;
