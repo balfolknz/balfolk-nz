@@ -18,10 +18,7 @@ import {
   faYoutube,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faUserGroup,
-} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 import ScrollSpy from "react-ui-scrollspy";
@@ -61,71 +58,86 @@ const CityTemplate = ({
               className={`${styles.classes} | flex flex-col gap-8 items-center justify-center | px-10 md:px-5`}
               id="classes"
             >
-              <section className={`${styles.text}`}>
-                <h2 className={`title`}>Classes</h2>
-                <section className={``}>
-                  <p
-                    className={`text-left ${styles.description} flex flex-column justify-center items-center`}
-                  >
-                    {parse(allClassInfo.description)}
-                  </p>
-                </section>
-              </section>
-
-              <section className={`${styles.times} | ${styles.section}`}>
-                <TableContainer component={Paper} className={`${styles.table}`}>
-                  <Table stickyHeader aria-label="class times">
-                    <TableHead>
-                      <TableRow className={`${styles.table__header}`}>
-                        <TableCell align="center">Style</TableCell>
-                        <TableCell align="center">Day</TableCell>
-                        <TableCell align="center">Time</TableCell>
-                        <TableCell align="center">Address</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {allClassInfo.allClasses.map((classInfo: classInfo) => {
-                        return (
-                          <TableRow key={classInfo.day}>
-                            <TableCell align="center">
-                              {parse(classInfo.style)}
-                            </TableCell>
-                            <TableCell align="center">
-                              {classInfo.day}
-                            </TableCell>
-                            <TableCell align="center">
-                              {classInfo.time}
-                            </TableCell>
-                            <TableCell align="center">
-                              {parse(classInfo.address)}
-                            </TableCell>
-                          </TableRow>
-                        );
-                      })}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </section>
-
-              <section className={`${styles.events} | ${styles.section}`}>
-                <section
-                  className={`flex gap-3 justify-center flex-col md:flex-row`}
-                >
-                  <button type={`button`} className={`${styles.button}`}>
-                    <a href={allClassInfo.eventsLink} target={"_blank"}>
-                      <p className={`text-center md:text-left`}>View Events</p>
-                    </a>
-                  </button>
-
-                  <button type={`button`} className={`${styles.button}`}>
-                    <a href={contactInfo.facebookLink} target={"_blank"}>
-                      <p className={`text-center md:text-left`}>
-                        Visit our Facebook Page
+              {allClassInfo.allClasses.length != 0 && (
+                <>
+                  <section className={`${styles.text}`}>
+                    <h2 className={`title`}>Classes</h2>
+                    <section className={``}>
+                      <p
+                        className={`text-left ${styles.description} flex flex-column justify-center items-center`}
+                      >
+                        {parse(allClassInfo.description)}
                       </p>
-                    </a>
-                  </button>
-                </section>
-              </section>
+                    </section>
+                  </section>
+
+                  <section className={`${styles.times} | ${styles.section}`}>
+                    <TableContainer
+                      component={Paper}
+                      className={`${styles.table}`}
+                    >
+                      <Table stickyHeader aria-label="class times">
+                        <TableHead>
+                          <TableRow className={`${styles.table__header}`}>
+                            <TableCell align="center">Style</TableCell>
+                            <TableCell align="center">Day</TableCell>
+                            <TableCell align="center">Time</TableCell>
+                            <TableCell align="center">Address</TableCell>
+                          </TableRow>
+                        </TableHead>
+                        <TableBody>
+                          {allClassInfo.allClasses.map(
+                            (classInfo: classInfo) => {
+                              return (
+                                <TableRow key={classInfo.day}>
+                                  <TableCell align="center">
+                                    {parse(classInfo.style)}
+                                  </TableCell>
+                                  <TableCell align="center">
+                                    {classInfo.day}
+                                  </TableCell>
+                                  <TableCell align="center">
+                                    {classInfo.time}
+                                  </TableCell>
+                                  <TableCell align="center">
+                                    {parse(classInfo.address)}
+                                  </TableCell>
+                                </TableRow>
+                              );
+                            }
+                          )}
+                        </TableBody>
+                      </Table>
+                    </TableContainer>
+                  </section>
+
+                  <section className={`${styles.events} | ${styles.section}`}>
+                    <section
+                      className={`flex gap-3 justify-center flex-col md:flex-row`}
+                    >
+                      {allClassInfo.eventsLink && (
+                        <button type={`button`} className={`${styles.button}`}>
+                          <a href={allClassInfo.eventsLink} target={"_blank"}>
+                            <p className={`text-center md:text-left`}>
+                              View Events
+                            </p>
+                          </a>
+                        </button>
+                      )}
+
+                      {contactInfo.facebookLink && (
+                        <button type={`button`} className={`${styles.button}`}>
+                          <a href={contactInfo.facebookLink} target={"_blank"}>
+                            <p className={`text-center md:text-left`}>
+                              Visit our Facebook Page
+                            </p>
+                          </a>
+                        </button>
+                      )}
+                    </section>
+                  </section>
+                </>
+              )}
             </section>
 
             {/* Contact Us */}
@@ -190,111 +202,129 @@ const CityTemplate = ({
 
             {/* Media */}
             <section id="media">
-              <FadeInLeftAnimation>
-                <section
-                  className={`${styles.media} | ${styles.section} | mt-10 px-8 w-full`}
-                >
-                  <h2 className={`title`}>Media</h2>
-                  <section
-                    className={`flex flex-col justify-start gap-5 w-full | ${styles.videos}`}
-                  >
-                    <h3 className={``}>Some of our favourite dances</h3>
-                    <section className="flex gap-3 flex-col w-full md:flex-row">
-                      {mediaInfo.allVideos.map((video: videoInfo) => {
-                        return (
-                          <section className={`flex flex-col gap-4 w-full`}>
-                            <p className={`font-bold`}>{video.title}</p>
-                            <section className={`${styles.videos__video}`}>
-                              <Iframe
-                                url={video.url}
-                                id=""
-                                display="block"
-                                position="relative"
-                                width="100%"
-                              />
-                            </section>
-                          </section>
-                        );
-                      })}
-                    </section>
-                  </section>
+              {mediaInfo.allPlaylists.length != 0 &&
+                mediaInfo.allVideos.length != 0 && (
+                  <FadeInLeftAnimation>
+                    <section
+                      className={`${styles.media} | ${styles.section} | mt-10 px-8 w-full`}
+                    >
+                      <h2 className={`title`}>Media</h2>
 
-                  <section className="playlists flex flex-col justify-start gap-5 w-full mt-5">
-                    <h3>
-                      <a
-                        href={mediaInfo.youtubeChannel}
-                        target="_blank"
-                        className={`link`}
-                      >
-                        <h3 className={``}>See some of our other dances</h3>
-                      </a>
-                    </h3>
-                    <section className="flex flex-col gap-3 justify-center min-w-full md:flex-row">
-                      {mediaInfo.allPlaylists.map((playlist: playlistInfo) => {
-                        return (
-                          <a
-                            href={playlist.url}
-                            target="_blank"
-                            className={`w-full`}
-                          >
-                            <section
-                              className={`playlist__image | ${styles.playlist__image}`}
+                      {mediaInfo.allVideos.length != 0 && (
+                        <section
+                          className={`flex flex-col justify-start gap-5 w-full | ${styles.videos}`}
+                        >
+                          <h3 className={``}>Some of our favourite dances</h3>
+                          <section className="flex gap-3 flex-col w-full md:flex-row">
+                            {mediaInfo.allVideos.map((video: videoInfo) => {
+                              return (
+                                <section
+                                  className={`flex flex-col gap-4 w-full`}
+                                >
+                                  <p className={`font-bold`}>{video.title}</p>
+                                  <section
+                                    className={`${styles.videos__video}`}
+                                  >
+                                    <Iframe
+                                      url={video.url}
+                                      id=""
+                                      display="block"
+                                      position="relative"
+                                      width="100%"
+                                    />
+                                  </section>
+                                </section>
+                              );
+                            })}
+                          </section>
+                        </section>
+                      )}
+
+                      {mediaInfo.allPlaylists.length != 0 && (
+                        <section className="playlists flex flex-col justify-start gap-5 w-full mt-5">
+                          <h3>
+                            <a
+                              href={mediaInfo.youtubeChannel}
+                              target="_blank"
+                              className={`link`}
                             >
-                              <Image
-                                priority
-                                src={playlist.thumbnailPath}
-                                fill={true}
-                                className={`playlist__image__photo w-full | ${styles.playlist__image__photo}`}
-                                alt={playlist.title}
-                              />
-                              <section
-                                className={`playlist__image__text | text-center`}
-                              >
-                                <section className="playlist__image__text__title">
-                                  <p>{playlist.title}</p>
-                                </section>
-                                <section className="playlist__image__text__body">
-                                  <p>{playlist.description}</p>
-                                </section>
-                              </section>
-                            </section>
-                          </a>
-                        );
-                      })}
+                              <h3 className={``}>
+                                See some of our other dances
+                              </h3>
+                            </a>
+                          </h3>
+                          <section className="flex flex-col gap-3 justify-center min-w-full md:flex-row">
+                            {mediaInfo.allPlaylists.map(
+                              (playlist: playlistInfo) => {
+                                return (
+                                  <a
+                                    href={playlist.url}
+                                    target="_blank"
+                                    className={`w-full`}
+                                  >
+                                    <section
+                                      className={`playlist__image | ${styles.playlist__image}`}
+                                    >
+                                      <Image
+                                        priority
+                                        src={playlist.thumbnailPath}
+                                        fill={true}
+                                        className={`playlist__image__photo w-full | ${styles.playlist__image__photo}`}
+                                        alt={playlist.title}
+                                      />
+                                      <section
+                                        className={`playlist__image__text | text-center`}
+                                      >
+                                        <section className="playlist__image__text__title">
+                                          <p>{playlist.title}</p>
+                                        </section>
+                                        <section className="playlist__image__text__body">
+                                          <p>{playlist.description}</p>
+                                        </section>
+                                      </section>
+                                    </section>
+                                  </a>
+                                );
+                              }
+                            )}
+                          </section>
+                        </section>
+                      )}
                     </section>
-                  </section>
-                </section>
-              </FadeInLeftAnimation>
+                  </FadeInLeftAnimation>
+                )}
             </section>
 
             {/* Gallery */}
             <section id="gallery">
               <FadeInLeftAnimation>
-                <section className={`${styles.section} ${styles.gallery}`}>
-                  <h2 className={`title`}>Gallery</h2>
-                  <section
-                    className={`flex flex-col px-10 justify-center items-center w-full`}
-                  >
+                {galleryInfo.groupPhotoPaths.length != 0 && (
+                  <section className={`${styles.section} ${styles.gallery}`}>
+                    <h2 className={`title`}>Gallery</h2>
                     <section
-                      className={`${styles.about__images} | flex flex-col gap-3 md:flex-row`}
+                      className={`flex flex-col px-10 justify-center items-center w-full`}
                     >
-                      {galleryInfo.groupPhotoPaths.map((photoPath) => {
-                        return (
-                          <section className={`relative`}>
-                            <Image
-                              priority
-                              width={300}
-                              height={300}
-                              src={photoPath}
-                              className={`${styles.gallery__photo}`}
-                              alt={"Group photo"}
-                            />
-                          </section>
-                        );
-                      })}
+                      <section
+                        className={`${styles.about__images} | flex flex-col gap-3 md:flex-row`}
+                      >
+                        {galleryInfo.groupPhotoPaths.map((photoPath) => {
+                          return (
+                            <section className={`relative`}>
+                              <Image
+                                priority
+                                width={300}
+                                height={300}
+                                src={photoPath}
+                                className={`${styles.gallery__photo}`}
+                                alt={"Group photo"}
+                              />
+                            </section>
+                          );
+                        })}
+                      </section>
                     </section>
                   </section>
-                </section>
+                )}
               </FadeInLeftAnimation>
             </section>
           </ScrollSpy>
