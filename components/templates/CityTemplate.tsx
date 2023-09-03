@@ -24,6 +24,7 @@ import { PageWrapperAnimation } from "@/components/animations/common/PageWrapper
 import ScrollSpy from "react-ui-scrollspy";
 import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
 import parse from "html-react-parser";
+import Zoom from "react-medium-image-zoom";
 
 type CityTemplateProps = {
   city: string;
@@ -310,14 +311,16 @@ const CityTemplate = ({
                         {galleryInfo.groupPhotoPaths.map((photoPath) => {
                           return (
                             <section className={`relative`}>
-                              <Image
-                                priority
-                                width={300}
-                                height={300}
-                                src={photoPath}
-                                className={`${styles.gallery__photo}`}
-                                alt={"Photo"}
-                              />
+                              <Zoom>
+                                <Image
+                                  priority
+                                  width={480}
+                                  height={480}
+                                  src={photoPath}
+                                  className={`${styles.gallery__photo}`}
+                                  alt={"Photo"}
+                                />
+                              </Zoom>
                             </section>
                           );
                         })}

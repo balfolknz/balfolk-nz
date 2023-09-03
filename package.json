@@ -34,6 +34,7 @@
     "react-iframe": "^1.8.5",
     "react-intersection-observer": "^9.5.2",
     "react-material-ui-carousel": "^3.4.2",
+    "react-medium-image-zoom": "^5.1.8",
     "react-ui-scrollspy": "^2.3.0",
     "sass": "^1.64.1",
     "tailwindcss": "3.3.3",

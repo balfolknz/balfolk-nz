@@ -4,6 +4,7 @@ import '../styles/globals.scss'
 import Navbar from "@/components/layout/navbar/Navbar";
 import Footer from "@/components/layout/footer/Footer";
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import "react-medium-image-zoom/dist/styles.css";
 
 const cormorant_sc = Cormorant_SC({
     subsets: ['latin'],
