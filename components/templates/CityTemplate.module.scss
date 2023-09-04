@@ -8,7 +8,8 @@
     overflow-x: hidden;
   }
 
-  &__left, &__right {
+  &__left,
+  &__right {
     display: flex;
     min-width: 20%;
     justify-content: center;
@@ -40,7 +41,7 @@
     }
 
     .section {
-      @apply flex flex-col gap-6 items-center justify-start
+      @apply flex flex-col gap-6 items-center justify-start;
     }
 
     .gallery {
@@ -62,9 +63,15 @@
 
       .times {
         .table {
-          max-width: 43rem;
+          max-width: 80vw;
+          overflow-x: auto;
 
-          th, td {
+          @media screen and (min-width: a.$mediumSize) {
+            max-width: 43rem;
+          }
+
+          th,
+          td {
             @apply font-libreBaskerville;
           }
 
@@ -89,7 +96,6 @@
         }
       }
     }
-
 
     .media {
       @include c.card(a.$primary-light-250);
@@ -117,9 +123,8 @@
     .contactUs {
       @include c.card(#fff);
       padding-block: 3rem;
-      @apply gap-6
+      @apply gap-6;
     }
-
   }
 
   &__right {
@@ -129,7 +134,8 @@
 
 @media screen and (min-width: a.$mediumSize) {
   .page {
-    &__left, &__right {
+    &__left,
+    &__right {
       align-items: flex-start;
     }
 

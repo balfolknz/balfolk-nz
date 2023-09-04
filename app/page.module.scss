@@ -18,11 +18,12 @@
 
 .heroButton {
   @include c.hover-fill-button(a.$primary-light, #fff);
-  width: 50%;
+  width: 100%;
   text-align: center;
 
   &__text {
     font-size: 1rem;
+    text-align: center;
   }
 }
 

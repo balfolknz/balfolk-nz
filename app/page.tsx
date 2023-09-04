@@ -37,14 +37,11 @@ const Page = () => {
                       Aotearoa/NZ
                     </h3>
                   </section>
-                  <button className={`${styles.heroButton}`}>
-                    <Link
-                      href="/#gallery"
-                      className={`${styles.heroButton__text}`}
-                    >
-                      Learn more
-                    </Link>
-                  </button>
+                  <Link href="/#gallery" className={``}>
+                    <button className={`${styles.heroButton}`}>
+                      <p className={`${styles.heroButton__text}`}>Learn more</p>
+                    </button>
+                  </Link>
                 </section>
               </HeroImage>
             );
@@ -108,17 +105,21 @@ const Page = () => {
                 >
                   {learnMoreButtons.allButtons.map((buttonContent) => {
                     return (
-                      <button className={`${styles.heroButton}`}>
-                        <Link href={buttonContent.path}>
-                          {buttonContent.name}
-                        </Link>
-                      </button>
+                      <Link href={buttonContent.path} className="w-full">
+                        <button className={`${styles.heroButton}`}>
+                          <p className={`${styles.heroButton__text}`}>
+                            {buttonContent.name}
+                          </p>
+                        </button>
+                      </Link>
                     );
                   })}
                 </section>
-                <button className={`${styles.heroButton}`}>
-                  <Link href={"/more#faq"}>FAQs</Link>
-                </button>
+                <Link href={"/more#faq"} className="w-full md:w-1/3">
+                  <button className={`${styles.heroButton}`}>
+                    <p className={`${styles.heroButton__text}`}>FAQs</p>
+                  </button>
+                </Link>
               </section>
             </section>
           </FadeInLeftAnimation>
