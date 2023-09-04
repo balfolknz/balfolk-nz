@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <section className={`${styles.homePage}`}>
       <PageWrapperAnimation>
-        <Carousel interval={6000} animation={"slide"} duration={700}>
+        <Carousel interval={6000} animation={"slide"} duration={1000}>
           {heroImagePaths.map((imagePath, i) => {
             return (
               <HeroImage image={imagePath} key={i}>
