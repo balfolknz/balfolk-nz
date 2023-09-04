@@ -23,7 +23,7 @@ export const allTeamContent: allTeamContent = {
       firstName: "Michael",
       lastName: "Parmenter",
       job: "Director",
-      imagePath: "/images/common/placeholder.svg",
+      imagePath: "/images/profiles/michael parmenter/Michael Parmenter 1.jpg",
       description: `
       <p>
         Michael Parmenter (Balfolk Auckland) has a long background in contemporary dance, having choreographed over 50 significant works for his own and other major companies. <br/>

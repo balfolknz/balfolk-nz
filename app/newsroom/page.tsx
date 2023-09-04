@@ -167,8 +167,8 @@ const NewsroomPage = () => {
                 {kitData.map((kit: kitData) => {
                   return (
                     kit.downloadPath && (
-                      <button className={`${styles.downloadButton}`}>
-                        <a href={kit.downloadPath}>
+                      <a href={kit.downloadPath}>
+                        <button className={`${styles.downloadButton}`}>
                           <div className="flex flex-row gap-2 justify-center">
                             <FontAwesomeIcon
                               icon={faDownload}
@@ -176,8 +176,8 @@ const NewsroomPage = () => {
                             />
                             <p className="whitespace-nowrap">{kit.name}</p>
                           </div>
-                        </a>
-                      </button>
+                        </button>
+                      </a>
                     )
                   );
                 })}
