@@ -45,7 +45,7 @@ export const questions: listOfQuestions = {
             <ol style="padding-left: 3rem">
               <p><li>Bourrée</li></p>
               <p><li>Mazurka</li></p>
-              <p><li>Mazurka</li></p>
+              <p><li>Schottische</li></p>
               <p><li>Valse</li></p>
               <p><li>Polka</li></p>
               <p><li>Rondeau</li></p>
