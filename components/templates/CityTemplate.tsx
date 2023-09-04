@@ -3,6 +3,13 @@
 import styles from "./CityTemplate.module.scss";
 import Iframe from "react-iframe";
 import Image from "next/image";
+import Link from "next/link";
+import ScrollSpy from "react-ui-scrollspy";
+import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
+import parse from "html-react-parser";
+import Zoom from "react-medium-image-zoom";
+
+
 import {
   Paper,
   Table,
@@ -19,12 +26,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faUserGroup } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
-import ScrollSpy from "react-ui-scrollspy";
-import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
-import parse from "html-react-parser";
-import Zoom from "react-medium-image-zoom";
 
 type CityTemplateProps = {
   city: string;
@@ -84,6 +86,7 @@ const CityTemplate = ({
                             <TableCell align="center">Day</TableCell>
                             <TableCell align="center">Time</TableCell>
                             <TableCell align="center">Address</TableCell>
+                            <TableCell align="center">$/Wk</TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
@@ -102,6 +105,9 @@ const CityTemplate = ({
                                   </TableCell>
                                   <TableCell align="center">
                                     {parse(classInfo.address)}
+                                  </TableCell>
+                                  <TableCell align="center">
+                                    {parse(classInfo.pricePerWeek)}
                                   </TableCell>
                                 </TableRow>
                               );
@@ -311,7 +317,7 @@ const CityTemplate = ({
                         {galleryInfo.groupPhotoPaths.map((photoPath) => {
                           return (
                             <section className={`relative`}>
-                              <Zoom>
+                              {/* <Zoom> */}
                                 <Image
                                   priority
                                   width={480}
@@ -320,7 +326,7 @@ const CityTemplate = ({
                                   className={`${styles.gallery__photo}`}
                                   alt={"Photo"}
                                 />
-                              </Zoom>
+                              {/* </Zoom> */}
                             </section>
                           );
                         })}

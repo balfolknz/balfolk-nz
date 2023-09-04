@@ -4,7 +4,34 @@ export const questions: listOfQuestions = {
       question: "What is Balfolk?",
       answer: `
       <p>
-        Imagine Balfolk as a vibrant fusion of centuries-old European dance traditions and modern sensibilities.
+        Imagine Balfolk as a vibrant fusion of centuries-old European dance traditions and modern sensibilities.<br/><br/>
+        Balfolk is a European folk dance and music movement.  <br/>
+        It encompasses a wide range of dances including partner and group dances. <br/>
+        Dance and music combine both traditional and contemporary elements and a lively, social and inclusive atmosphere, making it accessible and enjoyable for people of all ages and skill levels.
+      </p>
+      `,
+    },
+    {
+      question: "What kind of music is played?",
+      answer: `
+      <p>
+        Balfolk music has its roots in tradition while also embracing  innovation. <br/>
+        It  features traditional instruments such as fiddles, bagpipes, hurdy-gurdy, and accordions, often blended in unique combinations with more modern instruments. <br/>
+        This fusion of traditional and modern elements gives the Balfolk sound the distinctive musical diversity that forms the backbone of Balfolk dance events.<br/><br/>
+        <a href="https://open.spotify.com/user/31l26quk6sqf6ghg2ubbks45jnci?si=e7cd470cde504300" className="link">Here</a>  you can find a number of playlists with tunes we use at Balfolk Dunedin(NZ). <br/>
+        Enjoy! 🙂
+      </p>
+      `,
+    },
+    {
+      question: "What do I need to bring?",
+      answer: `
+      <p>
+        Flat, leather sole shoes are ideal, but any comfortable pair of shoes (like sneakers) will do!<br/>
+        Bring a positive attitude and a casual set of clothes.<br/><br/>
+        While it's not necessary to bring a dance partner, it can be more enjoyable if you come with friends or as a couple. <br/>
+        Balfolk events are typically very social, and you'll have the opportunity to dance with various people. <br/>
+        If you play a musical instrument, you might also want to bring it along to participate in  euro-sessions or practice with others.
       </p>
       `,
     },
@@ -29,32 +56,6 @@ export const questions: listOfQuestions = {
               <p><li>Bransle</li></p>
             </ol>
         </p>`,
-    },
-    {
-      question: "What kind of music is played?",
-      answer: `
-      <p>
-        Balfolk dancing borrows music from a wide range of genres, and is often played with live musicians at events. <br>
-        Here's the <a href="https://open.spotify.com/user/31l26quk6sqf6ghg2ubbks45jnci?si=e7cd470cde504300" className="link">Spotify Playlist</a> that we use during our practises for your own enjoyment :)
-      </p>`,
-    },
-    {
-      question: "What do I need to bring?",
-      answer: `
-      <p>
-        Just a set of clothes that you wouldnt mind getting dirty<br/>
-        Flat, leather sole shoes are ideal, but any comfortable pair of shoes (like sneakers) will do!
-      </p>
-      `,
-    },
-    {
-      question: "Do I need to bring a partner?",
-      answer: `
-      <p>
-        Absolutely not, but the more the merrier! <br/>
-        Balfolk dances are often done in groups, and so we'll easily be able to fit you into one of our existing groups on the day.
-      </p>
-      `,
     },
   ],
 };

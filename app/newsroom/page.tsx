@@ -1,22 +1,24 @@
 "use client";
 
 import styles from "./page.module.scss";
-import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 import Link from "next/link";
+import parse from "html-react-parser";
+import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
+import PortraitTeamCard from "@/components/common/teamCards/portrait/PortraitTeamCard";
+import PressMentionCard from "@/components/newsroom/pressMentionCard/pressMentionCard";
+import Image from "next/image";
+
+import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 import { usePathname } from "next/navigation";
 import {
   aboutContent,
   allTeamContent,
   allPressMentions,
   kitData,
+  mediaEnquiriesInfo,
 } from "@/content/newsroom/index.content";
-import parse from "html-react-parser";
-import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
-import TeamCard from "@/components/newsroom/teamCard/TeamCard";
-import PressMentionCard from "@/components/newsroom/pressMentionCard/pressMentionCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
 
 type navContent = {
   name: string;
@@ -89,9 +91,7 @@ const NewsroomPage = () => {
           </div>
         </section>
 
-        <section
-          className={`${styles.content} mb-10 flex flex-col mt-10`}
-        >
+        <section className={`${styles.content} mb-10 flex flex-col mt-10`}>
           <FadeInLeftAnimation>
             <section className={`${styles.firstRow}`}>
               <section id="about" className="w-100 h-100">
@@ -103,7 +103,7 @@ const NewsroomPage = () => {
                 <section className={`flex gap-10 mt-5 flex-col md:gap-20`}>
                   {allTeamContent.allTeams.map((teamContent) => {
                     return (
-                      <TeamCard
+                      <PortraitTeamCard
                         image={teamContent.imagePath}
                         job={teamContent.job}
                         firstName={teamContent.firstName}
@@ -166,17 +166,19 @@ const NewsroomPage = () => {
               <div className="flex flex-row gap-3">
                 {kitData.map((kit: kitData) => {
                   return (
-                    <button className={`${styles.downloadButton}`}>
-                      <a href={kit.downloadPath}>
-                        <div className="flex flex-row gap-2 justify-center">
-                          <FontAwesomeIcon
-                            icon={faDownload}
-                            className={`${styles.kit__icon}`}
-                          />
-                          <p className="whitespace-nowrap">{kit.name}</p>
-                        </div>
-                      </a>
-                    </button>
+                    kit.downloadPath && (
+                      <button className={`${styles.downloadButton}`}>
+                        <a href={kit.downloadPath}>
+                          <div className="flex flex-row gap-2 justify-center">
+                            <FontAwesomeIcon
+                              icon={faDownload}
+                              className={`${styles.kit__icon}`}
+                            />
+                            <p className="whitespace-nowrap">{kit.name}</p>
+                          </div>
+                        </a>
+                      </button>
+                    )
                   );
                 })}
               </div>
@@ -192,9 +194,9 @@ const NewsroomPage = () => {
               <div className="flex flex-row gap-12">
                 <Image
                   priority
-                  src={"/images/common/placeholder.svg"}
-                  height={400}
-                  width={400}
+                  src={mediaEnquiriesInfo.imagePath}
+                  height={550}
+                  width={550}
                   className={`hidden md:block`}
                   style={{
                     objectFit: "cover",
@@ -203,10 +205,20 @@ const NewsroomPage = () => {
                   alt={""}
                 />
                 <div className="flex flex-col justify-center items-center gap-5">
-                  <h2 className={`text-white text-center`}>For Media Inquiries</h2>
-                  <a href={`mailto:balfolkdunedin@gmail.com`} target={"_blank"}>
-                    <p className="text-lg text-white hover:underline">balfolkdunedin@gmail.com</p>
-                  </a>
+                  <h2 className={`text-white text-center`}>
+                    For Media Enquiries
+                  </h2>
+                  <section className="flex flex-col gap-2 md:gap-1">
+                    {mediaEnquiriesInfo.contactEmails.map((email: string) => {
+                      return (
+                        <a href={`mailto:${email}`} target={"_blank"}>
+                          <p className="text-lg text-white hover:underline">
+                            {email}
+                          </p>
+                        </a>
+                      );
+                    })}
+                  </section>
                 </div>
               </div>
             </section>

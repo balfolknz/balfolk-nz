@@ -15,7 +15,8 @@ export const allClasses: allClassInfo = {
             style: "Coming Soon!",
             day: "Coming Soon!",
             time: "Coming Soon!",
-            address: "Coming Soon"
+            address: "Coming Soon",
+            pricePerWeek: "Coming Soon!"
         },
     ],
     eventsLink: ""

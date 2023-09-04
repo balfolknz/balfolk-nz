@@ -59,7 +59,7 @@ p {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   height: 4px;
 }
 
@@ -201,6 +201,9 @@ p {
 }
 
 .link {
+  color: a.$primary-dark;
+  font-weight: bold;
+
   &:hover {
     color: a.$primary-light;
     text-decoration: underline;

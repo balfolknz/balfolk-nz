@@ -1,0 +1,12 @@
+@use "styles/components" as c;
+@use "styles/abstracts" as a;
+
+.teamCard {
+  &__image {
+    height: 10rem;
+    width: auto;
+
+    &__photo {
+    }
+  }
+}

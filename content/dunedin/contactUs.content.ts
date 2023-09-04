@@ -3,5 +3,4 @@ export const contactInfo: contactInfo = {
   facebookLink: "https://www.facebook.com/balfolkdunedin",
   facebookGroupLink: "https://www.facebook.com/groups/balfolkdunedincommunity",
   instagramLink: "https://www.instagram.com/balfolkdunedin/",
-  youtubeLink: "https://www.youtube.com/",
 };

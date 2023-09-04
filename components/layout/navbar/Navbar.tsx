@@ -1,15 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { NavLinks } from "@/constants/navbar.constants";
-
 import styles from "./Navbar.module.scss";
+import Image from "next/image";
+
+import { NavLinks } from "@/constants/navbar.constants";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { BounceInAnimation } from "@/components/animations/navbar/BounceInAnimation";
-import Image from "next/image";
 
 function Navbar() {
   const currentRoute = usePathname();

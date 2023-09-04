@@ -1,8 +1,10 @@
 "use client";
 
-import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 import styles from "./global-error.module.scss";
 import Link from "next/link";
+
+import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
+
 
 export default function GlobalError({
   error,

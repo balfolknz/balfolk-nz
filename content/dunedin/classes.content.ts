@@ -28,6 +28,7 @@ export const allClasses: allClassInfo = {
         128 Opoho Road, <br/>
         Dunedin North
       `,
+      pricePerWeek: "10",
     },
     {
       style: "English Country Dance <br/><strong>(Beyond Basics)</strong>",
@@ -38,6 +39,7 @@ export const allClasses: allClassInfo = {
         128 Opoho Road, <br/>
         Dunedin North
       `,
+      pricePerWeek: "10",
     },
     {
       style: "Balfolk Immersion",
@@ -48,15 +50,7 @@ export const allClasses: allClassInfo = {
           63 North Road, <br/>
           North East Valley
         `,
-    },
-    {
-      style: "Balfolk Squad <br/><strong>(by invitation)</strong>",
-      day: "Wednesday",
-      time: "7:00pm - 8:30pm",
-      address: `
-        <strong>North East Valley Baptist Community Centre </strong><br/><br/>
-        270 North Road, <br/>
-        North East Valley`,
+      pricePerWeek: "10",
     },
   ],
   eventsLink: "https://www.eventfinda.co.nz/user/kategrace",

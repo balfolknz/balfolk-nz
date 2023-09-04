@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { footerLinks } from "@/constants/footer.constants";
 import styles from "./Footer.module.scss";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
+
+import { footerLinks } from "@/constants/footer.constants";
+import { usePathname } from "next/navigation";
 
 type ColumnProps = {
   title: footerLink;

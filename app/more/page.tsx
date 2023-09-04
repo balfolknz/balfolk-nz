@@ -1,7 +1,8 @@
 import styles from "./page.module.scss";
+import parse from "html-react-parser";
+
 import { questions } from "@/content/more/questions.content";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
-import parse from "html-react-parser";
 
 const MorePage = () => {
   return (

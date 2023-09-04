@@ -1,9 +1,9 @@
 import styles from "./page.module.scss";
+import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
+import PressMentionCard from "@/components/newsroom/pressMentionCard/pressMentionCard";
+
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 import { allPressMentions } from "@/content/newsroom/index.content";
-import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
-import TeamCard from "@/components/newsroom/teamCard/TeamCard";
-import PressMentionCard from "@/components/newsroom/pressMentionCard/pressMentionCard";
 
 const AllNewsPage = () => {
   return (

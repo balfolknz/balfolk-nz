@@ -19,3 +19,8 @@ type kitData = {
   name: string,
   downloadPath: string
 }
+
+type mediaEnquiriesInfo = {
+  contactEmails: Array<string>;
+  imagePath: string;
+};

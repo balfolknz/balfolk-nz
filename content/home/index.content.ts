@@ -36,7 +36,7 @@ export const allTeamContent: allTeamContent = {
       firstName: "Kate",
       lastName: "Grace",
       job: "Director",
-      imagePath: "/images/common/placeholder.svg",
+      imagePath: "/images/profiles/kate grace/Kate Grace 1.jpg",
       description: `
         <p>
           Kate Grace (Balfolk Dunedin) hails originally from France where her early encounters with dance included African dance and Contact Improvisation. <br/>
