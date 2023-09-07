@@ -170,7 +170,7 @@ p {
   &::before, &::after {
     content: "";
     flex-direction: row;
-    border-bottom: 3px solid a.$secondary-dark;
+    border-bottom: 3px solid a.$primary-light;
     width: 4rem;
   }
 

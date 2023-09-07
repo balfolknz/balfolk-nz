@@ -352,7 +352,7 @@ const CityTemplate = ({
                   >
                     <h2 className={`${styles.instagramPreview__title} | title flex justify-center`}>
                       Our Instagram
-                      <span>
+                      <span className="hidden md:block">
                         <FontAwesomeIcon
                           icon={faInstagram}
                           className={`ml-2`}
