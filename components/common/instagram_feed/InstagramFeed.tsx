@@ -71,6 +71,10 @@ export const InstagramFeed = ({ tokenName, limit }: InstagramFeedProps) => {
           }
           setIsLoading(false);
         },
+        error: function(error:any) {
+          console.log(error)
+          setIsLoading(false);
+        }
       });
     }
   }, []);
