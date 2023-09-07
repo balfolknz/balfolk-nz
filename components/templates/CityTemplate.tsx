@@ -346,8 +346,20 @@ const CityTemplate = ({
                 className={`${styles.section} ${styles.instagramPreview}`}
               >
                 <FadeInLeftAnimation>
-                  <a href={contactInfo.instagramLink} target="_blank">
-                    <h2 className={`title`}>Our Instagram!</h2>
+                  <a
+                    href={contactInfo.instagramLink}
+                    target="_blank"
+                  >
+                    <h2 className={`${styles.instagramPreview__title} | title flex justify-center`}>
+                      Our Instagram
+                      <span>
+                        <FontAwesomeIcon
+                          icon={faInstagram}
+                          className={`ml-2`}
+                        />{" "}
+                        !
+                      </span>
+                    </h2>
                   </a>
 
                   <InstagramFeed

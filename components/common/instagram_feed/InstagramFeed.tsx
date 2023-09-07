@@ -1,6 +1,7 @@
 import styles from "./InstagramFeed.module.scss";
-import { useEffect, useState } from "react";
 import $ from "jquery";
+
+import { useEffect, useState } from "react";
 import { CircularProgress, ImageList, ImageListItem, useMediaQuery } from "@mui/material";
 
 type InstagramFeedProps = {
