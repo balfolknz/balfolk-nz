@@ -21,8 +21,15 @@ const PortraitTeamCard = ({
     <section
       className={`${styles.teamCard} w-full flex-1 | flex gap-8 flex-col md:flex-row justify-start items-center md:items-start`}
     >
-      <div className={`${styles.teamCard__image} relative`}>
-        <Image src={image} width={200} height={200} alt={job} />
+      <div className={`${styles.teamCard__image} relative hoverImage`}>
+        <Image
+          src={image}
+          width={200}
+          height={200}
+          alt={job}
+          className={`hoverImage__photo`}
+        />
+        <p className={`hoverImage__text`}>{job}</p>
       </div>
 
       <section className={`flex flex-col w-full`}>

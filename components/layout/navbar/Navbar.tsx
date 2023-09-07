@@ -71,11 +71,10 @@ function Navbar() {
             <section className="flex flex-col gap-3 md:flex-row items-center">
               {NavLinks.left.map((link: navlinkConfig) => {
                 return (
-                  <li>
+                  <li key={link.key}>
                     <p>
                       <Link
                         href={link.href}
-                        key={link.key}
                         onClick={toggleNavBarState}
                         className={`${
                           currentRoute === link.href
@@ -98,7 +97,6 @@ function Navbar() {
                     <p>
                       <Link
                         href={link.href}
-                        key={link.key}
                         onClick={toggleNavBarState}
                         className={`${
                           currentRoute === link.href
@@ -117,11 +115,10 @@ function Navbar() {
             <section className="flex flex-col gap-3 md:flex-row items-center">
               {NavLinks.right.map((link: navlinkConfig) => {
                 return (
-                  <li>
+                  <li key={link.key}>
                     <p>
                       <Link
                         href={link.href}
-                        key={link.key}
                         onClick={toggleNavBarState}
                         className={`${
                           currentRoute === link.href

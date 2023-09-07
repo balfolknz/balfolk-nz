@@ -16,7 +16,7 @@ const AllNewsPage = () => {
           {allPressMentions.allPressMentions.map(
             (pressMention: pressMention) => {
               return (
-                <div className={`${styles.pressMentionCard}`}>
+                <div className={`${styles.pressMentionCard}`} key={pressMention.link}>
                   <FadeInLeftAnimation>
                     <PressMentionCard
                       title={pressMention.title}

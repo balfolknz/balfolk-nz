@@ -29,7 +29,7 @@ const FooterColumn = ({ title, links }: ColumnProps) => {
       <ul className={`flex flex-col gap-2 font-normal | ${styles.footerNav}`}>
         {links.map((link: footerLink) => {
           return (
-            <p className={`text-left`}>
+            <p className={`text-left`} key={link.path}>
               <Link href={link.path} key={link.name} className={``}>
                 {link.name}
               </Link>

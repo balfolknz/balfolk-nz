@@ -14,7 +14,7 @@ const MorePage = () => {
         >
           <h2 className={`title`}>FAQs</h2>
           <section className={`gridTwoCol | px-5`}>
-            {questions.questions.map((question: questionContent) => {
+            {questions.questions.map((question: questionContent, index: number) => {
               return (
                 <section className={`${styles.questionWrapper} gap-4 `}>
                   <section

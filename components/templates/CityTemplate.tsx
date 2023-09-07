@@ -9,7 +9,6 @@ import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimat
 import parse from "html-react-parser";
 import Zoom from "react-medium-image-zoom";
 
-
 import {
   Paper,
   Table,
@@ -27,6 +26,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
+import { InstagramFeed } from "@/components/common/instagram_feed/InstagramFeed";
 
 type CityTemplateProps = {
   city: string;
@@ -35,6 +35,7 @@ type CityTemplateProps = {
   mediaInfo: mediaInfo;
   allClassInfo: allClassInfo;
   contactInfo: contactInfo;
+  instagramPreviewInfo: instagramPreviewInfo;
 };
 
 const CityTemplate = ({
@@ -44,6 +45,7 @@ const CityTemplate = ({
   allClassInfo,
   contactInfo,
   galleryInfo,
+  instagramPreviewInfo,
 }: CityTemplateProps) => {
   return (
     <PageWrapperAnimation>
@@ -93,7 +95,7 @@ const CityTemplate = ({
                           {allClassInfo.allClasses.map(
                             (classInfo: classInfo) => {
                               return (
-                                <TableRow key={classInfo.day}>
+                                <TableRow key={classInfo.style}>
                                   <TableCell align="center">
                                     {parse(classInfo.style)}
                                   </TableCell>
@@ -318,14 +320,14 @@ const CityTemplate = ({
                           return (
                             <section className={`relative`}>
                               {/* <Zoom> */}
-                                <Image
-                                  priority
-                                  width={480}
-                                  height={480}
-                                  src={photoPath}
-                                  className={`${styles.gallery__photo}`}
-                                  alt={"Photo"}
-                                />
+                              <Image
+                                priority
+                                width={480}
+                                height={480}
+                                src={photoPath}
+                                className={`${styles.gallery__photo}`}
+                                alt={"Photo"}
+                              />
                               {/* </Zoom> */}
                             </section>
                           );
@@ -336,6 +338,23 @@ const CityTemplate = ({
                 )}
               </FadeInLeftAnimation>
             </section>
+
+            {/* Instagram preview */}
+            {contactInfo.instagramLink && (
+              <section
+                id="instagram-preview"
+                className={`${styles.section} ${styles.instagramPreview}`}
+              >
+                <a href={contactInfo.instagramLink} target="_blank">
+                  <h2 className={`title`}>Our Instagram!</h2>
+                </a>
+
+                <InstagramFeed
+                  tokenName={`NEXT_PUBLIC_${instagramPreviewInfo.apiEnvVariableName}`}
+                  limit={instagramPreviewInfo.limit}
+                />
+              </section>
+            )}
           </ScrollSpy>
         </section>
 
@@ -343,36 +362,53 @@ const CityTemplate = ({
           <section
             className={`${styles.page__right__nav} | flex flex-col items-center justify-center`}
           >
-            <section
-              className={`${styles.page__right__nav__link} ${styles.page__right__nav__link__noBorder}`}
-              data-to-scrollspy-id="classes"
-            >
-              <Link href={rootPath + "/#classes"}>
-                <p>Classes</p>
-              </Link>
-            </section>
-            <section
+            {allClassInfo.allClasses.length != 0 && (
+              <section
+                className={`${styles.page__right__nav__link} ${styles.page__right__nav__link__noBorder}`}
+                data-to-scrollspy-id="classes"
+              >
+                <Link href={rootPath + "/#classes"}>
+                  <p>Classes</p>
+                </Link>
+              </section>
+            )}
+            <Link
+              href={rootPath + "/#contact-us"}
               className={`${styles.page__right__nav__link}`}
               data-to-scrollspy-id="contact-us"
             >
-              <Link href={rootPath + "/#contact-us"}>
-                <p>Contact Us</p>
+              <p>Contact Us</p>
+            </Link>
+
+            {mediaInfo.allPlaylists.length != 0 && (
+              <Link
+                href={rootPath + "/#media"}
+                className={`${styles.page__right__nav__link}`}
+                data-to-scrollspy-id="media"
+              >
+                <p>Media</p>
               </Link>
-            </section>
-            <Link
-              href={rootPath + "/#media"}
-              className={`${styles.page__right__nav__link}`}
-              data-to-scrollspy-id="media"
-            >
-              <p>Media</p>
-            </Link>
-            <Link
-              href={rootPath + "/#gallery"}
-              className={`${styles.page__right__nav__link}`}
-              data-to-scrollspy-id="gallery"
-            >
-              <p>Gallery</p>
-            </Link>
+            )}
+
+            {galleryInfo.groupPhotoPaths.length != 0 && (
+              <Link
+                href={rootPath + "/#gallery"}
+                className={`${styles.page__right__nav__link}`}
+                data-to-scrollspy-id="gallery"
+              >
+                <p>Gallery</p>
+              </Link>
+            )}
+
+            {contactInfo.instagramLink && (
+              <Link
+                href={rootPath + "/#instagram-preview"}
+                className={`${styles.page__right__nav__link}`}
+                data-to-scrollspy-id="instagram-preview"
+              >
+                <p>Instagram</p>
+              </Link>
+            )}
           </section>
         </section>
       </section>

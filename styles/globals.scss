@@ -218,13 +218,9 @@ a {
   color: a.$primary-light;
 }
 
-// Specific to a page, but has to be stored in global.scss
-// Home - Meet the team
-@include c.imageWithTextOverlay(".teamCard__image", #FFFFFF, #000000, 0.5rem);
+// General style to apply for hover cards
+@include c.imageWithTextOverlay(".hoverImage", #FFFFFF, a.$primary-dark, 0.5rem);
 
-
-// Template - Media - Playlists
-@include c.imageWithTextOverlay(".playlist__image", #FFFFFF, #000000, 0.5rem);
 
 // Scrollspy
 .active-scroll-spy {

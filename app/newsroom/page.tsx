@@ -75,7 +75,7 @@ const NewsroomPage = () => {
           <div
             className={`${styles.banner__navbar} w-10/12 bg-primary-light pr-10 justify-self-end flex-row gap-6 hidden lg:flex `}
           >
-            {navLinks.map((navItem: navContent) => {
+            {navLinks.map((navItem: navContent, index: number) => {
               return (
                 <p>
                   <Link
@@ -134,6 +134,7 @@ const NewsroomPage = () => {
                           shortDescription={pressMention.shortDescription}
                           date={pressMention.date}
                           link={pressMention.link}
+                          key={pressMention.link}
                         />
                       );
                     })}
@@ -164,7 +165,7 @@ const NewsroomPage = () => {
                 <p className={`text-primary-dark`}>Grab our assets here!</p>
               </div>
               <div className="flex flex-row gap-3">
-                {kitData.map((kit: kitData) => {
+                {kitData.map((kit: kitData, index: number) => {
                   return (
                     kit.downloadPath && (
                       <a href={kit.downloadPath}>
@@ -211,7 +212,7 @@ const NewsroomPage = () => {
                   <section className="flex flex-col gap-2 md:gap-1">
                     {mediaEnquiriesInfo.contactEmails.map((email: string) => {
                       return (
-                        <a href={`mailto:${email}`} target={"_blank"}>
+                        <a href={`mailto:${email}`} target={"_blank"} key={email}>
                           <p className="text-lg text-white hover:underline">
                             {email}
                           </p>

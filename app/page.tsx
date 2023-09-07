@@ -105,7 +105,11 @@ const Page = () => {
                 >
                   {learnMoreButtons.allButtons.map((buttonContent) => {
                     return (
-                      <Link href={buttonContent.path} className="w-full">
+                      <Link
+                        href={buttonContent.path}
+                        className="w-full"
+                        key={buttonContent.path}
+                      >
                         <button className={`${styles.heroButton}`}>
                           <p className={`${styles.heroButton__text}`}>
                             {buttonContent.name}

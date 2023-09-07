@@ -3,6 +3,7 @@ import {allMedia} from "@/content/dunedin/media.content";
 import {allClasses} from "@/content/dunedin/classes.content";
 import {contactInfo} from "@/content/dunedin/contactUs.content";
 import {galleryInfo} from "@/content/dunedin/gallery.content";
+import {instagramPreviewInfo} from "@/content/dunedin/instagram.content";
 
 const DunedinPage = () => {
     return (
@@ -13,6 +14,7 @@ const DunedinPage = () => {
             mediaInfo={allMedia}
             allClassInfo={allClasses}
             contactInfo={contactInfo}
+            instagramPreviewInfo={instagramPreviewInfo}
         />
     );
 }
