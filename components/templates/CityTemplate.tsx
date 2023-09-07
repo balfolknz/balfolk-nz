@@ -345,14 +345,16 @@ const CityTemplate = ({
                 id="instagram-preview"
                 className={`${styles.section} ${styles.instagramPreview}`}
               >
-                <a href={contactInfo.instagramLink} target="_blank">
-                  <h2 className={`title`}>Our Instagram!</h2>
-                </a>
+                <FadeInLeftAnimation>
+                  <a href={contactInfo.instagramLink} target="_blank">
+                    <h2 className={`title`}>Our Instagram!</h2>
+                  </a>
 
-                <InstagramFeed
-                  tokenName={`NEXT_PUBLIC_${instagramPreviewInfo.apiEnvVariableName}`}
-                  limit={instagramPreviewInfo.limit}
-                />
+                  <InstagramFeed
+                    tokenName={`NEXT_PUBLIC_${instagramPreviewInfo.apiEnvVariableName}`}
+                    limit={instagramPreviewInfo.limit}
+                  />
+                </FadeInLeftAnimation>
               </section>
             )}
           </ScrollSpy>
