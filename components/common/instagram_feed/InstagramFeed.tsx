@@ -113,7 +113,7 @@ export const InstagramFeed = ({ tokenName, limit }: InstagramFeedProps) => {
               })}
             </ImageList>
           ) : (
-            <div className={`${styles.noData}`}>No Images found</div>
+            <div className={`${styles.noData}`}><p>No posts could be previewd yet</p></div>
           )}
         </>
       )}

@@ -79,6 +79,15 @@ export const allPressMentions: allPressMentions = {
       shortDescription:
         "Coming to the deep South as winter approaches means acclaimed dancer and choreographer Michael Parmenter is having to do stretches and warm-ups, just to prepare for his usual stretches and warm-ups.",
     },
+    {
+      title: "European Folk Day in New Zealand",
+      author: "Unknown",
+      company: "European Folk Day",
+      date: "Unknown",
+      link: "https://www.europeanfolkday.eu/the-european-folk-day-also-in-new-zealand-thanks-to-kate-grace-and-michael-parmenter/",
+      shortDescription:
+        "The European Folk Day, also in New Zealand, thanks to Kate Grace and Michael Parmenter",
+    },
   ],
 };
 

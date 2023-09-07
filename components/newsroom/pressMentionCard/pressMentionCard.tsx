@@ -15,7 +15,7 @@ const PressMentionCard = ({
         href={`${link}`}
         target={"_blank"}
       >
-        <h3 className={`pb-3 ${styles.title}`}>{title}</h3>
+        <h3 className={`pb-3 ${styles.title}`}>{title.substring(0, 30)}...</h3>
         <div>
           <p>
             By <strong>{author}</strong> -{" "}
@@ -23,7 +23,7 @@ const PressMentionCard = ({
           </p>
           <p>On {date}</p>
         </div>
-        <p className="pt-2">{shortDescription}</p>
+        <p className="pt-2">{shortDescription.substring(0, 150)}...</p>
       </a>
     </section>
   );
