@@ -42,7 +42,6 @@ export const InstagramFeed = ({ tokenName, limit }: InstagramFeedProps) => {
 
   useEffect(() => {
     setIsLoading(true);
-
     let token = getToken(tokenName);
 
     if (token) {
@@ -113,7 +112,7 @@ export const InstagramFeed = ({ tokenName, limit }: InstagramFeedProps) => {
               })}
             </ImageList>
           ) : (
-            <div className={`${styles.noData}`}><p>No posts could be previewd yet</p></div>
+            <div className={`${styles.noData}`}><p>No posts could be previewed yet</p></div>
           )}
         </>
       )}

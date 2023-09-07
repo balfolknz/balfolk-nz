@@ -40,6 +40,10 @@ export const footerLinks: allFooterLinks = {
           name: "Gallery",
           path: "/auckland#gallery",
         },
+        {
+          name: "Instagram",
+          path: "/auckland#instagram-preview",
+        },
       ],
     },
     {
@@ -64,6 +68,10 @@ export const footerLinks: allFooterLinks = {
           name: "Gallery",
           path: "/dunedin#gallery",
         },
+        {
+          name: "Instagram",
+          path: "/dunedin#instagram-preview",
+        },
       ],
     },
     {
@@ -87,6 +95,10 @@ export const footerLinks: allFooterLinks = {
         {
           name: "Gallery",
           path: "/wellington#gallery",
+        },
+        {
+          name: "Instagram",
+          path: "/wellington#instagram-preview",
         },
       ],
     },
