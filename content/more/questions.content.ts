@@ -43,17 +43,17 @@ export const questions: listOfQuestions = {
             It would be impossible to list them all out, so here are some of the key ones that we practise.
 
             <ol style="padding-left: 3rem">
-              <p><li>Bourrée</li></p>
-              <p><li>Mazurka</li></p>
-              <p><li>Schottische</li></p>
-              <p><li>Valse</li></p>
-              <p><li>Polka</li></p>
-              <p><li>Rondeau</li></p>
-              <p><li>An Dro</li></p>
-              <p><li>Hanter Dro</li></p>
-              <p><li>Cercle Circassien</li></p>
-              <p><li>Chapelloise</li></p>
-              <p><li>Bransle</li></p>
+              <li><p>Bourrée</p></li>
+              <li><p>Mazurka</p></li>
+              <li><p>Schottische</p></li>
+              <li><p>Valse</p></li>
+              <li><p>Polka</p></li>
+              <li><p>Rondeau</p></li>
+              <li><p>An Dro</p></li>
+              <li><p>Hanter Dro</p></li>
+              <li><p>Cercle Circassien</p></li>
+              <li><p>Chapelloise</p></li>
+              <li><p>Bransle</p></li>
             </ol>
         </p>`,
     },
