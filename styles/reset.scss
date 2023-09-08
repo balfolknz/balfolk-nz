@@ -56,5 +56,5 @@ html:focus-within {
   10. Re-add numbers to ordered lists
 */
 ol {
-  list-style: decimal;
+  list-style: decimal !important;
 }
