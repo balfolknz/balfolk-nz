@@ -121,7 +121,7 @@ const NewsroomPage = () => {
           <FadeInLeftAnimation>
             <section id="press-mentions" className={`${styles.pressMentions}`}>
               <div className={`${styles.pressMentions__content}`}>
-                <h1 className={`${styles.title}`}>Press Mentions</h1>
+                <h1 className={`${styles.title}`}>Press <br/> Mentions</h1>
                 <section className={`${styles.posts} flex flex-col gap-6`}>
                   {allPressMentions.allPressMentions
                     .slice(0, 3)

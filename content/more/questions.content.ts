@@ -18,7 +18,7 @@ export const questions: listOfQuestions = {
         Balfolk music has its roots in tradition while also embracing  innovation. <br/>
         It  features traditional instruments such as fiddles, bagpipes, hurdy-gurdy, and accordions, often blended in unique combinations with more modern instruments. <br/>
         This fusion of traditional and modern elements gives the Balfolk sound the distinctive musical diversity that forms the backbone of Balfolk dance events.<br/><br/>
-        <a href="https://open.spotify.com/user/31l26quk6sqf6ghg2ubbks45jnci?si=e7cd470cde504300" className="link">Here</a>  you can find a number of playlists with tunes we use at Balfolk Dunedin(NZ). <br/>
+        <a href="https://open.spotify.com/user/31l26quk6sqf6ghg2ubbks45jnci?si=e7cd470cde504300" target="_blank" className="link">Here</a>  you can find a number of playlists with tunes we use at Balfolk Dunedin(NZ). <br/>
         Enjoy! 🙂
       </p>
       `,
