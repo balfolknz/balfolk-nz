@@ -1,5 +1,5 @@
 import CityTemplate from "@/components/templates/CityTemplate";
-import {allMedia} from "@/content/auckland/media.content";
+import {allMedia, allMusic} from "@/content/auckland/media.content";
 import {allClasses} from "@/content/auckland/classes.content";
 import {contactInfo} from "@/content/auckland/contactUs.content";
 import {galleryInfo} from "@/content/auckland/gallery.content";
