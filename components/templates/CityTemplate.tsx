@@ -23,6 +23,7 @@ import {
   faFacebook,
   faYoutube,
   faInstagram,
+  faSpotify
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
@@ -33,6 +34,7 @@ type CityTemplateProps = {
   rootPath: string;
   galleryInfo: galleryInfo;
   mediaInfo: mediaInfo;
+  musicInfo: musicInfo;
   allClassInfo: allClassInfo;
   contactInfo: contactInfo;
   instagramPreviewInfo: instagramPreviewInfo;
@@ -42,6 +44,7 @@ const CityTemplate = ({
   city,
   rootPath,
   mediaInfo,
+  musicInfo,
   allClassInfo,
   contactInfo,
   galleryInfo,
@@ -122,7 +125,7 @@ const CityTemplate = ({
 
                   <section className={`${styles.events} | ${styles.section}`}>
                     <section
-                      className={`flex gap-3 justify-center flex-col md:flex-row`}
+                      className={`flex gap-6 items-center justify-center flex-col md:flex-row`}
                     >
                       {allClassInfo.eventsLink && (
                         <button type={`button`} className={`${styles.button}`}>
@@ -142,6 +145,18 @@ const CityTemplate = ({
                             </p>
                           </a>
                         </button>
+                      )}
+
+                      {musicInfo.spotifyGroup && (
+                        <a
+                          href={musicInfo.spotifyGroup}
+                          target={"_blank"}
+                        >
+                          <FontAwesomeIcon
+                            icon={faSpotify}
+                            className={`icon | ${styles.classes__icon}`}
+                          />
+                        </a>
                       )}
                     </section>
                   </section>
@@ -346,11 +361,10 @@ const CityTemplate = ({
                 className={`${styles.section} ${styles.instagramPreview}`}
               >
                 <FadeInLeftAnimation>
-                  <a
-                    href={contactInfo.instagramLink}
-                    target="_blank"
-                  >
-                    <h2 className={`${styles.instagramPreview__title} | title flex justify-center`}>
+                  <a href={contactInfo.instagramLink} target="_blank">
+                    <h2
+                      className={`${styles.instagramPreview__title} | title flex justify-center`}
+                    >
                       Our Instagram
                       <span className="hidden md:block">
                         <FontAwesomeIcon

@@ -7,3 +7,7 @@ export const allMedia: mediaInfo = {
     allVideos: allVideos,
     allPlaylists: allPlaylists
 }
+
+export const allMusic: musicInfo = {
+  spotifyGroup: "",
+};

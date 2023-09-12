@@ -56,6 +56,10 @@
       background: a.$primary-light-100;
       padding-block: 3rem;
 
+      &__icon {
+        font-size: 3rem;
+      }
+
       .description {
         padding-inline: 2rem;
         max-width: 90ch;

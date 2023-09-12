@@ -16,6 +16,7 @@ const WellingtonPage = () => {
         rootPath={"wellington"}
         galleryInfo={galleryInfo}
         mediaInfo={allMedia}
+        musicInfo={allMusic}
         allClassInfo={allClasses}
         contactInfo={contactInfo}
         instagramPreviewInfo={instagramPreviewInfo}

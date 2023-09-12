@@ -12,6 +12,7 @@ const AucklandPage = () => {
         rootPath={"auckland"}
         galleryInfo={galleryInfo}
         mediaInfo={allMedia}
+        musicInfo={allMusic}
         allClassInfo={allClasses}
         contactInfo={contactInfo}
         instagramPreviewInfo={instagramPreviewInfo}

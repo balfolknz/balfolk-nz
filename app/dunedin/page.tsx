@@ -1,5 +1,5 @@
 import CityTemplate from "@/components/templates/CityTemplate";
-import {allMedia} from "@/content/dunedin/media.content";
+import {allMedia, allMusic} from "@/content/dunedin/media.content";
 import {allClasses} from "@/content/dunedin/classes.content";
 import {contactInfo} from "@/content/dunedin/contactUs.content";
 import {galleryInfo} from "@/content/dunedin/gallery.content";
@@ -12,6 +12,7 @@ const DunedinPage = () => {
             rootPath={"dunedin"}
             galleryInfo={galleryInfo}
             mediaInfo={allMedia}
+            musicInfo={allMusic}
             allClassInfo={allClasses}
             contactInfo={contactInfo}
             instagramPreviewInfo={instagramPreviewInfo}

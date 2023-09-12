@@ -15,3 +15,8 @@ type mediaInfo = {
     allVideos: Array<videoInfo>,
     allPlaylists: Array<playlistInfo>
 }
+
+type musicInfo = {
+    spotifyGroup: string,
+    spotifyPlaylistLinks?: Array<string>,
+}

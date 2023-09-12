@@ -19,3 +19,8 @@ export const allMedia: mediaInfo = {
     allVideos: allVideos,
     allPlaylists: allPlaylists
 }
+
+export const allMusic: musicInfo = {
+  spotifyGroup:
+    "https://open.spotify.com/user/31l26quk6sqf6ghg2ubbks45jnci?si=e7cd470cde504300",
+};
