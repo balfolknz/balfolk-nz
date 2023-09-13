@@ -141,6 +141,30 @@
         }
       }
     }
+
+    .allMentions {
+      &__card {
+        border: 1px solid #d7d7da;
+        box-shadow: none;
+        border-radius: 5px;
+
+        &__header {
+          font-size: 0.7rem;
+        }
+
+        &__divider {
+          background-color: #bbbbc1;
+          height: 1px;
+          border: none;
+        }
+
+
+        &:hover {
+          // color: a.$primary-light !important;
+          box-shadow: 0px 5px 10px 1px #d7d7da
+        }
+      }
+    }
   }
 
   &__right {

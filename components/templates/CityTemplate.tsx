@@ -10,6 +10,14 @@ import parse from "html-react-parser";
 import Zoom from "react-medium-image-zoom";
 
 import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardHeader,
+  CardMedia,
+  IconButton,
+  ImageList,
   Paper,
   Table,
   TableBody,
@@ -17,17 +25,26 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  useMediaQuery,
 } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faYoutube,
   faInstagram,
-  faSpotify
+  faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faUserGroup,
+  faBookOpen,
+  faNewspaper,
+  faVideo,
+  faFont,
+} from "@fortawesome/free-solid-svg-icons";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 import { InstagramFeed } from "@/components/common/instagram_feed/InstagramFeed";
+import { MentionTypes, MediaTypes } from "@/enums/templates/mentions";
 
 type CityTemplateProps = {
   city: string;
@@ -38,6 +55,7 @@ type CityTemplateProps = {
   allClassInfo: allClassInfo;
   contactInfo: contactInfo;
   instagramPreviewInfo: instagramPreviewInfo;
+  allCityMentions: Array<cityMention>;
 };
 
 const CityTemplate = ({
@@ -49,7 +67,10 @@ const CityTemplate = ({
   contactInfo,
   galleryInfo,
   instagramPreviewInfo,
+  allCityMentions,
 }: CityTemplateProps) => {
+  const matches = useMediaQuery("(min-width:768px)");
+
   return (
     <PageWrapperAnimation>
       <section className={`${styles.page} | flex flex-col px-3 md:flex-row`}>
@@ -148,10 +169,7 @@ const CityTemplate = ({
                       )}
 
                       {musicInfo.spotifyGroup && (
-                        <a
-                          href={musicInfo.spotifyGroup}
-                          target={"_blank"}
-                        >
+                        <a href={musicInfo.spotifyGroup} target={"_blank"}>
                           <FontAwesomeIcon
                             icon={faSpotify}
                             className={`icon | ${styles.classes__icon}`}
@@ -383,6 +401,129 @@ const CityTemplate = ({
                 </FadeInLeftAnimation>
               </section>
             )}
+
+            {/* Mentions from other websites */}
+            {allCityMentions.length != 0 && (
+              <section
+                id="all-mentions"
+                className={`${styles.section} ${styles.allMentions}`}
+              >
+                <FadeInLeftAnimation>
+                  <h2 className={`title`}>Some Mentions</h2>
+                  <ImageList variant="masonry" cols={matches ? 3 : 1} gap={8}>
+                    {allCityMentions.map((mention: cityMention) => (
+                      <a href={mention.link} target="_blank">
+                        <Card className={`${styles.allMentions__card} | my-4`}>
+                          <CardMedia
+                            sx={{
+                              maxHeight: 400,
+                              minHeight: 200,
+                              maxWidth: 400,
+                              minWidth: 200,
+                            }}
+                            image={mention.thumbnailPath}
+                            title={mention.title}
+                          />
+                          <div className="px-8 pt-4 pb-2 flex flex-col gap-3">
+                            <div
+                              className={`flex flex-col gap-0 | ${styles.allMentions__card__header}`}
+                            >
+                              <small className="">{mention.author}</small>
+                              <div className="flex flex-row gap-3">
+                                <small>{mention.date}</small>
+                                <small>&#x2022;</small>
+                                <small>{mention.readingtimeMins} mins</small>
+                              </div>
+                            </div>
+                            <CardContent className="p-0 flex flex-col gap-2">
+                              <h4 className="capitalize">{mention.title}</h4>
+                              <p style={{ fontSize: "0.7rem" }}>
+                                {mention.shortDescription}
+                              </p>
+                            </CardContent>
+                            <hr
+                              className={`${styles.allMentions__card__divider}`}
+                            />
+                            <CardActions className="p-0 flex flex-row justify-between">
+                              <div
+                                className={`${styles.left} | flex flex-row gap-3 items-center`}
+                              >
+                                {/* Mention Type */}
+                                {mention.mentionTypes.map(
+                                  (mentionType: MentionTypes) => {
+                                    switch (mentionType) {
+                                      case MentionTypes.News:
+                                        return (
+                                          <FontAwesomeIcon
+                                            icon={faNewspaper}
+                                            className={`text-primary-light`}
+                                          />
+                                        );
+                                        break;
+                                      case MentionTypes.Blog:
+                                        return (
+                                          <FontAwesomeIcon
+                                            icon={faBookOpen}
+                                            className={`text-primary-light`}
+                                          />
+                                        );
+                                        break;
+                                      default:
+                                        return (
+                                          <FontAwesomeIcon
+                                            icon={faNewspaper}
+                                            className={`text-primary-light`}
+                                          />
+                                        );
+                                        break;
+                                    }
+                                  }
+                                )}
+                              </div>
+                              <div
+                                className={`${styles.right} | flex flex-row gap-3 items-center`}
+                              >
+                                {/* Media Type */}
+                                {mention.mediaTypes.map(
+                                  (mediaType: MediaTypes) => {
+                                    switch (mediaType) {
+                                      case MediaTypes.Text:
+                                        return (
+                                          <FontAwesomeIcon
+                                            icon={faFont}
+                                            className={`text-primary-light`}
+                                          />
+                                        );
+                                        break;
+                                      case MediaTypes.Video:
+                                        return (
+                                          <FontAwesomeIcon
+                                            icon={faVideo}
+                                            className={`text-primary-light`}
+                                          />
+                                        );
+                                        break;
+                                      default:
+                                        return (
+                                          <FontAwesomeIcon
+                                            icon={faFont}
+                                            className={`text-primary-light`}
+                                          />
+                                        );
+                                        break;
+                                    }
+                                  }
+                                )}
+                              </div>
+                            </CardActions>
+                          </div>
+                        </Card>
+                      </a>
+                    ))}
+                  </ImageList>
+                </FadeInLeftAnimation>
+              </section>
+            )}
           </ScrollSpy>
         </section>
 
@@ -435,6 +576,16 @@ const CityTemplate = ({
                 data-to-scrollspy-id="instagram-preview"
               >
                 <p>Instagram</p>
+              </Link>
+            )}
+
+            {allCityMentions.length != 0 && (
+              <Link
+                href={rootPath + "/#all-mentions"}
+                className={`${styles.page__right__nav__link}`}
+                data-to-scrollspy-id="all-mentions"
+              >
+                <p>Mentions</p>
               </Link>
             )}
           </section>

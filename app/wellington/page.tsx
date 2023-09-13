@@ -7,7 +7,7 @@ import {allClasses} from "@/content/wellington/classes.content";
 import {contactInfo} from "@/content/wellington/contactUs.content";
 import {galleryInfo} from "@/content/wellington/gallery.content";
 import { instagramPreviewInfo } from "@/content/wellington/instagram.content";
-import { useEffect } from "react";
+import { allCityMentions } from "@/content/wellington/mentions.content";
 
 const WellingtonPage = () => {
     return (
@@ -20,6 +20,7 @@ const WellingtonPage = () => {
         allClassInfo={allClasses}
         contactInfo={contactInfo}
         instagramPreviewInfo={instagramPreviewInfo}
+        allCityMentions={allCityMentions}
       />
     );
 }

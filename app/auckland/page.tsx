@@ -4,6 +4,8 @@ import {allClasses} from "@/content/auckland/classes.content";
 import {contactInfo} from "@/content/auckland/contactUs.content";
 import {galleryInfo} from "@/content/auckland/gallery.content";
 import { instagramPreviewInfo } from "@/content/auckland/instagram.content";
+import { allCityMentions } from "@/content/auckland/mentions.content";
+
 
 const AucklandPage = () => {
     return (
@@ -16,6 +18,7 @@ const AucklandPage = () => {
         allClassInfo={allClasses}
         contactInfo={contactInfo}
         instagramPreviewInfo={instagramPreviewInfo}
+        allCityMentions={allCityMentions}
       />
     );
 }
