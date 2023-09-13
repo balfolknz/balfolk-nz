@@ -135,6 +135,9 @@
     }
 
     .instagramPreview {
+      @include c.card(#fff);
+      padding: 3rem;
+
       &__title {
         &:hover {
           color: a.$primary-light !important;
