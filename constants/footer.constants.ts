@@ -72,6 +72,10 @@ export const footerLinks: allFooterLinks = {
           name: "Instagram",
           path: "/dunedin#instagram-preview",
         },
+        {
+          name: "Mentions",
+          path: "/dunedin#all-mentions",
+        },
       ],
     },
     {
