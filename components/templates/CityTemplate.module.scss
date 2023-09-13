@@ -135,6 +135,9 @@
     }
 
     .instagramPreview {
+      @include c.card(#fff);
+      padding: 3rem;
+
       &__title {
         &:hover {
           color: a.$primary-light !important;
@@ -143,6 +146,8 @@
     }
 
     .allMentions {
+      padding-block: 3rem;
+
       &__card {
         border: 1px solid #d7d7da;
         box-shadow: none;
@@ -158,10 +163,9 @@
           border: none;
         }
 
-
         &:hover {
           // color: a.$primary-light !important;
-          box-shadow: 0px 5px 10px 1px #d7d7da
+          box-shadow: 0px 5px 10px 1px #d7d7da;
         }
       }
     }
