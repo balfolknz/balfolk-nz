@@ -33,7 +33,7 @@ main {
 h1, h2, h3, h4, h5, h6 {
   @apply break-normal;
   font-weight: 400 !important;
-  text-transform: uppercase !important;
+  text-transform: uppercase;
   color: a.$primary-dark;
 }
 

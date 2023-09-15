@@ -32,18 +32,22 @@ export const footerLinks: allFooterLinks = {
           name: "Contact Us",
           path: "/auckland#contact-us",
         },
-        {
-          name: "Media",
-          path: "/auckland#media",
-        },
+        // {
+        //   name: "Media",
+        //   path: "/auckland#media",
+        // },
         {
           name: "Gallery",
           path: "/auckland#gallery",
         },
-        {
-          name: "Instagram",
-          path: "/auckland#instagram-preview",
-        },
+        // {
+        //   name: "Instagram",
+        //   path: "/auckland#instagram-preview",
+        // },
+        // {
+        //   name: "Mentions",
+        //   path: "/wellington#all-mentions",
+        // },
       ],
     },
     {
@@ -60,10 +64,10 @@ export const footerLinks: allFooterLinks = {
           name: "Contact Us",
           path: "/dunedin#contact-us",
         },
-        {
-          name: "Media",
-          path: "/dunedin#media",
-        },
+        // {
+        //   name: "Media",
+        //   path: "/dunedin#media",
+        // },
         {
           name: "Gallery",
           path: "/dunedin#gallery",
@@ -72,6 +76,10 @@ export const footerLinks: allFooterLinks = {
           name: "Instagram",
           path: "/dunedin#instagram-preview",
         },
+        // {
+        //   name: "Mentions",
+        //   path: "/dunedin#all-mentions",
+        // },
       ],
     },
     {
@@ -88,10 +96,10 @@ export const footerLinks: allFooterLinks = {
           name: "Contact Us",
           path: "/wellington#contact-us",
         },
-        {
-          name: "Media",
-          path: "/wellington#media",
-        },
+        // {
+        //   name: "Media",
+        //   path: "/wellington#media",
+        // },
         {
           name: "Gallery",
           path: "/wellington#gallery",
@@ -100,6 +108,10 @@ export const footerLinks: allFooterLinks = {
           name: "Instagram",
           path: "/wellington#instagram-preview",
         },
+        // {
+        //   name: "Mentions",
+        //   path: "/wellington#all-mentions",
+        // },
       ],
     },
   ],
