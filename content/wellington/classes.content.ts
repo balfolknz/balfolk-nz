@@ -29,7 +29,7 @@ export const allClasses: allClassInfo = {
       time: "6:00pm - 7:30pm",
       address: `
         <strong>Newtown Community Centre</strong><br/>
-        <strong>Whare Kanikani Dance Hall</strong> <br/><br/>
+        <strong>(Whare Kanikani Dance Hall)</strong> <br/><br/>
 
         Colombo Street &, Rintoul Street, <br/>
         Newtown
