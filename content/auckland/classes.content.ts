@@ -7,6 +7,7 @@ export const allClasses: allClassInfo = {
       time: "7:00pm - 8:30pm",
       address: `
         <strong>St Stephens Church </strong> <br/><br/>
+
         65 Jervois Road, <br/>
         Jervois
       `,
@@ -18,6 +19,7 @@ export const allClasses: allClassInfo = {
       time: "11:00am - 12:30pm",
       address: `
         <strong>TAPAC </strong> <br/><br/>
+
         100 Motions Road, <br/>
         Western Springs
       `,

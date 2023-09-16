@@ -15,7 +15,13 @@ export const allClasses: allClassInfo = {
         Participants of all ages and skill levels come together to enjoy these dances.  <br/>
         This dance form encourages creativity and embraces change, making it a vibrant and ever-evolving experience.
         <br/><br/>
-        <strong><em>Price:</em></strong> $40 for a block of 5 consecutive weeks - $10 casual attendance
+
+        <strong><em>Price:</em></strong>
+        $40 for a block of 5 consecutive weeks - $10 casual attendance <br/><br/>
+
+        If you have any questions, feel free to email our team at
+        <a className="activeLink" href="mailto:balfolkdunedin@gmail.com">Balfolk Dunedin!</a></p>
+
       <p/>
     `,
   allClasses: [
@@ -25,6 +31,7 @@ export const allClasses: allClassInfo = {
       time: "6:00pm - 7:00pm",
       address: `
         <strong>Opoho Scout Hall</strong> <br/><br/>
+
         128 Opoho Road, <br/>
         Dunedin North
       `,
@@ -36,6 +43,7 @@ export const allClasses: allClassInfo = {
       time: "7:00pm - 8:30pm",
       address: `
         <strong>Opoho Scout Hall </strong> <br/><br/>
+
         128 Opoho Road, <br/>
         Dunedin North
       `,
@@ -47,6 +55,7 @@ export const allClasses: allClassInfo = {
       time: "10:00am - 11:30am",
       address: `
         <strong>North East Valley Baptist Community Centre </strong><br/><br/>
+
         270 North Road, <br/>
         North East Valley`,
       pricePerWeek: "10",
@@ -56,7 +65,9 @@ export const allClasses: allClassInfo = {
       day: "Tuesday",
       time: "7:00pm - 8:30pm",
       address: `
-          <strong>Sacred Heart School Hall<br/>(Nga Maara Hall)</strong> <br/><br/>
+          <strong>Sacred Heart School Hall<br/>
+          (Nga Maara Hall)</strong> <br/><br/>
+
           63 North Road, <br/>
           North East Valley
         `,

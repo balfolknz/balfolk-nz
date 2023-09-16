@@ -106,7 +106,7 @@ export const mediaEnquiriesInfo: mediaEnquiriesInfo = {
   contactEmails: [
     "balfolkauckland@gmail.com",
     "balfolkdunedin@gmail.com",
-    "balfolkwellington@gmail.com",
+    "wellingtonbalfolk@gmail.com",
   ],
   imagePath:
     "/images/festivals/International Dance Day 2023/Kate and Michael 1.jpeg",
