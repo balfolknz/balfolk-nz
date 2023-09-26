@@ -77,7 +77,7 @@ export const EventsFindaFeed = ({ cityName, limit }: eventsFindaFeedProps) => {
         beforeSend: function (xhr) {
           xhr.setRequestHeader(
             "Authorization",
-            "Basic " + btoa(credentials.username + ":" + credentials.password)
+            "Basic " + btoa(credentials!.username + ":" + credentials!.password)
           );
         },
         success: function (response: any) {
