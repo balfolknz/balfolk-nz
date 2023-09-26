@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { CircularProgress, ImageList, ImageListItem, useMediaQuery } from "@mui/material";
 
 type InstagramFeedProps = {
-  tokenName: string;
+  cityName: string;
   limit: number;
 };
 
@@ -16,15 +16,15 @@ type postConfig = {
   mediaType: string;
 };
 
-function getToken(tokenName: string) {
-  switch (tokenName) {
-    case "NEXT_PUBLIC_DUNEDIN_INSTAGRAM_BASIC_DISPLAY_TOKEN":
+function getToken(cityName: string) {
+  switch (cityName) {
+    case "Dunedin":
       return process.env.NEXT_PUBLIC_DUNEDIN_INSTAGRAM_BASIC_DISPLAY_TOKEN;
       break;
-    case "NEXT_PUBLIC_AUCKLAND_INSTAGRAM_BASIC_DISPLAY_TOKEN":
+    case "Auckland":
       return process.env.NEXT_PUBLIC_AUCKLAND_INSTAGRAM_BASIC_DISPLAY_TOKEN;
       break;
-    case "NEXT_PUBLIC_WELLINGTON_INSTAGRAM_BASIC_DISPLAY_TOKEN":
+    case "Wellington":
       return process.env.NEXT_PUBLIC_WELLINGTON_INSTAGRAM_BASIC_DISPLAY_TOKEN;
       break;
 
@@ -34,7 +34,7 @@ function getToken(tokenName: string) {
   }
 }
 
-export const InstagramFeed = ({ tokenName, limit }: InstagramFeedProps) => {
+export const InstagramFeed = ({ cityName, limit }: InstagramFeedProps) => {
   const [isLoading, setIsLoading] = useState(true);
   const [instagramPosts, setInstagramPosts] = useState<postConfig[]>([]);
 
@@ -43,7 +43,7 @@ export const InstagramFeed = ({ tokenName, limit }: InstagramFeedProps) => {
 
   useEffect(() => {
     setIsLoading(true);
-    let token = getToken(tokenName);
+    let token = getToken(cityName);
 
     if (token) {
       let fields =

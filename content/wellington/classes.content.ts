@@ -1,7 +1,6 @@
 export const allClasses: allClassInfo = {
   description: `
     <div>
-      <h3 className="text-center">Starting from October 25th 2023!</h4> <br/><br/>
       <p>
         <strong>Balfolk</strong><br/>
         Balfolk is a folk dance and music movement from Europe that gives new life to traditional dances.<br/>
@@ -37,5 +36,5 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
   ],
-  eventsLink: "",
+  eventsLink: "https://www.eventfinda.co.nz/user/wellingtonbalfolk",
 };

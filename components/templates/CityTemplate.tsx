@@ -43,8 +43,9 @@ import {
   faFont,
 } from "@fortawesome/free-solid-svg-icons";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
-import { InstagramFeed } from "@/components/common/instagram_feed/InstagramFeed";
+import { InstagramFeed } from "@/components/common/instagramFeed/InstagramFeed";
 import { MentionTypes, MediaTypes } from "@/enums/templates/mentions";
+import { EventsFindaFeed } from "../common/eventsFindaFeed/eventsFindaFeed";
 
 type CityTemplateProps = {
   city: string;
@@ -82,6 +83,22 @@ const CityTemplate = ({
 
         <section className={`${styles.page__center} | flex flex-col w-full`}>
           <ScrollSpy offsetBottom={100} scrollThrottle={80} useBoxMethod>
+
+            {/* Eventfinda preview */}
+            {/* {allClassInfo.eventsLink && (
+              <section
+                id="events-preview"
+                className={`${styles.section} ${styles.eventsPreview}`}
+              >
+                <FadeInLeftAnimation>
+                  <EventsFindaFeed
+                    cityName={`${city}`}
+                    limit={instagramPreviewInfo.limit}
+                  />
+                </FadeInLeftAnimation>
+              </section>
+            )} */}
+
             {/* Classes */}
             <section
               className={`${styles.classes} | flex flex-col gap-8 items-center justify-center | px-10 md:px-5`}
@@ -395,7 +412,7 @@ const CityTemplate = ({
                   </a>
 
                   <InstagramFeed
-                    tokenName={`NEXT_PUBLIC_${instagramPreviewInfo.apiEnvVariableName}`}
+                    cityName={`${city}`}
                     limit={instagramPreviewInfo.limit}
                   />
                 </FadeInLeftAnimation>
