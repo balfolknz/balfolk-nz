@@ -42,11 +42,12 @@ export default function GlobalError({
               <section
                 className={`flex flex-row justify-center items-center gap-3`}
               >
-                <button className={`${styles.button}`}>
-                  <Link className={``} href={"/"}>
+                <Link className={``} href={"/"}>
+                  <button className={`${styles.button}`}>
                     <p>Home page</p>
-                  </Link>
-                </button>
+                  </button>
+                </Link>
+
                 <button className={`${styles.button}`} onClick={() => reset()}>
                   <p>Refresh Page</p>
                 </button>

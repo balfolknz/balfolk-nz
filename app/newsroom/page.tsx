@@ -121,7 +121,9 @@ const NewsroomPage = () => {
           <FadeInLeftAnimation>
             <section id="press-mentions" className={`${styles.pressMentions}`}>
               <div className={`${styles.pressMentions__content}`}>
-                <h1 className={`${styles.title}`}>Press <br/> Mentions</h1>
+                <h1 className={`${styles.title}`}>
+                  Press <br /> Mentions
+                </h1>
                 <section className={`${styles.posts} flex flex-col gap-6`}>
                   {allPressMentions.allPressMentions
                     .slice(0, 3)
@@ -138,15 +140,14 @@ const NewsroomPage = () => {
                         />
                       );
                     })}
-
-                  <button className={`${styles.allNewsButton}`}>
-                    <Link
-                      href="/newsroom/all-news/"
-                      className={`${styles.allNewsButton__text}`}
-                    >
+                  <Link
+                    href="/newsroom/all-news/"
+                    className={`${styles.allNewsButton__text}`}
+                  >
+                    <button className={`${styles.allNewsButton}`}>
                       See All News
-                    </Link>
-                  </button>
+                    </button>
+                  </Link>
                 </section>
               </div>
             </section>
@@ -212,7 +213,11 @@ const NewsroomPage = () => {
                   <section className="flex flex-col gap-2 md:gap-1">
                     {mediaEnquiriesInfo.contactEmails.map((email: string) => {
                       return (
-                        <a href={`mailto:${email}`} target={"_blank"} key={email}>
+                        <a
+                          href={`mailto:${email}`}
+                          target={"_blank"}
+                          key={email}
+                        >
                           <p className="text-lg text-white hover:underline">
                             {email}
                           </p>

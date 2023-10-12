@@ -83,7 +83,6 @@ const CityTemplate = ({
 
         <section className={`${styles.page__center} | flex flex-col w-full`}>
           <ScrollSpy offsetBottom={100} scrollThrottle={80} useBoxMethod>
-
             {/* Eventfinda preview */}
             {/* {allClassInfo.eventsLink && (
               <section
@@ -166,23 +165,29 @@ const CityTemplate = ({
                       className={`flex gap-6 items-center justify-center flex-col md:flex-row`}
                     >
                       {allClassInfo.eventsLink && (
-                        <button type={`button`} className={`${styles.button}`}>
-                          <a href={allClassInfo.eventsLink} target={"_blank"}>
+                        <a href={allClassInfo.eventsLink} target={"_blank"}>
+                          <button
+                            type={`button`}
+                            className={`${styles.button}`}
+                          >
                             <p className={`text-center md:text-left`}>
                               View Events
                             </p>
-                          </a>
-                        </button>
+                          </button>
+                        </a>
                       )}
 
                       {contactInfo.facebookLink && (
-                        <button type={`button`} className={`${styles.button}`}>
-                          <a href={contactInfo.facebookLink} target={"_blank"}>
+                        <a href={contactInfo.facebookLink} target={"_blank"}>
+                          <button
+                            type={`button`}
+                            className={`${styles.button}`}
+                          >
                             <p className={`text-center md:text-left`}>
                               Visit our Facebook Page
                             </p>
-                          </a>
-                        </button>
+                          </button>
+                        </a>
                       )}
 
                       {musicInfo.spotifyGroup && (
