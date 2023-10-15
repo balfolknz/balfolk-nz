@@ -1,6 +1,5 @@
 export const heroImagePaths: string[] = [
-  "/images/home/main5.jpg",
-  "/images/home/main2.jpg",
+  "/images/dunedin/Toitu Minibal 2022 (1).png",
 ];
 
 export const aboutContent: aboutContent = {

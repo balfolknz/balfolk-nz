@@ -94,7 +94,7 @@ export const allPressMentions: allPressMentions = {
 export const kitData: Array<kitData> = [
   {
     name: "Media Kit",
-    downloadPath: "/media kits/media kit 4-09-2023.zip",
+    downloadPath: "/media kits/media kit 15-10-2023.zip",
   },
   {
     name: "Brand Kit",
