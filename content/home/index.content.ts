@@ -60,8 +60,6 @@ export const learnMoreButtons: learnMoreButtons = {
     {
       name: "Dunedin",
       path: "/dunedin",
-      path: "/dunedin",
-      path: "/dunedin",
     },
     {
       name: "Wellington",
