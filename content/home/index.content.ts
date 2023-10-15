@@ -1,5 +1,7 @@
 export const heroImagePaths: string[] = [
   "/images/dunedin/Toitu Minibal 2022 (1).png",
+  "/images/home/main5.jpg",
+  "/images/home/main2.jpg",
 ];
 
 export const aboutContent: aboutContent = {
@@ -57,6 +59,8 @@ export const learnMoreButtons: learnMoreButtons = {
     },
     {
       name: "Dunedin",
+      path: "/dunedin",
+      path: "/dunedin",
       path: "/dunedin",
     },
     {
