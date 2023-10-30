@@ -76,7 +76,7 @@ export const allClasses: allClassInfo = {
     {
       style: "<strong>Event - </strong><em>Bal de la Saison Douce</em>",
       day: "Saturday 25th November",
-      time: "<strong>TBC<strong/>",
+      time: "<strong>TBC</strong>",
       address: `
           <strong>TBC</strong>
         `,
