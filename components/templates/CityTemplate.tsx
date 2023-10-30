@@ -140,10 +140,10 @@ const CityTemplate = ({
                                     {parse(classInfo.style)}
                                   </TableCell>
                                   <TableCell align="center">
-                                    {classInfo.day}
+                                    {parse(classInfo.day)}
                                   </TableCell>
                                   <TableCell align="center">
-                                    {classInfo.time}
+                                    {parse(classInfo.time)}
                                   </TableCell>
                                   <TableCell align="center">
                                     {parse(classInfo.address)}
