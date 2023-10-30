@@ -26,7 +26,7 @@ export const allClasses: allClassInfo = {
     `,
   allClasses: [
     {
-      style: `English Country Dance <br/><strong>(Beginners)</strong>`,
+      style: `Balfolk Partner Dances <br/><strong>(Beginners)</strong>`,
       day: "Monday",
       time: "6:00pm - 7:00pm",
       address: `
@@ -38,7 +38,7 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: "English Country Dance <br/><strong>(Beyond Basics)</strong>",
+      style: "Balfolk Partner Dances <br/><strong>(Beyond Basics)</strong>",
       day: "Monday",
       time: "7:00pm - 8:30pm",
       address: `
