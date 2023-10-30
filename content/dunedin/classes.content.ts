@@ -74,7 +74,7 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: "<em>Event - </em>Bal de la Saison Douce",
+      style: "<strong>Event - </strong><em>Bal de la Saison Douce</em>",
       day: "Saturday 25th November",
       time: "<strong>TBC<strong/>",
       address: `
