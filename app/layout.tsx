@@ -69,6 +69,12 @@ export default function RootLayout({
         ></link>
         <link rel="shortcut icon" href="/icons-white/favicon.ico" />
         <meta name="theme-color" content="#542e23" />
+        <script
+          async
+          defer
+          crossorigin="anonymous"
+          src="https://connect.facebook.net/en_US/sdk.js"
+        ></script>
       </head>
       <body>
         <Navbar />

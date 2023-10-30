@@ -8,6 +8,13 @@ import ScrollSpy from "react-ui-scrollspy";
 import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
 import parse from "html-react-parser";
 import Zoom from "react-medium-image-zoom";
+import { useEffect } from "react";
+
+import {
+  getFacebookLoginStatus,
+  initFacebookSdk,
+  fbLogin,
+} from "@/components/utils/facebooksdk";
 
 import {
   Button,
@@ -97,6 +104,36 @@ const CityTemplate = ({
                 </FadeInLeftAnimation>
               </section>
             )} */}
+
+            {/* Facebook Events preview */}
+            {contactInfo.facebookGroupLink && (
+              <section
+                id="instagram-preview"
+                className={`${styles.section} ${styles.instagramPreview}`}
+              >
+                <FadeInLeftAnimation>
+                  <a href={contactInfo.instagramLink} target="_blank">
+                    <h2
+                      className={`${styles.instagramPreview__title} | title flex justify-center`}
+                    >
+                      Our Instagram
+                      <span className="hidden md:block">
+                        <FontAwesomeIcon
+                          icon={faInstagram}
+                          className={`ml-2`}
+                        />{" "}
+                        !
+                      </span>
+                    </h2>
+                  </a>
+
+                  <InstagramFeed
+                    cityName={`${city}`}
+                    limit={instagramPreviewInfo.limit}
+                  />
+                </FadeInLeftAnimation>
+              </section>
+            )}
 
             {/* Classes */}
             <section
