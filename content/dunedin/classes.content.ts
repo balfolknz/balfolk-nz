@@ -50,17 +50,6 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: "English Country Dance <br/><strong>(Beginners)</strong>",
-      day: "Tuesday",
-      time: "10:00am - 11:30am",
-      address: `
-        <strong>North East Valley Baptist Community Centre </strong><br/><br/>
-
-        270 North Road, <br/>
-        North East Valley`,
-      pricePerWeek: "10",
-    },
-    {
       style: "Balfolk Immersion",
       day: "Tuesday",
       time: "7:00pm - 8:30pm",
