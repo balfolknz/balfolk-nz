@@ -37,18 +37,18 @@ export const allClasses: allClassInfo = {
       `,
       pricePerWeek: "10",
     },
-    {
-      style: "Balfolk Partner Dances <br/><strong>(Beyond Basics)</strong>",
-      day: "Monday",
-      time: "7:00pm - 8:30pm",
-      address: `
-        <strong>Opoho Scout Hall </strong> <br/><br/>
+    // {
+    //   style: "Balfolk Partner Dances <br/><strong>(Beyond Basics)</strong>",
+    //   day: "Monday",
+    //   time: "7:00pm - 8:30pm",
+    //   address: `
+    //     <strong>Opoho Scout Hall </strong> <br/><br/>
 
-        128 Opoho Road, <br/>
-        Dunedin North
-      `,
-      pricePerWeek: "10",
-    },
+    //     128 Opoho Road, <br/>
+    //     Dunedin North
+    //   `,
+    //   pricePerWeek: "10",
+    // },
     {
       style: "Balfolk Immersion",
       day: "Tuesday",
