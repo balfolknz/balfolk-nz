@@ -63,18 +63,27 @@ export default function RootLayout({
     >
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <link
-          rel="apple-touch-icon"
-          href="/icons-white/apple-touch-icon.png"
-        ></link>
+
         <link rel="shortcut icon" href="/icons-white/favicon.ico" />
         <meta name="theme-color" content="#542e23" />
-        <script
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="viewport" content="viewport-fit=cover"></meta>
+        <meta name="mobile-web-app-capable" content="yes"></meta>
+
+        <link rel="apple-touch-icon" href="/icons-white/apple-touch-icon.png"></link>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta name="apple-mobile-web-app-status-bar-style" content="default"></meta>
+        <meta name="apple-mobile-web-app-title" content="Studio Y Creative"></meta>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta name="apple-touch-startup-image" content="/icons/icon.jpg"></meta>
+        <meta name="apple-touch-fullscreen" content="yes"></meta>
+        {/*  */}
+        {/* <script
           async
           defer
           crossorigin="anonymous"
           src="https://connect.facebook.net/en_US/sdk.js"
-        ></script>
+        ></script> */}
       </head>
       <body>
         <Navbar />

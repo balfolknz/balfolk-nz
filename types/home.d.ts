@@ -1,3 +1,8 @@
+type lowHighResImagePaths = {
+    lowResImagePath: string,
+    highResImagePath: string
+}
+
 type aboutContent = {
     shortDescription: string,
     verboseDescription: string

@@ -21,9 +21,9 @@ const Page = () => {
     <section className={`${styles.homePage}`}>
       <PageWrapperAnimation>
         <Carousel interval={6000} animation={"slide"} duration={1000}>
-          {heroImagePaths.map((imagePath, i) => {
+          {heroImagePaths.map((imagePaths, index) => {
             return (
-              <HeroImage image={imagePath} key={i}>
+              <HeroImage imagePaths={imagePaths} key={index}>
                 <section
                   className={`flex flex-col gap-2 items-center justify-center`}
                 >

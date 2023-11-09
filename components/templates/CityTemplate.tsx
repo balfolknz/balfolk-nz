@@ -10,11 +10,11 @@ import parse from "html-react-parser";
 import Zoom from "react-medium-image-zoom";
 import { useEffect } from "react";
 
-import {
-  getFacebookLoginStatus,
-  initFacebookSdk,
-  fbLogin,
-} from "@/components/utils/facebooksdk";
+// import {
+//   getFacebookLoginStatus,
+//   initFacebookSdk,
+//   fbLogin,
+// } from "@/components/utils/facebooksdk";
 
 import {
   Button,
@@ -106,7 +106,7 @@ const CityTemplate = ({
             )} */}
 
             {/* Facebook Events preview */}
-            {contactInfo.facebookGroupLink && (
+            {/* {contactInfo.facebookGroupLink && ( */}
               <section
                 id="instagram-preview"
                 className={`${styles.section} ${styles.instagramPreview}`}
@@ -133,7 +133,7 @@ const CityTemplate = ({
                   />
                 </FadeInLeftAnimation>
               </section>
-            )}
+            {/* )} */}
 
             {/* Classes */}
             <section
