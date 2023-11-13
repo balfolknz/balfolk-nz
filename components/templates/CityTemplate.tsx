@@ -106,34 +106,16 @@ const CityTemplate = ({
             )} */}
 
             {/* Facebook Events preview */}
-            {/* {contactInfo.facebookGroupLink && ( */}
+            {/* {contactInfo.facebookGroupLink && (
               <section
-                id="instagram-preview"
-                className={`${styles.section} ${styles.instagramPreview}`}
+                id="facebook-events-preview"
+                className={`${styles.section} ${styles.facebookPreview}`}
               >
                 <FadeInLeftAnimation>
-                  <a href={contactInfo.instagramLink} target="_blank">
-                    <h2
-                      className={`${styles.instagramPreview__title} | title flex justify-center`}
-                    >
-                      Our Instagram
-                      <span className="hidden md:block">
-                        <FontAwesomeIcon
-                          icon={faInstagram}
-                          className={`ml-2`}
-                        />{" "}
-                        !
-                      </span>
-                    </h2>
-                  </a>
-
-                  <InstagramFeed
-                    cityName={`${city}`}
-                    limit={instagramPreviewInfo.limit}
-                  />
+                  <section>Facebook</section>
                 </FadeInLeftAnimation>
               </section>
-            {/* )} */}
+             )} */}
 
             {/* Classes */}
             <section
