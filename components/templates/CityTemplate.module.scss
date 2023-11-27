@@ -62,7 +62,7 @@
 
       .description {
         padding-inline: 2rem;
-        max-width: 90ch;
+        max-width: clamp(75ch, 120ch, 150ch);
 
         @media screen and (min-width: a.$mediumSize) {
           padding-inline: 7rem;
@@ -139,6 +139,7 @@
       padding: 3rem;
 
       &__title {
+        margin-bottom: 1.75rem !important;
         &:hover {
           color: a.$primary-light !important;
         }
