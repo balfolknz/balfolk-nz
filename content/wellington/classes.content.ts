@@ -10,7 +10,8 @@ export const allClasses: allClassInfo = {
         It makes it accessible to people with all skill levels. <br/><br/>
 
         In the class, we will learn and practice the dances you would commonly find in a Bal Folk. <br/>
-        You don’t need any previous dance experience, curiosity is all you need 😊
+        You don’t need any previous dance experience, curiosity is all you need 😊 <br/>
+        Classes will resume from the 13th of February 2024!
         <br/><br/>
 
         <strong><em>Price:</em></strong> $10/class or koha for concession <br/><br/>
@@ -24,14 +25,13 @@ export const allClasses: allClassInfo = {
   allClasses: [
     {
       style: "Balfolk",
-      day: "Wednesday ",
+      day: "Tuesday",
       time: "6:00pm - 7:30pm",
       address: `
-        <strong>Newtown Community Centre</strong><br/>
-        <strong>(Whare Kanikani Dance Hall)</strong> <br/><br/>
+        <strong>Innermost Gardens</strong><br/>
 
-        Colombo Street &, Rintoul Street, <br/>
-        Newtown
+        31 Lawson Place, <br/>
+        Mount Victoria
       `,
       pricePerWeek: "10",
     },
