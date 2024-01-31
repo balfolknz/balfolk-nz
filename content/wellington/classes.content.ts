@@ -28,7 +28,7 @@ export const allClasses: allClassInfo = {
       day: "Tuesday",
       time: "6:00pm - 7:30pm",
       address: `
-        <strong>Innermost Gardens</strong><br/>
+        <strong>Innermost Gardens</strong><br/><br/>
 
         31 Lawson Place, <br/>
         Mount Victoria
