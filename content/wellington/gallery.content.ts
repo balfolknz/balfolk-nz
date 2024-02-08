@@ -1,6 +1,7 @@
 export const galleryInfo: galleryInfo = {
   groupPhotoPaths: [
-    "/images/wellington/Balfolk Wellington 1.jpg",
-    "/images/wellington/Balfolk Wellington 2.jpg",
+    "/images/wellington/Class 3.jpg",
+    "/images/wellington/Class 4.jpg",
+    "/images/wellington/Event 1.jpg",
   ],
 };
