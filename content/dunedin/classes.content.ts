@@ -26,7 +26,7 @@ export const allClasses: allClassInfo = {
 
           <ol>
             <strong>27th April 2024</strong> - Timeless Costumed Ball<br/>
-            <strong>4th May 2024</strong> - Balfolk Bal<br/>
+            <strong>8th June 2024</strong> - Balfolk Bal<br/>
           </ol>
         </p>
         <br/><br/>
@@ -63,9 +63,9 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: "Balfolk et Contredanses",
+      style: "Balfolk et Contredanses (101)",
       day: "Tuesday",
-      time: "10:00am - 11:30am",
+      time: "9:00am - 10:30am",
       address: `
           <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
 
@@ -75,17 +75,29 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: "Balfolk Partner Dance",
+      style: "Balfolk et Contredanses (Beyond Basics)",
       day: "Tuesday",
-      time: "6:00pm - 7:00pm",
+      time: "10:30am - 12:00pm",
       address: `
-          <strong>Opoho Scout Hall</strong> <br/><br/>
+          <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
 
-          128 Opoho Road, <br/>
-          North Dunedin
+          270 North Road, <br/>
+          North East Valley
         `,
       pricePerWeek: "10",
     },
+    // {
+    //   style: "Balfolk Partner Dance",
+    //   day: "Tuesday",
+    //   time: "6:00pm - 7:00pm",
+    //   address: `
+    //       <strong>Opoho Scout Hall</strong> <br/><br/>
+
+    //       128 Opoho Road, <br/>
+    //       North Dunedin
+    //     `,
+    //   pricePerWeek: "10",
+    // },
     {
       style: "Balfolk Immersion",
       day: "Tuesday",
