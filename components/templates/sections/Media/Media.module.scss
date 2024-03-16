@@ -1,0 +1,23 @@
+@use "styles/abstracts" as a;
+@use "styles/components" as c;
+
+.media {
+  @include c.generalSection();
+  @include c.card(a.$primary-light-250);
+
+  .videos {
+    &__video {
+      border: 1px solid a.$primary-dark;
+    }
+  }
+
+  .playlist {
+    &__image {
+      cursor: pointer;
+
+      &__photo {
+        border: 1px solid a.$primary-dark;
+      }
+    }
+  }
+}

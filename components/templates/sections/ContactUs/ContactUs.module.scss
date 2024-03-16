@@ -1,0 +1,7 @@
+@use "styles/abstracts" as a;
+@use "styles/components" as c;
+
+.contactUs {
+  @include c.card(#fff);
+  @include c.generalSection();
+}

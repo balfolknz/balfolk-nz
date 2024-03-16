@@ -1,0 +1,14 @@
+@use "styles/abstracts" as a;
+@use "styles/components" as c;
+
+.instagramPreview {
+  @include c.generalSection();
+  @include c.card(#fff);
+
+  &__title {
+    margin-bottom: 1.75rem !important;
+    &:hover {
+      color: a.$primary-light !important;
+    }
+  }
+}

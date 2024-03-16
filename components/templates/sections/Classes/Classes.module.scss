@@ -1,0 +1,55 @@
+@use "styles/abstracts" as a;
+@use "styles/components" as c;
+
+.classes {
+  @include c.generalSection();
+  background: a.$primary-light-100;
+
+  &__icon {
+    font-size: 3rem;
+  }
+
+  .description {
+    padding-inline: 2rem;
+    max-width: clamp(75ch, 120ch, 150ch);
+
+    @media screen and (min-width: a.$mediumSize) {
+      padding-inline: 7rem;
+    }
+  }
+
+  .times {
+    .table {
+      max-width: 80vw;
+      overflow-x: auto;
+
+      @media screen and (min-width: a.$mediumSize) {
+        max-width: 43rem;
+      }
+
+      th,
+      td {
+        @apply font-libreBaskerville;
+      }
+
+      th {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+      }
+
+      td {
+        font-size: 0.65rem;
+      }
+
+      &__header {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .events {
+    .button {
+      @include c.hover-fill-button(a.$primary-light, #fff);
+    }
+  }
+}

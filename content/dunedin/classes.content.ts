@@ -17,6 +17,8 @@ export const allClasses: allClassInfo = {
         This dance form encourages creativity and embraces change, making it a vibrant and ever-evolving experience.
         <br/><br/>
 
+        <br/><br/>
+
         <h3>Upcoming events</h1>
         <p>
           We've got two upcoming events happening in April/May 2024. <br/>

@@ -1,0 +1,6 @@
+@use "styles/abstracts" as a;
+@use "styles/components" as c;
+
+.gallery {
+  @include c.generalSection();
+}
