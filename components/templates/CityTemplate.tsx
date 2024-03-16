@@ -47,7 +47,10 @@ const CityTemplate = ({
         </section>
 
         <section className={`${styles.page__center} | flex flex-col w-full`}>
-          <ScrollSpy offsetBottom={100} useBoxMethod>
+          <ScrollSpy
+            updateHistoryStack={false}
+            scrollThrottle={100}
+          >
             {/* Classes */}
             <section className={`${styles.classesWrapper}`} id="classes">
               {allClassInfo.allClasses.length != 0 && (

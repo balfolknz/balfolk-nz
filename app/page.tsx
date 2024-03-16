@@ -145,7 +145,6 @@ const Page = () => {
                       {galleryInfo.photoPaths.map((photoPath) => {
                         return (
                           <section className={`relative`}>
-                            {/* <Zoom> */}
                             <Image
                               priority
                               width={300}
@@ -154,7 +153,6 @@ const Page = () => {
                               className={`${styles.gallery__photo}`}
                               alt={"Photo"}
                             />
-                            {/* </Zoom> */}
                           </section>
                         );
                       })}
