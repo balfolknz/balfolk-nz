@@ -1,3 +1,3 @@
 type galleryInfo = {
-    groupPhotoPaths: Array<string>,
+    photoPaths: Array<string>,
 }

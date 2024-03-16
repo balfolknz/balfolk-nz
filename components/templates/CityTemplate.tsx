@@ -7,8 +7,6 @@ import Link from "next/link";
 import ScrollSpy from "react-ui-scrollspy";
 import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
 import parse from "html-react-parser";
-import Zoom from "react-medium-image-zoom";
-import { useEffect } from "react";
 
 // import {
 //   getFacebookLoginStatus,
@@ -17,13 +15,10 @@ import { useEffect } from "react";
 // } from "@/components/utils/facebooksdk";
 
 import {
-  Button,
   Card,
   CardActions,
   CardContent,
-  CardHeader,
   CardMedia,
-  IconButton,
   ImageList,
   Paper,
   Table,
@@ -52,7 +47,7 @@ import {
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 import { InstagramFeed } from "@/components/common/instagramFeed/InstagramFeed";
 import { MentionTypes, MediaTypes } from "@/enums/templates/mentions";
-import { EventsFindaFeed } from "../common/eventsFindaFeed/eventsFindaFeed";
+// import { EventsFindaFeed } from "../common/eventsFindaFeed/eventsFindaFeed";
 
 type CityTemplateProps = {
   city: string;
@@ -381,7 +376,7 @@ const CityTemplate = ({
             {/* Gallery */}
             <section id="gallery">
               <FadeInLeftAnimation>
-                {galleryInfo.groupPhotoPaths.length != 0 && (
+                {galleryInfo.photoPaths.length != 0 && (
                   <section className={`${styles.section} ${styles.gallery}`}>
                     <h2 className={`title`}>Gallery</h2>
                     <section
@@ -390,7 +385,7 @@ const CityTemplate = ({
                       <section
                         className={`${styles.about__images} | flex flex-col gap-3 md:flex-row`}
                       >
-                        {galleryInfo.groupPhotoPaths.map((photoPath) => {
+                        {galleryInfo.photoPaths.map((photoPath) => {
                           return (
                             <section className={`relative`}>
                               {/* <Zoom> */}
@@ -451,7 +446,7 @@ const CityTemplate = ({
               >
                 <FadeInLeftAnimation>
                   <h2 className={`title`}>Some Mentions</h2>
-                  <ImageList variant="masonry" cols={matches ? 3 : 1} gap={8}>
+                  <ImageList cols={matches ? 3 : 1} gap={8}>
                     {allCityMentions.map((mention: cityMention) => (
                       <a href={mention.link} target="_blank">
                         <Card className={`${styles.allMentions__card} | my-4`}>
@@ -600,7 +595,7 @@ const CityTemplate = ({
               </Link>
             )}
 
-            {galleryInfo.groupPhotoPaths.length != 0 && (
+            {galleryInfo.photoPaths.length != 0 && (
               <Link
                 href={rootPath + "/#gallery"}
                 className={`${styles.page__right__nav__link}`}

@@ -76,3 +76,12 @@ export const learnMoreButtons: learnMoreButtons = {
     },
   ],
 };
+
+export const galleryInfo: galleryInfo = {
+  photoPaths: [
+    "/images/auckland/Balfolk Auckland Square 1.jpg",
+    "/images/dunedin/Wanaka Festival of Color 2023.jpg",
+    "/images/dunedin/Toitu Minibal 2022.jpg",
+    "/images/wellington/Class 3.jpg",
+  ],
+};

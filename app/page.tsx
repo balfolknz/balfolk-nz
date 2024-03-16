@@ -7,12 +7,14 @@ import PortraitTeamCard from "@/components/common/teamCards/portrait/PortraitTea
 import Carousel from "react-material-ui-carousel";
 import FadeInLeftAnimation from "@/components/animations/common/FadeInLeftAnimation";
 import parse from "html-react-parser";
+import Image from "next/image";
 
 import {
   aboutContent,
   allTeamContent,
   heroImagePaths,
   learnMoreButtons,
+  galleryInfo,
 } from "@/content/home/index.content";
 import { PageWrapperAnimation } from "@/components/animations/common/PageWrapperAnimation";
 
@@ -127,6 +129,41 @@ const Page = () => {
               </section>
             </section>
           </FadeInLeftAnimation>
+
+          {/* Gallery */}
+          <section id="gallery">
+            <FadeInLeftAnimation>
+              {galleryInfo.photoPaths.length != 0 && (
+                <section className={`${styles.section} ${styles.gallery}`}>
+                  <h2 className={`title`}>Gallery</h2>
+                  <section
+                    className={`flex flex-col px-10 justify-center items-center w-full`}
+                  >
+                    <section
+                      className={`${styles.about__images} | flex flex-col gap-3 md:flex-row`}
+                    >
+                      {galleryInfo.photoPaths.map((photoPath) => {
+                        return (
+                          <section className={`relative`}>
+                            {/* <Zoom> */}
+                            <Image
+                              priority
+                              width={300}
+                              height={300}
+                              src={photoPath}
+                              className={`${styles.gallery__photo}`}
+                              alt={"Photo"}
+                            />
+                            {/* </Zoom> */}
+                          </section>
+                        );
+                      })}
+                    </section>
+                  </section>
+                </section>
+              )}
+            </FadeInLeftAnimation>
+          </section>
         </section>
       </PageWrapperAnimation>
     </section>
