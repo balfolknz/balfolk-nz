@@ -100,18 +100,18 @@ export const allClasses: allClassInfo = {
     //     `,
     //   pricePerWeek: "10",
     // },
-    {
-      style: "Balfolk Immersion",
-      day: "Tuesday",
-      time: "7:00pm - 8:30pm",
-      address: `
-          <strong>Opoho Scout Hall</strong> <br/><br/>
-
-          128 Opoho Road, <br/>
-          North Dunedin
-        `,
-      pricePerWeek: "10",
-    },
+    // {
+    //  style: "Balfolk Immersion",
+    //  day: "Tuesday",
+    //  time: "7:00pm - 8:30pm",
+    //  address: `
+    //      <strong>Opoho Scout Hall</strong> <br/><br/>
+//
+    //      128 Opoho Road, <br/>
+    //      North Dunedin
+    //    `,
+    //  pricePerWeek: "10",
+    //},
   ],
   eventsLink: "https://www.eventfinda.co.nz/user/kategrace",
 };
