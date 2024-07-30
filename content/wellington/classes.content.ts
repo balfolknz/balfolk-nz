@@ -10,11 +10,17 @@ export const allClasses: allClassInfo = {
         It makes it accessible to people with all skill levels. <br/><br/>
 
         In the class, we will learn and practice the dances you would commonly find in a Bal Folk. <br/>
-        You don’t need any previous dance experience, curiosity is all you need 😊 <br/>
-        Classes will resume from the 13th of February 2024!
+        You don’t need any previous dance experience, curiosity is all you need 😊 <br/><br/>
+
+        Classes are run in blocks of 6 weeks.<br/>
+        Check out our Facebook page for the next upcoming blocks!
         <br/><br/>
 
-        <strong><em>Price:</em></strong> $10/class or koha for concession <br/><br/>
+        <strong><em>Price:</em></strong>
+        <ul>
+        <li>$60 for 6 classes or</li>
+        <li>$15 for casual attendance or</li>
+        <li>Koha for <strong>student/unwaged/concession</strong></li></ul><br/><br/>
 
         If you have any questions, feel free to email our team at
         <a className="activeLink" href="mailto:wellingtonbalfolk@gmail.com">Balfolk Wellington!</a></p>
@@ -25,16 +31,16 @@ export const allClasses: allClassInfo = {
   allClasses: [
     {
       style: "Balfolk",
-      day: "Tuesday",
-      time: "6:00pm - 7:30pm",
+      day: "Wednesday",
+      time: "4:00pm - 5:30pm",
       address: `
-        <strong>Innermost Gardens</strong><br/><br/>
+        <strong>Newtown Community Centre - Te Whare Hapori o Ngā Puna Waiora</strong><br/><br/>
 
-        31 Lawson Place, <br/>
-        Mount Victoria
+        Colombo Street &, Rintoul Street, <br/>
+        Newton
       `,
-      pricePerWeek: "10",
+      pricePerWeek: "15",
     },
   ],
-  eventsLink: "https://www.eventfinda.co.nz/user/wellingtonbalfolk",
+  eventsLink: "https://www.facebook.com/balfolkwellington/events",
 };
