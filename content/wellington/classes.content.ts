@@ -32,7 +32,7 @@ export const allClasses: allClassInfo = {
     {
       style: "Balfolk",
       day: "Wednesday",
-      time: "4:00pm - 5:30pm",
+      time: "6:00pm - 7:30pm",
       address: `
         <strong>Newtown Community Centre - Te Whare Hapori o Ngā Puna Waiora</strong><br/><br/>
 
