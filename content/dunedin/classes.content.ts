@@ -52,7 +52,7 @@ export const allClasses: allClassInfo = {
     `,
   allClasses: [
     {
-      style: `Contredanses - 101<br/>`,
+      style: `Contredanses - 101 （Evening)<br/>`,
       day: "Monday",
       time: "6:00pm - 7:00pm",
       address: `
@@ -61,6 +61,18 @@ export const allClasses: allClassInfo = {
         128 Opoho Road, <br/>
         Dunedin North
       `,
+      pricePerWeek: "10",
+    },
+    {
+      style: `Contredanses - 101 (Day)<br/>`,
+      day: "Tuesday",
+      time: "9:30am - 11:00am",
+      address: `
+          <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
+
+          270 North Road, <br/>
+          North East Valley
+        `,
       pricePerWeek: "10",
     },
     {
@@ -92,10 +104,10 @@ export const allClasses: allClassInfo = {
       day: "Tuesday",
       time: "6:00pm - 7:00pm",
       address: `
-          <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
+          <strong>Opoho Scout Hall</strong> <br/><br/>
 
-          270 North Road, <br/>
-          North East Valley
+          128 Opoho Road, <br/>
+          North Dunedin
         `,
       pricePerWeek: "10",
     },
