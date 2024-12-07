@@ -28,11 +28,34 @@ export const allClasses: allClassInfo = {
         </ul>
         <br/><br/>
 
-        <h3>End of Year Shutdown</h1>
+        <h3>Upcoming 2025 Classes</h3>
         <p>
         2024 classes are done for the year! <br/>
-        But please join us again in early Feb 2025 when we start up again :)
+        But please join us again in <strong>early Feb 2025</strong> when we start up again :)
         We'll be hosting classes to prepare for the Pastel Ball (scheduled <strong>Saturday 12th of April</strong>)
+
+        <h3>Upcoming 2025 Minibals</h3>
+        <p>
+        A wonderful chance for you to come experience Balfolk Dance in a group! <br/>
+        Everyone is welcome, and attendance is free :) <br/><br/>
+
+        <h4>Details</h4>
+        <strong>Location: </strong>Toitū Otago Settlers Museum, 31 Queens Garden. <br/>
+        <strong>Time: </strong>2pm on the last Sunday of each month. <br/>
+        <ul>
+        <li>Sunday 23rd Febuary</li>
+        <li>Sunday 30th March</li>
+        <li>Sunday 27th April</li>
+        <li>Sunday 25th May</li>
+        <li>Sunday 29th June</li>
+        <li>Sunday 27th July</li>
+        <li>Sunday 31st August</li>
+        <li>Sunday 28th September</li>
+        <li>Sunday 19th October</li>
+        <li>Sunday 30th November</li>
+        </ul>
+        </p>
+        <br/><br/>
 
         If you have any questions, feel free to email our team at
         <a className="activeLink" href="mailto:balfolkdunedin@gmail.com">Balfolk Dunedin!</a></p>
