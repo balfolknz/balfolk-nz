@@ -18,8 +18,8 @@ export const allClasses: allClassInfo = {
         <br/><br/>
 
         <h4>Details</h4>
-        No prior bookings, experience or partner are required. <br/>
-        Beginners most welcome :). <br/><br/>
+        Breathe new life into old dances, join the Balfolk fun! <br/>
+        No partner, no experience needed. <br/><br/>
         Classes are run in blocks of 5 consecutive classes.<br/>
         <strong><em>Price:</em></strong>
         <ul>
@@ -28,13 +28,17 @@ export const allClasses: allClassInfo = {
         </ul>
         <br/><br/>
 
-        <h3>Upcoming 2025 Classes</h3>
+        <h3>Balfolk Valentine's Potluck</h3>
         <p>
-        2024 classes are done for the year! <br/>
-        But please join us again in <strong>early Feb 2025</strong> when we start up again :)
-        We'll be hosting classes to prepare for the Pastel Ball (scheduled <strong>Saturday 12th of April</strong>)
+        Join us for a session of informal dancing, delicious food and good company. <br/>
+        Everyone is welcome, and attendance is free, just bring a plate :) <br/><br/>
 
+        <h4>Details</h4>
+        <strong>Location: </strong>North East Valley Community Centre, 270 North Road. <br/>
+        <strong>Time: </strong>7pm<br/>
+        </p>
         <br/><br/>
+
 
         <h3>Upcoming 2025 Minibals</h3>
         <p>
@@ -48,13 +52,6 @@ export const allClasses: allClassInfo = {
         <li>Sunday 23rd Febuary</li>
         <li>Sunday 30th March</li>
         <li>Sunday 27th April</li>
-        <li>Sunday 25th May</li>
-        <li>Sunday 29th June</li>
-        <li>Sunday 27th July</li>
-        <li>Sunday 31st August</li>
-        <li>Sunday 28th September</li>
-        <li>Sunday 19th October</li>
-        <li>Sunday 30th November</li>
         </ul>
         </p>
         <br/><br/>
@@ -67,78 +64,49 @@ export const allClasses: allClassInfo = {
     `,
   allClasses: [
     {
-      style: `TBA`,
-      day: "TBA",
-      time: "TBA",
-      address: `TBA`,
-      pricePerWeek: "TBA",
+      style: `Balfolk 101 - Morning<br/>`,
+      day: "Tuesday",
+      time: "9:30am - 10:30am",
+      address: `
+          <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
+          270 North Road, <br/>
+          North East Valley
+      `,
+      pricePerWeek: "10",
     },
-    // {
-    //   style: `Contredanses - 101 （Evening)<br/>`,
-    //   day: "Monday",
-    //   time: "6:00pm - 7:00pm",
-    //   address: `
-    //     <strong>Opoho Scout Hall </strong> <br/><br/>
-    //     128 Opoho Road, <br/>
-    //     Dunedin North
-    //   `,
-    //   pricePerWeek: "10",
-    // },
-    // {
-    //   style: `Contredanses - 101 (Day)<br/>`,
-    //   day: "Tuesday",
-    //   time: "9:30am - 11:00am",
-    //   address: `
-    //       <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
-    //       270 North Road, <br/>
-    //       North East Valley
-    //     `,
-    //   pricePerWeek: "10",
-    // },
-    // {
-    //   style: `Contredanses - Beyond Basics (Evening)<br/>`,
-    //   day: "Monday",
-    //   time: "7:00pm - 8:30pm",
-    //   address: `
-    //     <strong>Opoho Scout Hall </strong> <br/><br/>
-    //     128 Opoho Road, <br/>
-    //     Dunedin North
-    //   `,
-    //   pricePerWeek: "10",
-    // },
-    // {
-    //   style: "Contredanses - Beyond Basics (Day)",
-    //   day: "Tuesday",
-    //   time: "10:30am - 12:00pm",
-    //   address: `
-    //       <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
-    //       270 North Road, <br/>
-    //       North East Valley
-    //     `,
-    //   pricePerWeek: "10",
-    // },
-    // {
-    //   style: "Balfolk - Partner Dances",
-    //   day: "Tuesday",
-    //   time: "6:00pm - 7:00pm",
-    //   address: `
-    //       <strong>Opoho Scout Hall</strong> <br/><br/>
-    //       128 Opoho Road, <br/>
-    //       North Dunedin
-    //     `,
-    //   pricePerWeek: "10",
-    // },
-    // {
-    //   style: "Balfolk - Immersion (All Balfolk Dances)",
-    //   day: "Tuesday",
-    //   time: "7:00pm - 8:30pm",
-    //   address: `
-    //       <strong>Opoho Scout Hall</strong> <br/><br/>
-    //       128 Opoho Road, <br/>
-    //       North Dunedin
-    //     `,
-    //   pricePerWeek: "10",
-    // },
+    {
+      style: `Balfolk 101 - Evening<br/>`,
+      day: "Tuesday",
+      time: "10:30am - 12:00pm",
+      address: `
+       <strong>Opoho Scout Hall </strong> <br/><br/>
+        128 Opoho Road, <br/>
+        Dunedin North
+        `,
+      pricePerWeek: "10",
+    },
+    {
+      style: `Balfolk Beyond Basics - Morning<br/>`,
+      day: "Monday",
+      time: "6:00pm - 7:00pm",
+      address: `
+          <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
+          270 North Road, <br/>
+          North East Valley
+      `,
+      pricePerWeek: "10",
+    },
+    {
+      style: "Balfolk Beyond Basics - Evening",
+      day: "Tuesday",
+      time: "7:00am - 8:30pm",
+      address: `
+       <strong>Opoho Scout Hall </strong> <br/><br/>
+        128 Opoho Road, <br/>
+        Dunedin North
+        `,
+      pricePerWeek: "10",
+    },
   ],
   eventsLink: "https://www.eventfinda.co.nz/user/kategrace",
 };
