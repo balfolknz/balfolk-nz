@@ -20,7 +20,7 @@ export const allClasses: allClassInfo = {
         <h4>Details</h4>
         Breathe new life into old dances, join the Balfolk fun! <br/>
         No partner, no experience needed. <br/><br/>
-        Classes are run in blocks of 5 consecutive classes.<br/>
+        All classes are run in blocks of 5 CONSECUTIVE classes.<br/>
         <strong><em>Price:</em></strong>
         <ul>
         <li>$40/block of 5 classes or</li>
@@ -28,14 +28,41 @@ export const allClasses: allClassInfo = {
         </ul>
         <br/><br/>
 
-        <h3>Balfolk Valentine's Potluck</h3>
+        <h2>Upcoming 2025 Events</h2><br/><br/>
+
+        <h3>2025 Balfolk Valentine's Potluck</h3>
         <p>
-        Join us for a session of informal dancing, delicious food and good company. <br/>
+        START THE YEAR WITH a session of informal dancing, delicious food and good company. <br/>
         Everyone is welcome, and attendance is free, just bring a plate :) <br/><br/>
 
         <h4>Details</h4>
         <strong>Location: </strong>North East Valley Community Centre, 270 North Road. <br/>
-        <strong>Time: </strong>7pm<br/>
+        <strong>Time: </strong>Friday 14th February at 7pm<br/>
+        </p>
+        <br/><br/>
+
+        <h3>2025 Pastel Ball</h3>
+        <p>
+        We've got our 2025 Pastel ball happening this year! <br/>
+        Visit our Eventfinda below for more details :) <br/><br/>
+
+        <h4>Details</h4>
+        <strong>Location: </strong>Sargood Centre, 40 Logan Park Drive. <br/>
+        <strong>Time: </strong>Saturday 12th April<br/>
+        </p>
+        <br/><br/>
+
+        <h3>Companion workshops for Pastel ball</h3>
+        <p>
+        To help prepare for the Pastel ball, we've got 3 companion workshops<br/>
+
+        <h4>Details</h4>
+        <strong>Location: </strong>North East Valley Baptist Community Centre, 270 North Road. <br/>
+        <ul>
+        <li>Sunday 9th March from 10:00am - 12:00pm</li>
+        <li>Sunday 5th April from 2:00pm - 5:00pm (Costume workshop)</li>
+        <li>Sunday 6th April from 10:00am - 12:00pm</li>
+        </ul>
         </p>
         <br/><br/>
 
@@ -47,11 +74,18 @@ export const allClasses: allClassInfo = {
 
         <h4>Details</h4>
         <strong>Location: </strong>Toitū Otago Settlers Museum, 31 Queens Garden. <br/>
-        <strong>Time: </strong>2pm on the last Sunday of each month. <br/>
+        <strong>Time: </strong>2pm SHARP on the last Sunday of each month. <br/>
         <ul>
         <li>Sunday 23rd Febuary</li>
         <li>Sunday 30th March</li>
         <li>Sunday 27th April</li>
+        <li>Sunday 25th May</li>
+        <li>Sunday 29th June</li>
+        <li>Sunday 27th July</li>
+        <li>Sunday 31th August</li>
+        <li>Sunday 28th September</li>
+        <li>Sunday 19th October</li>
+        <li>Sunday 30th November</li>
         </ul>
         </p>
         <br/><br/>
@@ -64,7 +98,29 @@ export const allClasses: allClassInfo = {
     `,
   allClasses: [
     {
-      style: `Balfolk 101 - Morning<br/>`,
+      style: "Balfolk - Evening (Block 1 starting 24th Feb)",
+      day: "Monday",
+      time: "7:00pm - 8:30pm",
+      address: `
+       <strong>Opoho Scout Hall </strong> <br/><br/>
+        128 Opoho Road, <br/>
+        Dunedin North
+        `,
+      pricePerWeek: "10",
+    },
+    {
+      style: "Balfolk - Evening (Block 2 starting 28th April)",
+      day: "Monday",
+      time: "7:00pm - 8:30pm",
+      address: `
+       <strong>OUSA Clubs and Societies Building </strong> <br/><br/>
+        84 Albany Street, <br/>
+        Dunedin North
+        `,
+      pricePerWeek: "10",
+    },
+    {
+      style: `Contredances 101 - Morning (Block 1 starting 11th Feb)<br/>`,
       day: "Tuesday",
       time: "9:30am - 10:30am",
       address: `
@@ -75,9 +131,9 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: `Balfolk 101 - Evening<br/>`,
+      style: "Contredances 101 - Evening (Block 1 Starting 4th Feb) ",
       day: "Tuesday",
-      time: "10:30am - 12:00pm",
+      time: "6:00pm - 7:00pm",
       address: `
        <strong>Opoho Scout Hall </strong> <br/><br/>
         128 Opoho Road, <br/>
@@ -86,9 +142,9 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: `Balfolk Beyond Basics - Morning<br/>`,
+      style: `Contredances Beyond Basics - Morning (Block 1 starting 11th Feb)<br/>`,
       day: "Tuesday",
-      time: "6:00pm - 7:00pm",
+      time: "9:30am - 10:30am",
       address: `
           <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
           270 North Road, <br/>
@@ -97,9 +153,9 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: "Balfolk Beyond Basics - Evening",
+      style: "Contredances Beyond Basics - Evening (Block 1 Starting 4th Feb) ",
       day: "Tuesday",
-      time: "7:00pm - 8:30pm",
+      time: "6:00pm - 7:00pm",
       address: `
        <strong>Opoho Scout Hall </strong> <br/><br/>
         128 Opoho Road, <br/>
