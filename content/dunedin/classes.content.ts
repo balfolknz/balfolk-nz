@@ -87,7 +87,7 @@ export const allClasses: allClassInfo = {
     },
     {
       style: `Balfolk Beyond Basics - Morning<br/>`,
-      day: "Monday",
+      day: "Tuesday",
       time: "6:00pm - 7:00pm",
       address: `
           <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
@@ -99,7 +99,7 @@ export const allClasses: allClassInfo = {
     {
       style: "Balfolk Beyond Basics - Evening",
       day: "Tuesday",
-      time: "7:00am - 8:30pm",
+      time: "7:00pm - 8:30pm",
       address: `
        <strong>Opoho Scout Hall </strong> <br/><br/>
         128 Opoho Road, <br/>
