@@ -111,7 +111,7 @@ export const allClasses: allClassInfo = {
         Dunedin North
         `,
       pricePerWeek: "10",
-    }
+    },
     {
       style: `English Country Dance`,
       day: "Tuesday",
