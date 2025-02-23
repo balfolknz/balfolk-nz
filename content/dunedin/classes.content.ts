@@ -20,7 +20,7 @@ export const allClasses: allClassInfo = {
         <h4>Details</h4>
         Breathe new life into old dances, join the Balfolk fun! <br/>
         No partner, no experience needed. <br/><br/>
-        All classes are run in blocks of 5 CONSECUTIVE classes.<br/>
+        All classes are run in blocks of 5 consecutive classes.<br/>
         <strong><em>Price:</em></strong>
         <ul>
         <li>$40/block of 5 classes or</li>
@@ -29,17 +29,6 @@ export const allClasses: allClassInfo = {
         <br/><br/>
 
         <h2>Upcoming 2025 Events</h2><br/><br/>
-
-        <h3>2025 Balfolk Valentine's Potluck</h3>
-        <p>
-        START THE YEAR WITH a session of informal dancing, delicious food and good company. <br/>
-        Everyone is welcome, and attendance is free, just bring a plate :) <br/><br/>
-
-        <h4>Details</h4>
-        <strong>Location: </strong>North East Valley Community Centre, 270 North Road. <br/>
-        <strong>Time: </strong>Friday 14th February at 7pm<br/>
-        </p>
-        <br/><br/>
 
         <h3>2025 Pastel Ball</h3>
         <p>
@@ -52,9 +41,9 @@ export const allClasses: allClassInfo = {
         </p>
         <br/><br/>
 
-        <h3>Companion workshops for Pastel ball</h3>
+        <h3>Companion dance workshops for Pastel ball</h3>
         <p>
-        To help prepare for the Pastel ball, we've got 3 companion workshops<br/>
+        To help prepare for the Pastel ball, we've got 3 companion workshops to help learn the dances<br/>
 
         <h4>Details</h4>
         <strong>Location: </strong>North East Valley Baptist Community Centre, 270 North Road. <br/>
@@ -66,6 +55,10 @@ export const allClasses: allClassInfo = {
         </p>
         <br/><br/>
 
+        <h4>Additional workshops at alternate locations</h4>
+        <li>Sunday 15th March: Gore</li>
+        <li>Sunday 22nd March: Oamaru</li>
+
 
         <h3>Upcoming 2025 Minibals</h3>
         <p>
@@ -74,7 +67,7 @@ export const allClasses: allClassInfo = {
 
         <h4>Details</h4>
         <strong>Location: </strong>Toitū Otago Settlers Museum, 31 Queens Garden. <br/>
-        <strong>Time: </strong>2pm SHARP on the last Sunday of each month. <br/>
+        <strong>Time: </strong>2pm Sharp on the last Sunday of each month. <br/>
         <ul>
         <li>Sunday 23rd Febuary</li>
         <li>Sunday 30th March</li>
@@ -118,11 +111,11 @@ export const allClasses: allClassInfo = {
         Dunedin North
         `,
       pricePerWeek: "10",
-    },
+    }
     {
-      style: `Contredances 101 - Morning (Block 1 starting 11th Feb)<br/>`,
+      style: `English Country Dance`,
       day: "Tuesday",
-      time: "9:30am - 10:30am",
+      time: "10:30am - 12:00pm",
       address: `
           <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
           270 North Road, <br/>
@@ -131,31 +124,9 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "10",
     },
     {
-      style: "Contredances 101 - Evening (Block 1 Starting 4th Feb) ",
+      style: "English Country Dance",
       day: "Tuesday",
-      time: "6:00pm - 7:00pm",
-      address: `
-       <strong>Opoho Scout Hall </strong> <br/><br/>
-        128 Opoho Road, <br/>
-        Dunedin North
-        `,
-      pricePerWeek: "10",
-    },
-    {
-      style: `Contredances Beyond Basics - Morning (Block 1 starting 11th Feb)<br/>`,
-      day: "Tuesday",
-      time: "9:30am - 10:30am",
-      address: `
-          <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
-          270 North Road, <br/>
-          North East Valley
-      `,
-      pricePerWeek: "10",
-    },
-    {
-      style: "Contredances Beyond Basics - Evening (Block 1 Starting 4th Feb) ",
-      day: "Tuesday",
-      time: "6:00pm - 7:00pm",
+      time: "7:00pm - 8:30pm",
       address: `
        <strong>Opoho Scout Hall </strong> <br/><br/>
         128 Opoho Road, <br/>
