@@ -44,6 +44,7 @@ export const allClasses: allClassInfo = {
         <h3>Companion dance workshops for Pastel ball</h3>
         <p>
         To help prepare for the Pastel ball, we've got 3 companion workshops to help learn the dances<br/>
+        <br/><br/>
 
         <h4>Details</h4>
         <strong>Location: </strong>North East Valley Baptist Community Centre, 270 North Road. <br/>
@@ -55,10 +56,22 @@ export const allClasses: allClassInfo = {
         </p>
         <br/><br/>
 
-        <h4>Additional workshops at alternate locations</h4>
-        <li>Sunday 15th March: Gore</li>
-        <li>Sunday 22nd March: Oamaru</li>
+        <h4>Details</h4>
+        <strong>Location: </strong>Gore. <br/>
+        <ul>
+        <li>Sunday 15th March</li>
+        </ul>
+        </p>
+        <br/><br/>
 
+        <h4>Details</h4>
+        <strong>Location: </strong>Oamaru. <br/>
+        <ul>
+        <li>Sunday 22nd March</li>
+        </ul>
+        </p>
+        <br/><br/>
+        <br/>
 
         <h3>Upcoming 2025 Minibals</h3>
         <p>
