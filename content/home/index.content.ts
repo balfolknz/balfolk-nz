@@ -8,12 +8,12 @@ export const heroImagePaths: lowHighResImagePaths[] = [
     highResImagePath: "/images/home/main2.jpg",
   },
   {
-    lowResImagePath: "/images/home/main6.jpg",
-    highResImagePath: "/images/home/main6.jpg",
+    lowResImagePath: "/images/home/main6.jpeg",
+    highResImagePath: "/images/home/main6.jpeg",
   },
   {
-    lowResImagePath: "/images/home/main7.jpg",
-    highResImagePath: "/images/home/main7.jpg",
+    lowResImagePath: "/images/home/main7.jpeg",
+    highResImagePath: "/images/home/main7.jpeg",
   },
 ];
 
