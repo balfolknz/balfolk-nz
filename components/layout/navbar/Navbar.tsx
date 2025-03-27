@@ -72,7 +72,7 @@ function Navbar() {
               {NavLinks.left.map((link: navlinkConfig) => {
                 return (
                   <li key={link.key}>
-                    <p>
+                    <p className={`${styles.right__links__link}`}>
                       <Link
                         href={link.href}
                         onClick={toggleNavBarState}

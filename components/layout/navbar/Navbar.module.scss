@@ -15,6 +15,9 @@
 
   .right {
     &__links {
+      &__link {
+        white-space: nowrap;
+      }
     }
   }
 
