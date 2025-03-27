@@ -48,21 +48,7 @@ export const allClasses: allClassInfo = {
 
         <h4>Details</h4>
         <strong>Location: </strong>Sargood Centre, 40 Logan Park Drive. <br/>
-        <strong>Time: </strong>Saturday 12th April<br/>
-        </p>
-        <br/><br/>
-
-        <h3>Companion workshops for Pastel ball</h3>
-        <p>
-        To help prepare for the Pastel ball, we've got 3 companion workshops<br/>
-
-        <h4>Details</h4>
-        <strong>Location: </strong>North East Valley Baptist Community Centre, 270 North Road. <br/>
-        <ul>
-        <li>Sunday 9th March from 10:00am - 12:00pm</li>
-        <li>Sunday 5th April from 2:00pm - 5:00pm (Costume workshop)</li>
-        <li>Sunday 6th April from 10:00am - 12:00pm</li>
-        </ul>
+        <strong>Time: </strong>Saturday 20th September<br/>
         </p>
         <br/><br/>
 
@@ -76,7 +62,6 @@ export const allClasses: allClassInfo = {
         <strong>Location: </strong>Toitū Otago Settlers Museum, 31 Queens Garden. <br/>
         <strong>Time: </strong>2pm SHARP on the last Sunday of each month. <br/>
         <ul>
-        <li>Sunday 23rd Febuary</li>
         <li>Sunday 30th March</li>
         <li>Sunday 27th April</li>
         <li>Sunday 25th May</li>
@@ -97,17 +82,6 @@ export const allClasses: allClassInfo = {
     </div>
     `,
   allClasses: [
-    {
-      style: "Balfolk - Evening (Block 1 starting 24th Feb)",
-      day: "Monday",
-      time: "7:00pm - 8:30pm",
-      address: `
-       <strong>Opoho Scout Hall </strong> <br/><br/>
-        128 Opoho Road, <br/>
-        Dunedin North
-        `,
-      pricePerWeek: "10",
-    },
     {
       style: "Balfolk - Evening (Block 2 starting 28th April)",
       day: "Monday",

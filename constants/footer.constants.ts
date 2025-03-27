@@ -46,7 +46,39 @@ export const footerLinks: allFooterLinks = {
         // },
         // {
         //   name: "Mentions",
-        //   path: "/wellington#all-mentions",
+        //   path: "/auckland#all-mentions",
+        // },
+      ],
+    },
+    {
+      title: {
+        name: "Christchurch",
+        path: "/christchurch",
+      },
+      links: [
+        {
+          name: "Classes",
+          path: "/christchurch#classes",
+        },
+        {
+          name: "Contact Us",
+          path: "/christchurch#contact-us",
+        },
+        // {
+        //   name: "Media",
+        //   path: "/christchurch#media",
+        // },
+        {
+          name: "Gallery",
+          path: "/christchurch#gallery",
+        },
+        // {
+        //   name: "Instagram",
+        //   path: "/christchurch#instagram-preview",
+        // },
+        // {
+        //   name: "Mentions",
+        //   path: "/christchurch#all-mentions",
         // },
       ],
     },
@@ -79,6 +111,38 @@ export const footerLinks: allFooterLinks = {
         // {
         //   name: "Mentions",
         //   path: "/dunedin#all-mentions",
+        // },
+      ],
+    },
+    {
+      title: {
+        name: "Golden Bay",
+        path: "/golden_bay",
+      },
+      links: [
+        {
+          name: "Classes",
+          path: "/golden_bay#classes",
+        },
+        {
+          name: "Contact Us",
+          path: "/golden_bay#contact-us",
+        },
+        // {
+        //   name: "Media",
+        //   path: "/golden_bay#media",
+        // },
+        {
+          name: "Gallery",
+          path: "/golden_bay#gallery",
+        },
+        // {
+        //   name: "Instagram",
+        //   path: "/golden_bay#instagram-preview",
+        // },
+        // {
+        //   name: "Mentions",
+        //   path: "/golden_bay#all-mentions",
         // },
       ],
     },
