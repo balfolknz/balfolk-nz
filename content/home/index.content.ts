@@ -4,12 +4,16 @@ export const heroImagePaths: lowHighResImagePaths[] = [
     highResImagePath: "/images/dunedin/Toitu Minibal 2022 (1).png",
   },
   {
-    lowResImagePath: "/images/home/main5.min.jpg",
-    highResImagePath: "/images/home/main5.jpg",
-  },
-  {
     lowResImagePath: "/images/home/main2.min.jpg",
     highResImagePath: "/images/home/main2.jpg",
+  },
+  {
+    lowResImagePath: "/images/home/main6.jpeg",
+    highResImagePath: "/images/home/main6.jpeg",
+  },
+  {
+    lowResImagePath: "/images/home/main7.jpeg",
+    highResImagePath: "/images/home/main7.jpeg",
   },
 ];
 
