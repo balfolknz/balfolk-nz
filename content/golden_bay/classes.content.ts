@@ -7,6 +7,13 @@ export const allClasses: allClassInfo = {
     </div>
     `,
   allClasses: [
+    {
+      style: "TBA",
+      day: "TBA",
+      time: "TBA",
+      address: `TBA`,
+      pricePerWeek: "TBA",
+    }
   ],
   eventsLink: "",
 };
