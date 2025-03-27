@@ -72,7 +72,7 @@ function Navbar() {
               {NavLinks.left.map((link: navlinkConfig) => {
                 return (
                   <li key={link.key}>
-                    <p style={{"white-space: nowrap"}}>
+                    <p style={{whiteSpace: "nowrap"}}>
                       <Link
                         href={link.href}
                         onClick={toggleNavBarState}
