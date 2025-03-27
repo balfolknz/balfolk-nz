@@ -68,10 +68,10 @@ export const footerLinks: allFooterLinks = {
         //   name: "Media",
         //   path: "/christchurch#media",
         // },
-        {
-          name: "Gallery",
-          path: "/christchurch#gallery",
-        },
+        // {
+        //   name: "Gallery",
+        //   path: "/christchurch#gallery",
+        // },
         // {
         //   name: "Instagram",
         //   path: "/christchurch#instagram-preview",
@@ -132,10 +132,10 @@ export const footerLinks: allFooterLinks = {
         //   name: "Media",
         //   path: "/golden_bay#media",
         // },
-        {
-          name: "Gallery",
-          path: "/golden_bay#gallery",
-        },
+        // {
+        //   name: "Gallery",
+        //   path: "/golden_bay#gallery",
+        // },
         // {
         //   name: "Instagram",
         //   path: "/golden_bay#instagram-preview",
@@ -217,6 +217,30 @@ export const footerLinks: allFooterLinks = {
         {
           name: "Contact",
           path: "/newsroom#contact",
+        },
+      ],
+    },
+    {
+      title: {
+        name: "",
+        path: "",
+      },
+      links: [
+        {
+          name: "",
+          path: "",
+        },
+      ],
+    },
+    {
+      title: {
+        name: "",
+        path: "",
+      },
+      links: [
+        {
+          name: "",
+          path: "",
         },
       ],
     },
