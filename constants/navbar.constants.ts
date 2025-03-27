@@ -7,7 +7,7 @@ export const NavLinks: allNavLinks = {
         {href: '/auckland', key: 'auckland', text: 'Auckland'},
         {href: '/christchurch', key: 'christchurch', text: 'Christchurch'},
         {href: '/dunedin', key: 'dunedin', text: 'Dunedin'},
-        {href: '/golden_bay', key: 'golden_bay', text: 'Golden-Bay'},
+        {href: '/golden_bay', key: 'golden_bay', text: 'GoldenBay'},
         {href: '/wellington', key: 'wellington', text: 'Wellington'},
     ],
     right: [
