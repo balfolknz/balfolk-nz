@@ -7,7 +7,7 @@ import { instagramPreviewInfo } from "@/content/golden_bay/instagram.content";
 import { allCityMentions } from "@/content/golden_bay/mentions.content";
 
 
-const GoldenBay = () => {
+const GoldenBayPage = () => {
     return (
       <CityTemplate
         city="GoldenBay"
