@@ -22,7 +22,7 @@ export const allClasses: allClassInfo = {
         No partner, no experience needed. <br/><br/>
         All classes are run in blocks of 5 consecutive classes.<br/>
         <br/>
-        For further details, <a href="https://www.ousa.org.nz/clubsandsocs/courses/balfolk-dance-for-beginners">please visit this link :)</a> <br/>
+        For further details, <a href="https://www.ousa.org.nz/clubsandsocs/courses/balfolk-dance-for-beginners" className='link' target='_blank'>please visit this link :)</a> <br/>
         <br/><br/>
 
         <h2>Upcoming 2025 Events</h2><br/><br/>

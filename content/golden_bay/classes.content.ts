@@ -14,7 +14,10 @@ export const allClasses: allClassInfo = {
         <br/><br/>
 
 
-        <h2>Upcoming 2025 Easter Events (from 20th to 24th April) </h2><br/><br/>
+        <h2>
+        Upcoming 2025 Easter Events <br/>
+        (from 20th to 24th April) 
+        </h2><br/><br/>
 
         <h3>1. Workshop + Kick off!</h3>
         <p>
@@ -65,6 +68,7 @@ export const allClasses: allClassInfo = {
         <strong>5pm – 6.30 pm: </strong> Shared pot luck kai <br/>
         <strong>6.30 pm – 9.30 pm: </strong> Balfolk Bal - Live music and dances <br/>
 
+        <br/>
         <h4>Details</h4>
         <strong>Location: </strong>Kotinga Hall, Long Plain Road, Tākaka 7183<br/>
         <strong>Time: </strong>Wednesday 23rd April<br/>
@@ -77,6 +81,7 @@ export const allClasses: allClassInfo = {
 
         <strong>5pm – 6:30pm: </strong> Workshop <br/>
 
+        <br/>
         <h4>Details</h4>
         <strong>Location: </strong>TBC<br/>
         <strong>Time: </strong>Thursday 24th April<br/>
