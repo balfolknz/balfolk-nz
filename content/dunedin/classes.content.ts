@@ -21,11 +21,8 @@ export const allClasses: allClassInfo = {
         Breathe new life into old dances, join the Balfolk fun! <br/>
         No partner, no experience needed. <br/><br/>
         All classes are run in blocks of 5 consecutive classes.<br/>
-        <strong><em>Price:</em></strong>
-        <ul>
-        <li>$40/block of 5 classes or</li>
-        <li>$10 for casual attendance</li>
-        </ul>
+        <br/>
+        For further details, <a href="https://www.ousa.org.nz/clubsandsocs/courses/balfolk-dance-for-beginners">please visit this link :)</a> <br/>
         <br/><br/>
 
         <h2>Upcoming 2025 Events</h2><br/><br/>
@@ -50,7 +47,6 @@ export const allClasses: allClassInfo = {
         <strong>Location: </strong>Toitū Otago Settlers Museum, 31 Queens Garden. <br/>
         <strong>Time: </strong>2pm Sharp on the last Sunday of each month. <br/>
         <ul>
-        <li>Sunday 30th March</li>
         <li>Sunday 27th April</li>
         <li>Sunday 25th May</li>
         <li>Sunday 29th June</li>
@@ -79,30 +75,8 @@ export const allClasses: allClassInfo = {
         84 Albany Street, <br/>
         Dunedin North
         `,
-      pricePerWeek: "10",
-    },
-    {
-      style: `English Country Dance`,
-      day: "Tuesday",
-      time: "10:30am - 12:00pm",
-      address: `
-          <strong>North East Valley Baptist Community Centre</strong> <br/><br/>
-          270 North Road, <br/>
-          North East Valley
-      `,
-      pricePerWeek: "10",
-    },
-    {
-      style: "English Country Dance",
-      day: "Tuesday",
-      time: "7:00pm - 8:30pm",
-      address: `
-       <strong>Opoho Scout Hall </strong> <br/><br/>
-        128 Opoho Road, <br/>
-        Dunedin North
-        `,
-      pricePerWeek: "10",
-    },
+      pricePerWeek: "",
+    }
   ],
   eventsLink: "https://www.eventfinda.co.nz/user/kategrace",
 };
