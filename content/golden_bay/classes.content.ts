@@ -16,8 +16,8 @@ export const allClasses: allClassInfo = {
 
         <h2>
         Explore the Balfolk Buzz; From Frenzy to Flow
-        <h2/><br/>
-        <h3>(from 20th to 24th April)</h3>
+        <h2/>
+        <h4>(from 20th to 24th April)</h3>
         <br/><br/>
 
         <h3>1. Workshop + Kick off!</h3>
