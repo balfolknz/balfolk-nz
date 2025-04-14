@@ -112,7 +112,7 @@ function Footer() {
       </section>
 
       <section className={`flexBetween ${styles.footerCopyright}`}>
-        <p>© 2023 Balfolk Aotearoa/NZ. All rights reserved</p>
+        <p>© {new Date().getFullYear()} Balfolk Aotearoa/NZ. All rights reserved</p>
         <p className={`${styles.footerCopyright__right}`}>
           <span className="">Welcome!</span>
         </p>
