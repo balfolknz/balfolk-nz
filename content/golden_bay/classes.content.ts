@@ -15,9 +15,10 @@ export const allClasses: allClassInfo = {
 
 
         <h2>
-        Upcoming 2025 Easter Events <br/>
-        (from 20th to 24th April) 
-        </h2><br/><br/>
+        Explore the Balfolk Buzz; From Frenzy to Flow
+        <h2/>
+        <h4>(from 20th to 24th April)</h3>
+        <br/><br/>
 
         <h3>1. Workshop + Kick off!</h3>
         <p>
@@ -60,7 +61,7 @@ export const allClasses: allClassInfo = {
         </p>
         <br/><br/>
 
-        <h3>4. Workshop + Bal ("From Frency to Flow")</h3>
+        <h3>4. Workshop + Bal ("From Frenzy to Flow")</h3>
         <p>
         Workshop on a range of group, circle, line and partner balfolk dances <br/><br/>
 
@@ -83,10 +84,13 @@ export const allClasses: allClassInfo = {
 
         <br/>
         <h4>Details</h4>
-        <strong>Location: </strong>TBC<br/>
+        <strong>Location: </strong>Golden Bay Sustainable Living Centre, 24 Waitapu Road, Takaka 7110<br/>
         <strong>Time: </strong>Thursday 24th April<br/>
         </p>
         <br/><br/>
+
+        If you have any questions, feel free to email our team at
+        <a className="activeLink" href="mailto:balfolkgoldenbay@gmail.com">Balfolk Golden Bay!</a></p>
 
       <p/>
     </div>
@@ -102,7 +106,7 @@ export const allClasses: allClassInfo = {
         Tākaka 7110
         `,
       pricePerWeek: "Koha",
-    }
+    },
   ],
   eventsLink: "",
 };
