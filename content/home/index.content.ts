@@ -82,6 +82,14 @@ export const learnMoreButtons: learnMoreButtons = {
       name: "Wellington",
       path: "/wellington",
     },
+    {
+      name: "Christchurch",
+      path: "/christchurch",
+    },
+    {
+      name: "Golden Bay",
+      path: "/golden_bay",
+    },
   ],
 };
 
