@@ -17,10 +17,11 @@ export const allClasses: allClassInfo = {
         This dance form encourages creativity and embraces change, making it a vibrant and ever-evolving experience.
         <br/><br/>
 
-        We are pausing classes for the winter, classes will resume at the end of July
+        <strong>We are pausing classes for the winter, classes will resume at the end of July</strong>
+        <br/><br/>
         <br/><br/>
 
-        <h2>Upcoming 2025 Events</h2><br/><br/>
+        <h2>Upcoming 2025 Events</h2><br/><br/> 
 
         <h3>2025 Le Bal Rouge Fundraiser</h3>
         <p>
@@ -80,7 +81,7 @@ export const allClasses: allClassInfo = {
       day: "TBC",
       time: "TBC",
       address: `TBC`,
-      pricePerWeek: "",
+      pricePerWeek: "TBC",
     },
     // {
     //   style: "Balfolk - Evening (Block 2 starting 28th April)",
