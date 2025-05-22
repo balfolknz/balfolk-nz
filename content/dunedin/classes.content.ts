@@ -17,15 +17,26 @@ export const allClasses: allClassInfo = {
         This dance form encourages creativity and embraces change, making it a vibrant and ever-evolving experience.
         <br/><br/>
 
-        <h4>Details</h4>
-        Breathe new life into old dances, join the Balfolk fun! <br/>
-        No partner, no experience needed. <br/><br/>
-        All classes are run in blocks of 5 consecutive classes.<br/>
-        <br/>
-        For further details, <a href="https://www.ousa.org.nz/clubsandsocs/courses/balfolk-dance-for-beginners" className='link' target='_blank'>please visit this link :)</a> <br/>
+        We are pausing classes for the winter, classes will resume at the end of July
         <br/><br/>
 
         <h2>Upcoming 2025 Events</h2><br/><br/>
+
+        <h3>2025 Le Bal Rouge Fundraiser</h3>
+        <p>
+        We're hosting a fundraiser to try save the North East Valley Community Centre! <br/>
+        Please come along to our bal to show your support, with all proceeds going towards the centre <br/>
+        Tickets are $10, and please bring a plate <br/>
+        Wear Red - Dance with Heart - Save our centre <br/><br/>
+
+        Visit <a className="activeLink" href="https://www.facebook.com/balfolkdunedin/posts/660932940255101">this Facebook Events page</a> for more details <br/><br/>
+
+        <h4>Details</h4>
+        <strong>Location: </strong>North East Valley Community Centre - 270 North Road <br/>
+        <strong>Time: </strong>Saturday 24th May, at 7:30pm<br/>
+        </p>
+        <br/><br/>
+
 
         <h3>2025 Pastel Ball</h3>
         <p>
@@ -45,16 +56,14 @@ export const allClasses: allClassInfo = {
 
         <h4>Details</h4>
         <strong>Location: </strong>Toitū Otago Settlers Museum, 31 Queens Garden. <br/>
-        <strong>Time: </strong>2pm Sharp on the last Sunday of each month. <br/>
+        <strong>Time: </strong>2pm Sharp on the first Sunday of each month. <br/>
         <ul>
-        <li>Sunday 27th April</li>
-        <li>Sunday 25th May</li>
-        <li>Sunday 29th June</li>
-        <li>Sunday 27th July</li>
-        <li>Sunday 31th August</li>
-        <li>Sunday 28th September</li>
-        <li>Sunday 19th October</li>
-        <li>Sunday 30th November</li>
+        <li>Sunday 1st June</li>
+        <li>Sunday 6th July</li>
+        <li>Sunday 3rd August</li>
+        <li>Sunday 7th September</li>
+        <li>Sunday 5th October</li>
+        <li>Sunday 2nd November</li>
         </ul>
         </p>
         <br/><br/>
@@ -67,16 +76,23 @@ export const allClasses: allClassInfo = {
     `,
   allClasses: [
     {
-      style: "Balfolk - Evening (Block 2 starting 28th April)",
-      day: "Monday",
-      time: "7:00pm - 8:30pm",
-      address: `
-       <strong>OUSA Clubs and Societies Building </strong> <br/><br/>
-        84 Albany Street, <br/>
-        Dunedin North
-        `,
+      style: "TBC",
+      day: "TBC",
+      time: "TBC",
+      address: `TBC`,
       pricePerWeek: "",
-    }
+    },
+    // {
+    //   style: "Balfolk - Evening (Block 2 starting 28th April)",
+    //   day: "Monday",
+    //   time: "7:00pm - 8:30pm",
+    //   address: `
+    //    <strong>OUSA Clubs and Societies Building </strong> <br/><br/>
+    //     84 Albany Street, <br/>
+    //     Dunedin North
+    //     `,
+    //   pricePerWeek: "",
+    // }
   ],
   eventsLink: "https://www.eventfinda.co.nz/user/kategrace",
 };
