@@ -13,82 +13,6 @@ export const allClasses: allClassInfo = {
         Live music from Hullabalou musicians.
         <br/><br/>
 
-
-        <h2>
-        Explore the Balfolk Buzz; From Frenzy to Flow
-        <h2/>
-        <h4>(from 20th to 24th April)</h3>
-        <br/><br/>
-
-        <h3>1. Workshop + Kick off!</h3>
-        <p>
-        Immersive workshop followed by an evening of live music for dancing <br/><br/>
-
-        <strong>3pm – 5pm: </strong> Workshop on a range of group, circle, line and partner balfolk dances, learning the patterns and finding the space to improvise. <br/>
-        <strong>5pm – 6.30 pm: </strong> Shared pot luck kai <br/>
-        <strong>6.30 pm – 9.30 pm: </strong> Music and dances <br/>
-
-        <br/>
-        <h4>Details</h4>
-        <strong>Location: </strong>Senior Citizens Hall, 94A Commercial Street, Tākaka 7110<br/>
-        <strong>Time: </strong>Sunday 20th April<br/>
-        </p>
-        <br/><br/>
-
-        <h3>2. Workshop</h3>
-        <p>
-        Immersive workshop focusing on 2-3 Balfolk Dances <br/><br/>
-
-        <strong>4pm – 5:30pm: </strong> Workshop <br/>
-
-        <br/>
-        <h4>Details</h4>
-        <strong>Location: </strong>Senior Citizens Hall, 94A Commercial Street, Tākaka 7110<br/>
-        <strong>Time: </strong>Monday 21st April<br/>
-        </p>
-        <br/><br/>
-
-        <h3>3. Workshop</h3>
-        <p>
-        Immersive workshop focusing on 2-3 Balfolk Dances <br/><br/>
-
-        <strong>5pm – 6:30pm: </strong> Workshop <br/>
-
-        <br/>
-        <h4>Details</h4>
-        <strong>Location: </strong>Senior Citizens Hall, 94A Commercial Street, Tākaka 7110<br/>
-        <strong>Time: </strong>Tuesday 22nd April<br/>
-        </p>
-        <br/><br/>
-
-        <h3>4. Workshop + Bal ("From Frenzy to Flow")</h3>
-        <p>
-        Workshop on a range of group, circle, line and partner balfolk dances <br/><br/>
-
-        <strong>3pm – 5pm: </strong> Workshop on a range of group, circle, line and partner balfolk dances, learning the patterns and finding the space to improvise. <br/>
-        <strong>5pm – 6.30 pm: </strong> Shared pot luck kai <br/>
-        <strong>6.30 pm – 9.30 pm: </strong> Balfolk Bal - Live music and dances <br/>
-
-        <br/>
-        <h4>Details</h4>
-        <strong>Location: </strong>Kotinga Hall, Long Plain Road, Tākaka 7183<br/>
-        <strong>Time: </strong>Wednesday 23rd April<br/>
-        </p>
-        <br/><br/>
-
-        <h3>5. Workshop</h3>
-        <p>
-        Immersive workshop focusing on 2-3 Balfolk Dances <br/><br/>
-
-        <strong>5pm – 6:30pm: </strong> Workshop <br/>
-
-        <br/>
-        <h4>Details</h4>
-        <strong>Location: </strong>Golden Bay Sustainable Living Centre, 24 Waitapu Road, Takaka 7110<br/>
-        <strong>Time: </strong>Thursday 24th April<br/>
-        </p>
-        <br/><br/>
-
         If you have any questions, feel free to email our team at
         <a className="activeLink" href="mailto:balfolkgoldenbay@gmail.com">Balfolk Golden Bay!</a></p>
 
@@ -98,12 +22,67 @@ export const allClasses: allClassInfo = {
   allClasses: [
     {
       style: "Balfolk",
-      day: "Tuesday",
-      time: "5:00pm - 7:00pm",
+      day: "Tuesday 17 June",
+      time: "5:00pm - 6:30pm",
       address: `
        <strong>Senior Citizen Hall</strong> <br/><br/>
         94A Commercial Street, <br/>
         Tākaka 7110
+        `,
+      pricePerWeek: "Koha",
+    },
+    {
+      style: "Balfolk",
+      day: "Tuesday 24 June",
+      time: "5:00pm - 6:30pm",
+      address: `
+       <strong>Senior Citizen Hall</strong> <br/><br/>
+        94A Commercial Street, <br/>
+        Tākaka 7110
+        `,
+      pricePerWeek: "Koha",
+    },
+    {
+      style: "Balfolk with Kate Grace (of Balfolk Aotearoa)",
+      day: "Friday 27 June",
+      time: "3:30pm - 5:00pm",
+      address: `
+       <strong>Senior Citizen Hall</strong> <br/><br/>
+        94A Commercial Street, <br/>
+        Tākaka 7110
+        `,
+      pricePerWeek: "Koha",
+    },
+    {
+      style: "Balfolk with Kate Grace (of Balfolk Aotearoa)",
+      day: "Saturday 28 June",
+      time: "3:00pm - 4:30pm",
+      address: `
+       <strong>Kotinga Hall</strong> <br/><br/>
+        269 Long Plain Rd, <br/>
+        Tākaka 7183
+        `,
+      pricePerWeek: "Koha",
+    },
+    {
+      style: "Hullabalou with Kate Grace (of Balfolk Aotearoa)",
+      day: "Saturday 28 June",
+      time: "8:00pm - Late",
+      address: `
+       <strong>Mussel Inn</strong> <br/><br/>
+        Onekaka, <br/>
+        Tākaka
+        `,
+      pricePerWeek: "Koha",
+    },
+    {
+      style: "Balfolk with Kate Grace (of Balfolk Aotearoa)",
+      day: "Sunday 29 June",
+      time: "3:00pm - 5:00pm",
+      address: `
+       <strong>Kotinga Hall</strong> <br/><br/>
+        269 Long Plain Rd, <br/>
+        Tākaka 7183
         `,
       pricePerWeek: "Koha",
     },
