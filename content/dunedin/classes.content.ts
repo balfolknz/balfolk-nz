@@ -23,26 +23,10 @@ export const allClasses: allClassInfo = {
 
         <h2>Upcoming 2025 Events</h2><br/><br/> 
 
-        <h3>2025 Le Bal Rouge Fundraiser</h3>
-        <p>
-        We're hosting a fundraiser to try save the North East Valley Community Centre! <br/>
-        Please come along to our bal to show your support, with all proceeds going towards the centre <br/>
-        Tickets are $10, and please bring a plate <br/>
-        Wear Red - Dance with Heart - Save our centre <br/><br/>
-
-        Visit <a className="activeLink" href="https://www.facebook.com/balfolkdunedin/posts/660932940255101">this Facebook Events page</a> for more details <br/><br/>
-
-        <h4>Details</h4>
-        <strong>Location: </strong>North East Valley Community Centre - 270 North Road <br/>
-        <strong>Time: </strong>Saturday 24th May, at 7:30pm<br/>
-        </p>
-        <br/><br/>
-
-
         <h3>2025 Pastel Ball</h3>
         <p>
         We've got our 2025 Pastel ball happening this year! <br/>
-        Visit our Eventfinda below for more details :) <br/><br/>
+        Visit our <a className="activeLink" href="https://www.eventfinda.co.nz/2025/the-pastel-ball/dunedin">Eventfinda for more details :)</a> <br/><br/>
 
         <h4>Details</h4>
         <strong>Location: </strong>Sargood Centre, 40 Logan Park Drive. <br/>
@@ -59,7 +43,6 @@ export const allClasses: allClassInfo = {
         <strong>Location: </strong>Toitū Otago Settlers Museum, 31 Queens Garden. <br/>
         <strong>Time: </strong>2pm Sharp on the first Sunday of each month. <br/>
         <ul>
-        <li>Sunday 1st June</li>
         <li>Sunday 6th July</li>
         <li>Sunday 3rd August</li>
         <li>Sunday 7th September</li>
@@ -77,23 +60,26 @@ export const allClasses: allClassInfo = {
     `,
   allClasses: [
     {
-      style: "TBC",
-      day: "TBC",
-      time: "TBC",
+      style: "English Country Dance",
+      day: "Tuesday",
+      time: "10:30am - 11:30am",
       address: `TBC`,
-      pricePerWeek: "TBC",
+      pricePerWeek: "",
     },
-    // {
-    //   style: "Balfolk - Evening (Block 2 starting 28th April)",
-    //   day: "Monday",
-    //   time: "7:00pm - 8:30pm",
-    //   address: `
-    //    <strong>OUSA Clubs and Societies Building </strong> <br/><br/>
-    //     84 Albany Street, <br/>
-    //     Dunedin North
-    //     `,
-    //   pricePerWeek: "",
-    // }
+    {
+      style: "Balfolk Partner Dance",
+      day: "Wednesday",
+      time: "6:00pm - 7:00pm",
+      address: `TBC`,
+      pricePerWeek: "",
+    },
+    {
+      style: "Balfolk Partner Dance",
+      day: "Wednesday",
+      time: "7:00pm - 8:00pm",
+      address: `TBC`,
+      pricePerWeek: "",
+    },
   ],
   eventsLink: "https://www.eventfinda.co.nz/user/kategrace",
 };
