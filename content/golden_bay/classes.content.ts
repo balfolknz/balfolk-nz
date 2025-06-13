@@ -43,7 +43,7 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "Koha",
     },
     {
-      style: "Balfolk with Kate Grace (of Balfolk Aotearoa)",
+      style: "Balfolk with Kate Grace (of Balfolk Aotearoa/NZ)",
       day: "Friday 27 June",
       time: "3:30pm - 5:00pm",
       address: `
@@ -54,7 +54,7 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "Koha",
     },
     {
-      style: "Balfolk with Kate Grace (of Balfolk Aotearoa)",
+      style: "Balfolk with Kate Grace (of Balfolk Aotearoa/NZ)",
       day: "Saturday 28 June",
       time: "3:00pm - 4:30pm",
       address: `
@@ -65,7 +65,7 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "Koha",
     },
     {
-      style: "Hullabalou with Kate Grace (of Balfolk Aotearoa)",
+      style: "Hullabalou with Kate Grace (of Balfolk Aotearoa/NZ)",
       day: "Saturday 28 June",
       time: "8:00pm - Late",
       address: `
@@ -76,7 +76,7 @@ export const allClasses: allClassInfo = {
       pricePerWeek: "Koha",
     },
     {
-      style: "Balfolk with Kate Grace (of Balfolk Aotearoa)",
+      style: "Balfolk with Kate Grace (of Balfolk Aotearoa/NZ)",
       day: "Sunday 29 June",
       time: "3:00pm - 5:00pm",
       address: `

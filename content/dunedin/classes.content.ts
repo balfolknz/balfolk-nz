@@ -62,19 +62,30 @@ export const allClasses: allClassInfo = {
     {
       style: "English Country Dance",
       day: "Tuesday",
-      time: "10:30am - 11:30am",
+      time: "10:30am - 12:00pm",
       address: `TBC`,
       pricePerWeek: "",
     },
     {
-      style: "Balfolk Partner Dance",
+      style: "English Country Dance",
+      day: "Tuesday",
+      time: "7:00pm - 8:30pm",
+      address: `
+      Opoho Scout Hall, 
+      123 Opoho Rd, 
+      Dunedin 9010
+      `,
+      pricePerWeek: "",
+    },
+    {
+      style: "Balfolk Partner Dance (no partner needed)",
       day: "Wednesday",
       time: "6:00pm - 7:00pm",
       address: `TBC`,
       pricePerWeek: "",
     },
     {
-      style: "Balfolk Partner Dance",
+      style: "Balfolk Partner Dance (no partner needed)",
       day: "Wednesday",
       time: "7:00pm - 8:00pm",
       address: `TBC`,
