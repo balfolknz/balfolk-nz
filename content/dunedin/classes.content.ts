@@ -17,9 +17,6 @@ export const allClasses: allClassInfo = {
         This dance form encourages creativity and embraces change, making it a vibrant and ever-evolving experience.
         <br/><br/>
 
-        <strong>We are pausing classes for the winter, classes will resume at the end of July</strong>
-        <br/><br/>
-        <br/><br/>
 
         <h2>Upcoming 2025 Events</h2><br/><br/> 
 
@@ -80,17 +77,14 @@ export const allClasses: allClassInfo = {
     {
       style: "Balfolk Partner Dance (no partner needed)",
       day: "Wednesday",
-      time: "6:00pm - 7:00pm",
-      address: `TBC`,
-      pricePerWeek: "",
-    },
-    {
-      style: "Balfolk Partner Dance (no partner needed)",
-      day: "Wednesday",
-      time: "7:00pm - 8:00pm",
-      address: `TBC`,
-      pricePerWeek: "",
-    },
+      time: "6:00pm - 8:30pm",
+      address: `
+       <strong>North East Valley Community Centre</strong> <br/><br/>
+        270 North Road, <br/>
+        Dunedin
+        `,
+      pricePerWeek: "10",
+    }
   ],
   eventsLink: "https://www.eventfinda.co.nz/user/kategrace",
 };

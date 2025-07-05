@@ -21,71 +21,12 @@ export const allClasses: allClassInfo = {
     `,
   allClasses: [
     {
-      style: "Balfolk",
-      day: "Tuesday 17 June",
-      time: "5:00pm - 6:30pm",
-      address: `
-       <strong>Senior Citizen Hall</strong> <br/><br/>
-        94A Commercial Street, <br/>
-        Tākaka 7110
-        `,
-      pricePerWeek: "Koha",
-    },
-    {
-      style: "Balfolk",
-      day: "Tuesday 24 June",
-      time: "5:00pm - 6:30pm",
-      address: `
-       <strong>Senior Citizen Hall</strong> <br/><br/>
-        94A Commercial Street, <br/>
-        Tākaka 7110
-        `,
-      pricePerWeek: "Koha",
-    },
-    {
-      style: "Balfolk with Kate Grace (of Balfolk Aotearoa/NZ)",
-      day: "Friday 27 June",
-      time: "3:30pm - 5:00pm",
-      address: `
-       <strong>Senior Citizen Hall</strong> <br/><br/>
-        94A Commercial Street, <br/>
-        Tākaka 7110
-        `,
-      pricePerWeek: "Koha",
-    },
-    {
-      style: "Balfolk with Kate Grace (of Balfolk Aotearoa/NZ)",
-      day: "Saturday 28 June",
-      time: "3:00pm - 4:30pm",
-      address: `
-       <strong>Kotinga Hall</strong> <br/><br/>
-        269 Long Plain Rd, <br/>
-        Tākaka 7183
-        `,
-      pricePerWeek: "Koha",
-    },
-    {
-      style: "Hullabalou with Kate Grace (of Balfolk Aotearoa/NZ)",
-      day: "Saturday 28 June",
-      time: "8:00pm - Late",
-      address: `
-       <strong>Mussel Inn</strong> <br/><br/>
-        Onekaka, <br/>
-        Tākaka
-        `,
-      pricePerWeek: "Koha",
-    },
-    {
-      style: "Balfolk with Kate Grace (of Balfolk Aotearoa/NZ)",
-      day: "Sunday 29 June",
-      time: "3:00pm - 5:00pm",
-      address: `
-       <strong>Kotinga Hall</strong> <br/><br/>
-        269 Long Plain Rd, <br/>
-        Tākaka 7183
-        `,
-      pricePerWeek: "Koha",
-    },
+      style: "TBD",
+      day: "TBD",
+      time: "TBD",
+      address: `TBD`,
+      pricePerWeek: "TBD",
+    }
   ],
   eventsLink: "",
 };
